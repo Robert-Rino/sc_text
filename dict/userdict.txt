@@ -1,0 +1,15 @@
+IEEE802.11
+wireless LAN
+無線網路 20
+ethernet
+基地台
+講
+等下
+不斷地
+漸行漸遠
+筆電
+有線網路 20
+802.11
+spanning tree
+分散式系統 100
+CSMA/CD 100
