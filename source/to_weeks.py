@@ -3,7 +3,7 @@ import csv,os
 #chapter_video_dir is dump from mysql v_chapter_video table
 #format is
 #cid,chid,chapter_order,content-order,vid,v_name
-chapter_video_dir = '../video_filev_chapter_video.csv'
+chapter_video_dir = '../video_file/v_chapter_video.csv'
 #in_file_path is dumpform mongodb format is
 #userId,videoStartTime,videoEndTime,videoTotalTime,videoId,time
 in_file_path = '../video_file/video_record_12_7_filtered.csv'
