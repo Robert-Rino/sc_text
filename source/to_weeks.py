@@ -8,7 +8,7 @@ chapter_video_dir = '../video_file/v_chapter_video.csv'
 #userId,videoStartTime,videoEndTime,videoTotalTime,videoId,time
 in_file_path = '../video_file/video_record_12_7_filtered.csv'
 # out_dir = './weeks_filtered/week3/'
-out_path = './to_weeks'
+out_path = '../to_weeks'
 if not os.path.exists(out_path):
     os.makedirs(out_path)
 title = []
