@@ -19,4 +19,4 @@ run ```python filter_just_pass.py``` will generate
 
 * run ```python to_weeks.py``` will generate files separated to weeks' videos ```to_weeks/...```
 
-run ```python preprocess_weeks_data.py``` generate files to dir ```to_weeks_preprecessed``` 
+* run ```python preprocess_weeks_data.py``` generate files to dir ```to_weeks_preprecessed``` 
