@@ -14,6 +14,9 @@ def return_big_index_list(timelineCount):
     # print sorted_index_list
     return sorted_index_list
 
+def get_key_word(scale_start,scale_end,video_start,video_end)
+
+
 
 jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
 jieba.analyse.set_stop_words("../dict/pleonasm.txt")
@@ -90,20 +93,5 @@ for folder in os.listdir('../original_file'):
                     subtitle[video_start,video_end] = tmp_word
 
                     fw.write('(' + str(video_start) + ',' + str(video_end) + ')' + ' : ' + str(tmp_word) + '\n' )
-
-                    if video_start < scale_start:
-                        if video_end > scale_end:
-                            #case1
-                            print(subtitle[video_start,video_end])
-                        else:
-                            #case2
-                            print(subtitle[video_start,video_end])
-                    else:
-                        if video_end > scale_end:
-                            #case3
-                            print(subtitle[video_start,video_end])
-                        else:
-                            #case4
-                            print(subtitle[video_start,video_end])
 
         fr.close()
