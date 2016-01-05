@@ -25,7 +25,10 @@ def get_key_word(scale_start,scale_end,video_start,video_end):
         if scale_end > video_start:
             return video_start,video_end
 
-def store_it_done():
+# preprocess 原始字幕黨成 ((startTime,endTime):[wordList])
+# original_file : 原始字幕黨
+# it_done : 處理好的字幕黨
+def preprocessSubtitle():
     for folder in os.listdir('../original_file'):
         print(folder + '============================')
         for filename in os.listdir('../original_file/'+ folder):
@@ -103,7 +106,7 @@ def store_it_done():
 # =======
 #deal processed timeline data===================================
 
-path = '../hot_scale/' #current dir
+path = '../hot_scale/' #current dir  week3所有處理好的影片熱點資料
 dirs = os.listdir(path)
 inPath = path+dirs[0]
 # sorted(dirs)
@@ -129,13 +132,14 @@ for order,file_name in enumerate(dirs):
         indexList = return_big_index_list(countList)
         returnTimeList = []
         returnCountList = []
-        for index_count in indexList[:5]:
+        for index_count in indexList[:5]: #前五大的值之index
             returnTimeList.append(timeList[index_count[0]])
             returnCountList.append(countList[index_count[0]])
         week_order_timeList[3][order]['time'] = returnTimeList
         week_order_timeList[3][order]['count'] = returnCountList
 
-store_it_done()
+# preprocess 原始字幕黨
+preprocessSubtitle()
 
 folder = input("Which folder? ")
 filename = input("Which file?(ex : 0.txt) ")
@@ -144,6 +148,10 @@ filename = input("Which file?(ex : 0.txt) ")
 subtitle = {}
 keyword = []
 
+# =========**********=======
+# 為什麼這邊要在讀入original file ??
+# 上面不是已經有處理好的資料放在 it_done了？
+#=========**********=========
 fr = open('../original_file/' + folder + '/' + filename)
 content_list = fr.read().splitlines()
 file = filename.split(".txt")
