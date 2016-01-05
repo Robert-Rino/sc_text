@@ -101,7 +101,7 @@ def store_it_done():
 #             scale_start = week_order_timeList[int(folder)][int(file[0])]['time'][point]
 #             scale_end = scale_start + 5
 # =======
-#deal processed data===================================
+#deal processed timeline data===================================
 path = '../hot_scale/' #current dir
 dirs = os.listdir(path)
 inPath = path+dirs[0]
