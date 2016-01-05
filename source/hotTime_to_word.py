@@ -21,46 +21,47 @@ jieba.analyse.set_stop_words("../dict/extra_dict/stop_words.txt")
 jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
 jieba.load_userdict('../dict/userdict.txt')
 
-#deal processed data===================================
-path = '../hot_scale/' #current dir
-dirs = os.listdir(path)
-inPath = path+dirs[0]
-# sorted(dirs)
-for key,name in enumerate(dirs):
-    if name == 'key_timeline.py':
-        del(dirs[key])
-
-week_order_timeList={}
-#future work all week data currently only week3
-week_order_timeList[3] = {}
-# 將key_timeline存入week_order_timeList
-for order,file_name in enumerate(dirs):
-    tmp_path = path+file_name
-    week_order_timeList[3][order] = {}
-    with open(tmp_path,'r') as f:
-        reader = csv.reader(f)
-        next(reader)#skip title
-        timeList = []
-        countList = []
-        for rows in reader:
-            timeList.append(int(rows[0]))
-            countList.append(int(rows[1]))
-        indexList = return_big_index_list(countList)
-        returnTimeList = []
-        returnCountList = []
-        for index_count in indexList[:5]:
-            returnTimeList.append(timeList[index_count[0]])
-            returnCountList.append(countList[index_count[0]])
-        week_order_timeList[3][order]['time'] = returnTimeList
-        week_order_timeList[3][order]['count'] = returnCountList
+#deal processed video data===================================
+# path = '../hot_scale/' #current dir
+# dirs = os.listdir(path)
+# inPath = path+dirs[0]
+# # sorted(dirs)
+# for key,name in enumerate(dirs):
+#     if name == 'key_timeline.py':
+#         del(dirs[key])
+#
+# week_order_timeList={}
+# #future work all week data currently only week3
+# week_order_timeList[3] = {}
+# # 將key_timeline存入week_order_timeList
+# for order,file_name in enumerate(dirs):
+#     tmp_path = path+file_name
+#     week_order_timeList[3][order] = {}
+#     with open(tmp_path,'r') as f:
+#         reader = csv.reader(f)
+#         next(reader)#skip title
+#         timeList = []
+#         countList = []
+#         for rows in reader:
+#             timeList.append(int(rows[0]))
+#             countList.append(int(rows[1]))
+#         indexList = return_big_index_list(countList)
+#         returnTimeList = []
+#         returnCountList = []
+#         for index_count in indexList[:5]:
+#             returnTimeList.append(timeList[index_count[0]])
+#             returnCountList.append(countList[index_count[0]])
+#         week_order_timeList[3][order]['time'] = returnTimeList
+#         week_order_timeList[3][order]['count'] = returnCountList
 # 分割字幕成關鍵字存入檔案
 for folder in os.listdir('../original_file'):
-    print(folder + '============================')
-    for filename in os.listdir('../original_file/'+ folder):
-        print(filename + '============================')
+    # print(folder + '============================')
+    week_dir = '../original_file/'+ folder
+    for filename in os.listdir(week_dir):
+        # print(filename + '============================')
         fr = open('../original_file/' + folder + '/' + filename)
         fw = open('../it_done/' + folder + '/' + filename,'w')
-        subtitle = {}
+        # subtitle = {}
         content_list = fr.read().splitlines()
 
         file = filename.split(".txt")
