@@ -5,6 +5,12 @@ import jieba.analyse
 import jieba.posseg as pseg
 import datetime
 
+jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
+jieba.analyse.set_stop_words("../dict/pleonasm.txt")
+jieba.analyse.set_stop_words("../dict/extra_dict/stop_words.txt")
+jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
+jieba.load_userdict('../dict/userdict.txt')
+
 def return_big_index_list(timelineCount):
     tmp = []
     for index,count in enumerate(timelineCount):
@@ -19,14 +25,31 @@ def get_key_word(scale_start,scale_end,video_start,video_end):
         if scale_end > video_start:
             return video_start,video_end
 
-
-
-
-jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
-jieba.analyse.set_stop_words("../dict/pleonasm.txt")
-jieba.analyse.set_stop_words("../dict/extra_dict/stop_words.txt")
-jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
-jieba.load_userdict('../dict/userdict.txt')
+def store_it_done():
+    for folder in os.listdir('../original_file'):
+        print(folder + '============================')
+        for filename in os.listdir('../original_file/'+ folder):
+            print(filename + '============================')
+            fr = open('../original_file/' + folder + '/' + filename)
+            fw = open('../it_done/' + folder + '/' + filename,'w')
+            content_list = fr.read().splitlines()
+            for index, content in enumerate(content_list):
+                if index % 4 == 1:
+                    # time
+                    time = content.split()
+                    time.pop(1)
+                    start = datetime.datetime.strptime(time[0], "%H:%M:%S,%f")
+                    end = datetime.datetime.strptime(time[1], "%H:%M:%S,%f")
+                    video_start = start.minute*60 + start.second
+                    video_end = end.minute*60 + end.second
+                    #keywords
+                    words = jieba.analyse.extract_tags(content_list[index +1])
+                    tmp_word = []
+                    for word in words:
+                        if word != ' ':
+                            tmp_word.append(word)
+                    fw.write('(' + str(video_start) + ',' + str(video_end) + ')' + ' : ' + str(tmp_word) + '\n' )
+            fr.close()
 
 #deal processed data===================================
 path = '../hot_scale/' #current dir
@@ -60,6 +83,7 @@ for order,file_name in enumerate(dirs):
             returnCountList.append(countList[index_count[0]])
         week_order_timeList[3][order]['time'] = returnTimeList
         week_order_timeList[3][order]['count'] = returnCountList
+
 # 分割字幕成關鍵字存入檔案
 subtitle = {}
 keyword = []
@@ -90,8 +114,6 @@ for filename in os.listdir('../original_file/3'):
                     if word != ' ':
                         tmp_word.append(word)
                 subtitle[video_start,video_end] = tmp_word
-                fw.write('(' + str(video_start) + ',' + str(video_end) + ')' + ' : ' + str(tmp_word) + '\n' )
-
                 keyword_time = get_key_word(scale_start,scale_end,tmp_time[0],tmp_time[1])
                 if keyword_time != None:
                     keyword.append(subtitle[keyword_time[0],keyword_time[1]])
