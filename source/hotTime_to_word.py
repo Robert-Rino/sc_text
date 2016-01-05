@@ -14,7 +14,11 @@ def return_big_index_list(timelineCount):
     # print sorted_index_list
     return sorted_index_list
 
-def get_key_word(scale_start,scale_end,video_start,video_end)
+def get_key_word(scale_start,scale_end,video_start,video_end):
+    if video_end > scale_start:
+        if scale_end > video_start:
+            return video_start,video_end
+
 
 
 
@@ -57,41 +61,38 @@ for order,file_name in enumerate(dirs):
         week_order_timeList[3][order]['time'] = returnTimeList
         week_order_timeList[3][order]['count'] = returnCountList
 # 分割字幕成關鍵字存入檔案
-for folder in os.listdir('../original_file'):
-    print(folder + '============================')
-    for filename in os.listdir('../original_file/'+ folder):
-        print(filename + '============================')
-        fr = open('../original_file/' + folder + '/' + filename)
-        fw = open('../it_done/' + folder + '/' + filename,'w')
-        subtitle = {}
-        content_list = fr.read().splitlines()
+subtitle = {}
+keyword = []
+for filename in os.listdir('../original_file/3'):
+    print(filename + '============================')
+    fr = open('../original_file/3/' + filename)
+    fw = open('../it_done/3/' + filename,'w')
+    content_list = fr.read().splitlines()
+    file = filename.split(".txt")
+    for point in range(0,5):
+        scale_start = week_order_timeList[3][int(file[0])]['time'][point]
+        scale_end = scale_start + 5
+        for index, content in enumerate(content_list):
+            if index % 4 == 1:
+                # time
+                time = content.split()
+                time.pop(1)
+                start = datetime.datetime.strptime(time[0], "%H:%M:%S,%f")
+                end = datetime.datetime.strptime(time[1], "%H:%M:%S,%f")
+                video_start = start.minute*60 + start.second
+                video_end = end.minute*60 + end.second
+                tmp_time = [video_start,video_end]
+                #keywords
+                words = jieba.analyse.extract_tags(content_list[index +1])
+                # words = pseg.cut(content_list[index +1])
+                tmp_word = []
+                for word in words:
+                    if word != ' ':
+                        tmp_word.append(word)
+                subtitle[video_start,video_end] = tmp_word
+                fw.write('(' + str(video_start) + ',' + str(video_end) + ')' + ' : ' + str(tmp_word) + '\n' )
 
-        file = filename.split(".txt")
-
-        for point in range(0,5):
-            scale_start = week_order_timeList[int(folder)][int(file[0])]['time'][point]
-            scale_end = scale_start + 5
-
-            for index, content in enumerate(content_list):
-                if index % 4 == 1:
-                    # time
-                    time = content.split()
-                    time.pop(1)
-                    start = datetime.datetime.strptime(time[0], "%H:%M:%S,%f")
-                    end = datetime.datetime.strptime(time[1], "%H:%M:%S,%f")
-                    video_start = start.minute*60 + start.second
-                    video_end = end.minute*60 + end.second
-                    tmp_time = [video_start,video_end]
-
-                    #keywords
-                    words = jieba.analyse.extract_tags(content_list[index +1])
-                    # words = pseg.cut(content_list[index +1])
-                    tmp_word = []
-                    for word in words:
-                        if word != ' ':
-                            tmp_word.append(word)
-                    subtitle[video_start,video_end] = tmp_word
-
-                    fw.write('(' + str(video_start) + ',' + str(video_end) + ')' + ' : ' + str(tmp_word) + '\n' )
-
-        fr.close()
+                keyword_time = get_key_word(scale_start,scale_end,tmp_time[0],tmp_time[1])
+                if keyword_time != None:
+                    keyword.append(subtitle[keyword_time[0],keyword_time[1]])
+    fr.close()
