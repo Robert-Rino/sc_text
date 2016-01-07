@@ -1,0 +1,5 @@
+ethernet,網卡,collision
+off,exponential,algorithm,back,網卡,ethernet
+第一次,封包
+off,back,algorithm,exponential
+

@@ -1,0 +1,5 @@
+collision,idea,封包
+802.11,CA,CSMA,protocol
+control,frame,目的地
+control,frame,request,RTS,send
+collision,封包

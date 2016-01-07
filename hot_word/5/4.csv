@@ -1,0 +1,5 @@
+bridgeX,網路,封包
+bridge,形成,網路,loop
+迴路,重複,loop,封包
+bridge,網路
+bridge,形成,網路,loop,可靠

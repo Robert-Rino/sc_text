@@ -1,0 +1,5 @@
+transmitter,station,PCF,receiver
+transmitter,point,coordinator,station,基地台,receiver,PCF
+ACK,MAC,子來,level
+coordinator,來收,receiver,基地台,point
+data,一連串,polling

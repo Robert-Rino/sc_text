@@ -1,0 +1,5 @@
+封包
+bridge,這裡面,destination,source,網路,封包
+source,destination,封包
+bridge,往前走,網路,封包
+封包

@@ -1,0 +1,5 @@
+preamble
+source,frame,start,網卡,欄位,位置,address,馬上,封包
+frame,start,delimiter,封包,馬上,欄位
+pattern,七八,56,bytes,七個,訊號,五十六,bits
+ethernet,frame,format
