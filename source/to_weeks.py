@@ -42,7 +42,8 @@ for week in weeks_vid:
         vid = video[1]
         vid_list.append(vid)
         for index,vid in enumerate(vid_list):
-            out_file_name = '/'+str(index)+'-'+str(vid)+'.csv'
+            # out_file_name = '/'+str(index)+'-'+str(vid)+'.csv'
+            out_file_name = '/'+str(index)+'.csv'
             out_file_path = dir_path+out_file_name
             out = []
             # out.append(title)
