@@ -30,6 +30,23 @@ def makeElementUnique(keyWordList):
     tmeSet = set(keyWordList)
     uniqueList = list(tmeSet)
     return uniqueList
+
+# 得到依點擊高低排序的 time-keyword pair
+def getTime_KeyWord(biggestCountIndex):
+    for rank in range(5): # 取前5高的點擊，可設定抓更多的數量
+        out = []
+        index_count = biggestCountIndex[rank]
+        startTime = index_count[0]*timeSegment
+        endTime = (index_count[0]+1)*timeSegment
+        timePair = (startTime,endTime) #make it tuple
+        keyWordTmp = []
+        for timeTuple in time_keyList:
+            # print 'start is :%s , end is %s' %(timeTuple[0],timeTuple[1])
+            keyWordTimeTmp = get_key_word(startTime,endTime,timeTuple[0],timeTuple[1])
+            if keyWordTimeTmp != None:
+                keyWordTmp.extend(time_keyList[keyWordTimeTmp])
+        time_keyword[timePair] = makeElementUnique(keyWordTmp)
+    return time_keyword
 # create weekdir in resultdir if not exists
 # week_dirs = os.listdir(keyword_dir)
 # for dirName in week_dirs:
@@ -65,20 +82,18 @@ with open(timeline_file,'r') as f:
 topRankedCount = return_big_index_list(countList)
 # 一個sequence是幾秒
 timeSegment = 5
+
 # 最後的關鍵字列表
 time_keyword = {}
-
 # 取前5高的點擊，可設定抓更多的數量
-for rank in range(5):
-    index_count = topRankedCount[rank]
-    startTime = index_count[0]*timeSegment
-    endTime = (index_count[0]+1)*timeSegment
-    timePair = (startTime,endTime) #make it tuple
-    keyWordTmp = []
-    for timeTuple in time_keyList:
-        # print 'start is :%s , end is %s' %(timeTuple[0],timeTuple[1])
-        keyWordTimeTmp = get_key_word(startTime,endTime,timeTuple[0],timeTuple[1])
-        if keyWordTimeTmp != None:
-            keyWordTmp.extend(time_keyList[keyWordTimeTmp])
-    time_keyword[timePair] = makeElementUnique(keyWordTmp)
-print(time_keyword)
+time_keyword = getTime_KeyWord(topRankedCount)
+# 輸出用的list
+out = []
+
+# wite into hot_word file
+for time in time_keyword :
+    out.append(time_keyword[time])
+with open('../hot_word/3/0.csv','w') as f:
+    w = csv.writer(f)
+    w.writerows(out)
+# print(time_keyword)
