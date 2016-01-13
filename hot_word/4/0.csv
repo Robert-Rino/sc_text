@@ -1,5 +1,5 @@
-wireless,無線網路,LAN,IEEE802.11
+wireless,無線網路,IEEE802.11,LAN
 
-wireless,佈局,LAN,網路,無線網路
+wireless,無線網路,網路,LAN,佈局
 IEEE802.11
-佈局,網路,ethernet
+網路,ethernet,佈局

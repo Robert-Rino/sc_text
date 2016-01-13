@@ -1,5 +1,5 @@
-protocol,tag,VLAN,封包
-encode,ethernet,tag,有分,VLAN
-00,12,VLAN,這裡面,TCI,哪裡,bit,81
-SNAP,encode,剛才
-SNAP,encode
+封包,tag,VLAN,protocol
+ethernet,encode,tag,VLAN,有分
+TCI,哪裡,VLAN,00,81,bit,這裡面,12
+剛才,encode,SNAP
+encode,SNAP

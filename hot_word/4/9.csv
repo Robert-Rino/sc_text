@@ -1,5 +1,5 @@
-network,clear,request,send,allocation,vector,過說,frame
-clear,request,send,交握,frame,等下,封包
-ACK,short,data,算進去,IFS
-設定,NAV
-network,allocation,vector,設定,NAV,過說
+allocation,vector,frame,clear,send,request,network
+frame,clear,send,request,交握,封包,等下
+IFS,算進去,ACK,data,short
+NAV,設定
+allocation,vector,NAV,network,設定

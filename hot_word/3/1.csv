@@ -1,5 +1,5 @@
-10,10Mbps,cable,base,band
-最長,bus,網段,ethernet,五百,segment,網路
-10,10Mbps,base,band
+10,base,10Mbps,cable,band
+網路,ethernet,最長,bus,網段,五百,segment
+10,base,10Mbps,band
 
-broadband,band,cable,channel
+band,broadband,cable,channel

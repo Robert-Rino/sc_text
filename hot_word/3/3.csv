@@ -1,5 +1,5 @@
-ethernet,晶片,gigabit
-24,ethernet,模組,gigabit,這裡面
-MAC,模組,port
-24,二十四個,晶片,gigabit,一百,ethernet,port
-pc,工作站,機器,交換機
+晶片,gigabit,ethernet
+這裡面,gigabit,模組,ethernet,24
+MAC,port,模組
+一百,gigabit,ethernet,port,二十四個,晶片,24
+pc,機器,工作站,交換機

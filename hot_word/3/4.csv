@@ -1,5 +1,5 @@
 preamble
-source,frame,start,網卡,欄位,位置,address,馬上,封包
-frame,start,delimiter,封包,馬上,欄位
-pattern,七八,56,bytes,七個,訊號,五十六,bits
-ethernet,frame,format
+網卡,frame,start,欄位,address,source,封包,位置
+封包,frame,delimiter,欄位,start
+56,七八,pattern,五十六,bits,訊號,bytes
+format,frame,ethernet

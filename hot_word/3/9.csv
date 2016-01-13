@@ -1,5 +1,5 @@
-CSMA,ethernet,protocol,CD
-效能,好不好,protocol,每次,封包
-collision,idle,busy
-嘗試,jam,重新,collision
+CD,CSMA,protocol,ethernet
+封包,protocol,效能,好不好,每次
+idle,busy,collision
+jam,嘗試,重新,collision
 idle,busy,每次,封包

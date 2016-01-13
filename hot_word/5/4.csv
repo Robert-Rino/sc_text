@@ -1,5 +1,5 @@
-bridgeX,網路,封包
-bridge,形成,網路,loop
-迴路,重複,loop,封包
+封包,網路,bridgeX
+形成,bridge,網路,loop
+封包,loop,迴路,重複
 bridge,網路
-bridge,形成,網路,loop,可靠
+可靠,bridge,形成,網路,loop

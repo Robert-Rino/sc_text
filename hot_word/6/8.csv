@@ -1,5 +1,5 @@
-總類,database,VLAN,靜態,Static,static,有關
-database,VLAN,總類,有關
-database,VLAN,總類,有關
-流量,dynamic,動態,Dynamic,static,設定,還沒跑
-protocol,通知,設定,交換機
+有關,database,Static,VLAN,總類,靜態,static
+有關,VLAN,總類,database
+有關,VLAN,總類,database
+Dynamic,流量,還沒跑,動態,dynamic,static,設定
+通知,protocol,設定,交換機

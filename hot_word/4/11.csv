@@ -1,5 +1,5 @@
-頻寬,IEEE802.11,多媒體
-function,IEEE802.11,coordination,point
-機制,coordinator,station,polling,point
-function,coordination,point
+IEEE802.11,頻寬,多媒體
+coordination,IEEE802.11,point,function
+station,機制,point,polling,coordinator
+coordination,point,function
 

@@ -1,5 +1,5 @@
 bridge,router
 
-switch,結構,VLAN,交換機,過的
+switch,過的,結構,交換機,VLAN
 shared,VLAN
-有關,VLAN,learning,address
+有關,address,VLAN,learning

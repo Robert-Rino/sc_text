@@ -1,5 +1,5 @@
-802.11,DCF,工作站,CSMA,主體,CA
-off,CA,random,CSMA,back,time,protocol
+802.11,CSMA,主體,工作站,CA,DCF
+back,CSMA,protocol,random,time,CA,off
 DCF
 
-free,period,間隔,contention,一點點
+一點點,period,間隔,free,contention

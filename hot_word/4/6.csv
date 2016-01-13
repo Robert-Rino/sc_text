@@ -1,5 +1,5 @@
-結構,這張,MAC
-IEEE802.11,MAC,結構,architecture
+MAC,這張,結構
+IEEE802.11,結構,MAC,architecture
 IEEE802.11
-node,隨意型,hoc,基地台,網路,ad
-DCF,架構,之上,hoc,ad
+hoc,node,網路,隨意型,ad,基地台
+之上,hoc,ad,DCF,架構

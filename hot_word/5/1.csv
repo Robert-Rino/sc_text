@@ -1,5 +1,5 @@
-六個,LAN,結構,連接成,bridge
+bridge,六個,結構,LAN,連接成
 六個,LAN
-六個,LAN,結構,連接成,bridge
+bridge,六個,結構,LAN,連接成
 bridge,bridge1
-bridge,LAN,bridge1,六個,LAN6,LAN1
+LAN,bridge1,bridge,六個,LAN6,LAN1
