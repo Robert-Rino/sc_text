@@ -1,5 +1,5 @@
-會給,bridge,id,byte
-spanning,algorithm
-bridge,id
-byte,MAC,address,六個,程式,設定
-bridge,id
+byte,id,bridge
+algorithm,spanning
+id,bridge
+byte,address,MAC
+id,bridge

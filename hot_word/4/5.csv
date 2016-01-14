@@ -1,5 +1,5 @@
-system,分散式,系統,bit,DS,distributed
-system,封包,DS,bit,基地台,distributed
-format,封包,frame
-分散式,系統,DS,bit
-基地台,封包,bit,分散式系統
+DS,system,distributed
+DS,system,distributed
+format,frame
+DS
+分散式系統

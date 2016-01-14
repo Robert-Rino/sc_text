@@ -1,5 +1,5 @@
-bridge,spanning,tree,algorithm
+algorithm,tree,bridge,spanning
 
-bridge,網路,架構
+bridge
 
-架構,bridge,網路,LAN,圖裡面
+bridge,LAN

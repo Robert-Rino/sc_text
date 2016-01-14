@@ -1,5 +1,5 @@
-PCF,frame,一塊,super,有用,period,contention,競爭
-super,CSMA,protocol,frame,CA
-PCF,有用,一塊,競爭
-frame,一塊,super,CSMA,競爭,CA
+period,contention,PCF,super,frame
+CSMA,protocol,CA,super,frame
+PCF
+CSMA,CA,super,frame
 

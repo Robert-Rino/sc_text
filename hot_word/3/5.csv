@@ -1,5 +1,5 @@
-核心,CD,MAC,CSMA,protocol,ethernet
-核心,ethernet
-MAC,protocol,整理
+ethernet,CSMA,protocol,MAC,CD
+ethernet
+protocol,MAC
 
-CD,MAC,CSMA,protocol,ethernet,整理
+ethernet,CSMA,protocol,MAC,CD

@@ -1,5 +1,5 @@
-10base5,10base2,ethernet,第一代
+ethernet,10base5,10base2
 
-pair,twisted,雙絞線,10baseT
-版本,ethernet
+twisted,10baseT
+ethernet
 10baseT

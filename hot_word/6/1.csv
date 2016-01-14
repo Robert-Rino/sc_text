@@ -1,5 +1,5 @@
-support,EtherNet,網路,shared,cable,media
-shared,support,網路,media,VLAN
-工作,VLAN,看成,設定
-level,VLAN,configuration,structure
-認識,bridge,VLAN,看不懂,交換機
+media,shared,cable,support,EtherNet
+shared,VLAN,support,media
+VLAN
+configuration,level,structure,VLAN
+認識,bridge,看不懂,VLAN

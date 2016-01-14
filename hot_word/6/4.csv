@@ -1,5 +1,5 @@
-設備,based,VLAN,網路,先對,說明,port,詳細
-support,認識,VLAN,bridge,交換機,傳統
-網路,definition,設備,分隔,先對
+based,VLAN,詳細,先對
+傳統,認識,bridge,VLAN,support
+分隔,definition,先對
 
-VLAN,port,說明,based,詳細
+based,VLAN,詳細

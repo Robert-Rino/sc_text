@@ -1,5 +1,5 @@
-面做,IEEE802.11,summary
-兩三百,達到,channel,Mbps,108Mbps
-運作,IEEE802.11,CSMA,collision,avoidance,CA
-IEEE802.11,CSMA,protocol,collision,avoidance,CA
-面做,IEEE802.11,summary,相關
+summary,IEEE802.11
+Mbps,108Mbps,channel
+collision,avoidance,CSMA,CA,IEEE802.11
+collision,CSMA,protocol,CA,avoidance,IEEE802.11
+summary,IEEE802.11
