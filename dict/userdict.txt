@@ -13,3 +13,4 @@ ethernet
 spanning tree
 分散式系統 100
 CSMA/CD 80450 eng
+萬一
