@@ -1,5 +1,5 @@
-分散式,bridge,演算法,互相交換
-tree,黃色,spanning
-bridge,最小,root,id
-unit,protocol,BPDU,bridge,data,黃色
-tree,封包,spanning
+bridge
+tree,spanning
+root,id,bridge
+unit,bridge,protocol,BPDU
+tree,spanning

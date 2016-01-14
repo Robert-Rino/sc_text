@@ -1,5 +1,5 @@
-運作,VLAN,步驟,交換機,通知,設定
-封包,通知,第三個,設定,交換機
-伸到,MAC,physical,address,IP,layer
-Port,member,四種,based,1Q,VLAN,IEEE802,組成
-運作,VLAN,步驟
+通知,VLAN,步驟
+通知
+layer,IP,address,MAC,伸到,physical
+1Q,based,VLAN,組成,member,IEEE802,四種
+VLAN,步驟

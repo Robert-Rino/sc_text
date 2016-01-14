@@ -1,5 +1,5 @@
-detection,CD,multiple,carrier,CSMA,access,collision,sense
-運作,CSMA,CD
-運作,CSMA,CD
+CSMA,collision,carrier,detection,multiple,access,CD,sense
+CSMA,CD
+CSMA,CD
 
-網卡,一堆,detection,一組,multiple,carrier,access,collision,工作站,sense
+collision,carrier,detection,multiple,access,sense

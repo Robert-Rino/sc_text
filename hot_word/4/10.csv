@@ -1,5 +1,5 @@
-封包,一連串,fragmentation
-封包,一連串,fragmentation
-ACK1,一連串,封包,fragment3,fragment2,fragmentation,fragment1,ACK3,ACK2
+fragmentation
+fragmentation
+ACK2,fragment2,fragmentation,fragment3,ACK1,fragment1,ACK3
 
 ACK

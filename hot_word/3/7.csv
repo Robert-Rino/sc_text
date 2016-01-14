@@ -1,5 +1,5 @@
-封包,window,確認,要花,collision
-封包,要花,確認,collision
-ethernet,10M,window,collision
-window,10M,trip,collision,delay,ethernet,來回,time,round
-window,collision
+collision,window
+collision
+ethernet,collision,window,10M
+ethernet,collision,round,time,window,10M
+collision,window

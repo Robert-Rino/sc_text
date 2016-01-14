@@ -1,5 +1,5 @@
-結構,網路
 
 
-root,LAN,port,LAN2
-結構,網路,LAN,bridge
+
+root,LAN2,LAN
+bridge,LAN
