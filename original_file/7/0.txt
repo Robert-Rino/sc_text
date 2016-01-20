@@ -288,7 +288,7 @@ class本身牽涉到說 它那個IP address分配跟多少
 
 73
 00:03:51,280 --> 00:03:56,210
-那提供呢 所謂的host to host 的 packet delivery service
+那提供呢 所謂的host-to-host 的 packet-delivery-service
 
 74
 00:03:56,210 --> 00:04:02,880
@@ -564,7 +564,7 @@ scalable就是說我們可以建很大的規模
 
 142
 00:07:48,510 --> 00:07:52,110
-那最下面是physical layer 那第二層所謂的data link layer
+那最下面是physical layer 那第二層所謂的data-link layer
 
 143
 00:07:52,110 --> 00:07:55,350
@@ -1417,4 +1417,3 @@ router本身可能會因為阻塞的時候 它封包出不去
 355
 00:19:01,750 --> 00:19:03,910
 那這個部分我們等一下再來介紹
-
