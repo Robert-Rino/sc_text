@@ -8,7 +8,8 @@ import datetime
 jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
 jieba.analyse.set_stop_words("../dict/pleonasm.txt")
 jieba.analyse.set_stop_words("../dict/extra_dict/stop_words.txt")
-jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
+# jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
+jieba.analyse.set_idf_path("../dict/idf.txt")
 jieba.load_userdict('../dict/userdict.txt')
 
 def return_big_index_list(timelineCount):
