@@ -1,5 +1,5 @@
 10base2,10base5,ethernet
 ethernet
 cable
-ethernet,cable,10base2
+10base2,cable,ethernet
 ethernet,baseband,10Mbps,10base5

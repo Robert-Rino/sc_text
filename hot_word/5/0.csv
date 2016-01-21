@@ -2,4 +2,4 @@ bridge
 
 
 bridge,LAN,station
-tree,algorithm
+spanning,algorithm

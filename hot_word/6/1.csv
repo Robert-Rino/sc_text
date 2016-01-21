@@ -1,5 +1,5 @@
 EtherNet,support,media,cable,shared
-它們,distribution
-configuration,屬於,VLAN
+distribution,它們
+station,configuration,屬於
 VLAN,第一件,處理過程
 shared,support,VLAN,media

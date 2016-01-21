@@ -1,5 +1,5 @@
-hybrid,VLAN,link,原理
-hybrid,link
+link,hybrid,原理,VLAN,標籤
+hybrid,標籤
 談說,spanning,VLAN,tree
-hybrid,VLAN,link,原理
+link,VLAN,hybrid,原理
 

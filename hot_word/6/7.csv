@@ -1,5 +1,5 @@
 VLAN,address,database
-VLAN,learning,database
+address,VLAN,learning,database
 VLAN,address,database
-VLAN,learning
+VLAN,learning,address
 VLAN

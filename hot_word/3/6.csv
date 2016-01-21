@@ -1,4 +1,4 @@
-multiple,CSMA,CD,access,carrier,sense
+access,multiple,sense,CSMA,CD
 CSMA,CD
 CSMA,CD
 collision,idle,一聽

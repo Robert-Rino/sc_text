@@ -1,5 +1,5 @@
 DCF,802.11,CSMA
 collision,avoidance
-頻寬,分享
-collision,avoidance,back,time
+頻寬,以來
+random,collision,avoidance,back
 collision

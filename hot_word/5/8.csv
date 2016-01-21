@@ -1,5 +1,5 @@
 bridge,review,tree,id,spanning
 spanning,tree,review
 spanning,tree
-bridge,LAN
-tree,spanning,cost,root,bridge
+LAN,代理
+bridge,spanning,cost,root

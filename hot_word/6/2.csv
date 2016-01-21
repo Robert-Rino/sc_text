@@ -1,5 +1,5 @@
 VLAN,通知
-IP,based,subnet
+subnet,based,IP
 based
 switch,分別
 VLAN,成員

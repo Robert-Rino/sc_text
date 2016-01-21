@@ -1,5 +1,5 @@
 bridge,frame,forwarding
 bridge,frame,forwarding,learning,address
 timer
-LAN,紫色
+LAN,12345,紫色
 
