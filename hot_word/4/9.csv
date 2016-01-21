@@ -1,5 +1,5 @@
-allocation,request,clear,vector,network,frame
-clear,交握,request,frame
-short,ACK,IFS,算進去
+allocation,frame,request,network
+allocation,NAV,network
+期間,busy
+
 NAV
-NAV,vector,network,allocation

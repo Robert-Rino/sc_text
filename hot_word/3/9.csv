@@ -1,5 +1,5 @@
-ethernet,CSMA,protocol,CD
 protocol
-busy,idle,collision
-collision
-busy,idle
+idle,busy
+少數
+ethernet,protocol
+CSMA,ethernet,protocol,CD

@@ -1,5 +1,5 @@
-bridge,連接成,LAN
+bridge,LAN,bridge1,LAN6
 LAN
-bridge,連接成,LAN
-bridge1,bridge
-bridge1,LAN1,bridge,LAN6,LAN
+
+source,address
+唯一,迴圈,兩點

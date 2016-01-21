@@ -1,5 +1,5 @@
-通知,VLAN,步驟
-通知
-layer,IP,address,MAC,伸到,physical
-1Q,based,VLAN,組成,member,IEEE802,四種
-VLAN,步驟
+VLAN,通知
+IP,based,subnet
+based
+switch,分別
+VLAN,成員

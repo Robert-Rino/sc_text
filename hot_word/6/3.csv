@@ -1,5 +1,5 @@
-configuration,distribution
-VLAN
-網管,SNMP,協議,protocol
-特定,VLAN,內部,協議
-Registration,通用性,Generic,Protocol,Attributes
+configuration,VLAN
+
+相對,relay,處置
+member,information,membership,VLAN
+貼標籤,標籤,拿掉

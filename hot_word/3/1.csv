@@ -1,5 +1,5 @@
-band,10Mbps,cable,base
-ethernet,bus,segment
-band,10Mbps,base
+ethernet,segment,同軸電纜,bus
 
-band,cable,broadband,channel
+ethernet,segment,bus
+ethernet
+ethernet,10base5,同軸電纜

@@ -1,5 +1,5 @@
-CSMA,collision,carrier,detection,multiple,access,CD,sense
+multiple,CSMA,CD,access,carrier,sense
 CSMA,CD
 CSMA,CD
-
-collision,carrier,detection,multiple,access,sense
+collision,idle,一聽
+math

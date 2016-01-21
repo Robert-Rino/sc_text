@@ -1,5 +1,5 @@
-分散式系統,system,IEEE,distributed,802.11
-分散式系統,system,IEEE,distributed,802.11
-node,無線網路
+IEEE,分散式系統,802.11,system,distributed
 
+node,無線網路
+node,infrastructure,基礎,point,access,建設
 無線網路,分散式系統

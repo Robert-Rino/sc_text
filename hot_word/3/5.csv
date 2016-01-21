@@ -1,5 +1,5 @@
-ethernet,CSMA,protocol,MAC,CD
-ethernet
-protocol,MAC
-
-ethernet,CSMA,protocol,MAC,CD
+cable
+那到,包含
+CSMA,ethernet,MAC,protocol,CD
+layer,cable,physical
+CSMA,CD

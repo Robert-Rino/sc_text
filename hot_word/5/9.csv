@@ -1,5 +1,5 @@
 root,可靠
-tree,spanning,matainnus
-topology,reset,database,filtering
-root,tree,spanning
-tree,spanning
+tree,spanning,root
+spanning,tree,扮演
+正常,spanning,bridge
+子收,bridge

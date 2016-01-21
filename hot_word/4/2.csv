@@ -1,5 +1,5 @@
 collision,idea
-CSMA,protocol,CA,802.11
-control,frame
-control,request,RTS,frame
+collision,CA,CSMA
+RTS
 collision
+control,frame

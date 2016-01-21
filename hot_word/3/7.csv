@@ -1,5 +1,5 @@
-collision,window
 collision
-ethernet,collision,window,10M
-ethernet,collision,round,time,window,10M
 collision,window
+collision,window
+
+

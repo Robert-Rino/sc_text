@@ -1,5 +1,5 @@
-ethernet,10base5,10base2
-
-twisted,10baseT
+10base2,10base5,ethernet
 ethernet
-10baseT
+cable
+ethernet,cable,10base2
+ethernet,baseband,10Mbps,10base5

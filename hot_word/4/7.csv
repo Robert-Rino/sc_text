@@ -1,5 +1,5 @@
-DCF,CSMA,CA,802.11
-CSMA,protocol,CA,time,back,random
-DCF
-
-period,contention,free
+DCF,802.11,CSMA
+collision,avoidance
+頻寬,分享
+collision,avoidance,back,time
+collision

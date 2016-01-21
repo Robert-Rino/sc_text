@@ -1,5 +1,5 @@
-router,bridge
-
-switch,過的,VLAN
-shared,VLAN
-address,learning,VLAN
+VLAN,address,database
+VLAN,learning,database
+VLAN,address,database
+VLAN,learning
+VLAN
