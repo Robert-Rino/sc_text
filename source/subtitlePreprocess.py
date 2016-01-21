@@ -8,7 +8,8 @@ import datetime
 jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
 jieba.analyse.set_stop_words("../dict/pleonasm.txt")
 jieba.analyse.set_stop_words("../dict/extra_dict/stop_words.txt")
-jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
+# jieba.analyse.set_idf_path("../dict/extra_dict/idf.txt.big");
+jieba.analyse.set_idf_path("../dict/idf.txt")
 jieba.load_userdict('../dict/userdict.txt')
 
 def return_big_index_list(timelineCount):
@@ -46,7 +47,7 @@ def preprocessSubtitle():
                     video_start = start.minute*60 + start.second
                     video_end = end.minute*60 + end.second
                     #keywords
-                    words = jieba.analyse.extract_tags(content_list[index +1])
+                    words = jieba.analyse.extract_tags(content_list[index +1], topK=2, withWeight=False, allowPOS=())
                     tmp_word = []
                     for word in words:
                         if word != ' ':
