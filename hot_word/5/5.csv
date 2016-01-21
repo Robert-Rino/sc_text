@@ -1,5 +1,5 @@
-byte,id,bridge
-algorithm,spanning
-id,bridge
-byte,address,MAC
-id,bridge
+bridge,id
+bridge,spanning,algorithm
+
+spanning,algorithm
+byte,MAC,address

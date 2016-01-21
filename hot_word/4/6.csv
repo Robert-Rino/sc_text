@@ -1,5 +1,5 @@
-MAC
-MAC,architecture,IEEE802.11
+IEEE802.11,MAC,architecture
+
 IEEE802.11
-node,hoc,ad
-DCF,hoc,ad
+function,服務,point
+MAC

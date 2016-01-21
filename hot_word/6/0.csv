@@ -1,5 +1,5 @@
-LANs,802.1,IEEE,Virtual
+layer,當它,橋接器,它們
 
 
-Virtual,architecture,LAN,一章
-
+虛擬,LAN,based,Virtual
+虛擬,802.1,IEEE,基本概念

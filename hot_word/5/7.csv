@@ -1,5 +1,5 @@
+bridge,一嘛
+
+bridge,root,id
+bridge,BPDU
 bridge
-tree,spanning
-root,id,bridge
-unit,bridge,protocol,BPDU
-tree,spanning

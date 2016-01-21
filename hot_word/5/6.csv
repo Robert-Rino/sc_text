@@ -1,5 +1,5 @@
+bridge
+bridge,id
+bridge,id
 
-
-
-root,LAN2,LAN
-bridge,LAN
+spanning,tree,algorithm

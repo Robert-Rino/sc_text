@@ -1,5 +1,5 @@
-VLAN,tagging,原則,原理,標籤,link,hybrid
-原則,tagging,標籤,link,hybrid
+hybrid,VLAN,link,原理
+hybrid,link
+談說,spanning,VLAN,tree
+hybrid,VLAN,link,原理
 
-原則,tagging,標籤,link,hybrid
-貼標籤,VLAN

@@ -18,7 +18,7 @@ with open(chapter_video_dir,'r') as f:
     reader = csv.reader(f)
     next(reader)#skip title
     for line in reader:
-        week = int(line[2])
+        week = int(line[2])-1
         content_order = int(line[3])
         vid = int(line[4])
         order_vid = (content_order,vid)

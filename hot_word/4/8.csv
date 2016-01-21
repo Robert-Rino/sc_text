@@ -1,5 +1,5 @@
-period,contention,PCF,super,frame
-CSMA,protocol,CA,super,frame
-PCF
-CSMA,CA,super,frame
-
+protocol,CSMA
+CSMA,週期,PCF,protocol
+frame,super
+protocol,frame,CSMA,super
+protocol,CSMA

@@ -1,5 +1,5 @@
-based,VLAN,詳細,先對
-傳統,認識,bridge,VLAN,support
-分隔,definition,先對
+先對,based,詳細
+device,VLAN,aware
+實做,VLAN,軟體,aware
 
-based,VLAN,詳細
+based,詳細

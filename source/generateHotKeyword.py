@@ -83,33 +83,36 @@ for week in weekList:
                 keyList = eval(line.split(':')[1])  # make keyword to list
                 time_keyList[timeInTuple] = keyList
             # print time_keyList
+        try:
+            # store timeline to %timeList %countList 2 list separately
+            with open(timeline_file,'r') as f:
+                reader = csv.reader(f)
+                next(reader) # skip title
+                timeList = []
+                countList = []
+                for line in reader:
+                    timeList.append(line[0])
+                    countList.append(line[1])
 
-        # store timeline to %timeList %countList 2 list separately
-        with open(timeline_file,'r') as f:
-            reader = csv.reader(f)
-            next(reader) # skip title
-            timeList = []
-            countList = []
-            for line in reader:
-                timeList.append(line[0])
-                countList.append(line[1])
+            # get biggest count index
+            topRankedCount = return_big_index_list(countList)
+            # 一個sequence是幾秒
+            timeSegment = 5
 
-        # get biggest count index
-        topRankedCount = return_big_index_list(countList)
-        # 一個sequence是幾秒
-        timeSegment = 5
+            # 最後的關鍵字列表
+            time_keyword = {}
+            # 取前5高的點擊，可設定抓更多的數量
+            time_keyword = getTime_KeyWord(topRankedCount)
+            # 輸出用的list
+            out = []
 
-        # 最後的關鍵字列表
-        time_keyword = {}
-        # 取前5高的點擊，可設定抓更多的數量
-        time_keyword = getTime_KeyWord(topRankedCount)
-        # 輸出用的list
-        out = []
-
-        # wite into hot_word file
-        for time in time_keyword :
-            out.append(time_keyword[time])
-        # with open('../hot_word/3/0.csv','w') as f:
-        with open(result_file,'w') as f:
-            w = csv.writer(f)
-            w.writerows(out)
+            # wite into hot_word file
+            for time in time_keyword :
+                out.append(time_keyword[time])
+            # with open('../hot_word/3/0.csv','w') as f:
+            with open(result_file,'w') as f:
+                w = csv.writer(f)
+                w.writerows(out)
+        except IOError:
+            print 'no such file'
+            pass

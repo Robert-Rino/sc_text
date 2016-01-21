@@ -1,5 +1,5 @@
-bridgeX
-loop,bridge
-loop
+bridge,可靠,loop
+filter,bridge,過濾,port1
+接成,可靠,loop
 bridge
-可靠,loop,bridge
+bridge,loop
