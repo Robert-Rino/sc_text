@@ -47,7 +47,7 @@ def preprocessSubtitle():
                     video_start = start.minute*60 + start.second
                     video_end = end.minute*60 + end.second
                     #keywords
-                    words = jieba.analyse.extract_tags(content_list[index +1])
+                    words = jieba.analyse.extract_tags(content_list[index +1], topK=2, withWeight=False, allowPOS=())
                     tmp_word = []
                     for word in words:
                         if word != ' ':
