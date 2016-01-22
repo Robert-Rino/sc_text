@@ -1,7 +1,7 @@
 var fill = d3.scale.category20();
 
 window.onload = function () {
-  tags = ["router", "layer", "ASIC", "fabric", "switching", "datagram", "table"]
+  tags = ["subnetting", "IP", "class", "遮罩", "更細", "分配", "address", "subnet", "十六次" , "number" , "16"]
   addTagCloud(tags);
 };
 
