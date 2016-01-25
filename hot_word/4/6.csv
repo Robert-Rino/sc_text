@@ -1,9 +1,5 @@
-count,keywords
-25,function
-25,服務
-25,point
-27,MAC
-37,architecture
-37,MAC
-37,IEEE802.11
-31,IEEE802.11
+IEEE802.11,MAC,architecture
+
+IEEE802.11
+function,服務,point
+MAC

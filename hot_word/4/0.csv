@@ -1,5 +1,5 @@
-count,keywords
-90,IEEE802.11
-47,wireless
-47,LAN
-61,ethernet
+wireless,無線網路,IEEE802.11
+
+wireless,無線網路
+IEEE802.11
+ethernet

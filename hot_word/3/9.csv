@@ -1,11 +1,5 @@
-count,keywords
-40,CSMA
-40,ethernet
-40,protocol
-40,CD
-42,idle
-42,busy
-47,ethernet
-47,protocol
-37,少數
-55,protocol
+protocol
+idle,busy
+少數
+ethernet,protocol
+CSMA,ethernet,protocol,CD

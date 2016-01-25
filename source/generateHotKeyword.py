@@ -2,8 +2,8 @@
 import csv,sys,os
 import datetime
 
-subtitle_dir = '../it_done'
-timeLine_dir = '../to_weeks_preprocessed'
+hotTime_dir = '../to_weeks_preprocessed'
+keyword_dir = '../it_done'
 result_dir  = '../hot_word'
 
 # 輸入countList
@@ -14,7 +14,7 @@ def return_big_index_list(timelineCount):
         tmp.append((index,int(count)))
     # print tmp
     sorted_index_list = sorted(tmp , key = lambda x :x[1],reverse=True)
-    #print sorted_index_list
+    # print sorted_index_list
     return sorted_index_list
 
 def get_key_word(scale_start,scale_end,video_start,video_end):
@@ -45,17 +45,8 @@ def getTime_KeyWord(biggestCountIndex):
             keyWordTimeTmp = get_key_word(startTime,endTime,timeTuple[0],timeTuple[1])
             if keyWordTimeTmp != None:
                 keyWordTmp.extend(time_keyList[keyWordTimeTmp])
-        time_keyword[index_count[1]] = makeElementUnique(keyWordTmp)
+        time_keyword[timePair] = makeElementUnique(keyWordTmp)
     return time_keyword
-
-def output_fill(time_keyword):
-    out = []
-    out.append(['count','keywords'])
-    for counts in time_keyword.keys():
-        for words in time_keyword[counts]:
-            out.append([counts,words])
-    return out
-
 # create weekdir in resultdir if not exists
 # week_dirs = os.listdir(keyword_dir)
 # for dirName in week_dirs:
@@ -64,6 +55,8 @@ def output_fill(time_keyword):
 #     for fileName in os.listdir(keyword_files):
 #         print dirName+'/'+fileName
 
+subtitle_dir = '../it_done'
+timeLine_dir = '../to_weeks_preprocessed'
 weekList = os.listdir(subtitle_dir)
 for week in weekList:
     weekDir = subtitle_dir+'/'+week
@@ -80,6 +73,7 @@ for week in weekList:
         # print '---'
 # keyword_file = '../it_done/3/0.txt'
 # timeline_file = '../to_weeks_preprocessed/3/0-13680.csv'
+
         # store keyword list to %time_keyList
         with open(keyword_file,'r') as f :
             time_keyList = {}
@@ -109,16 +103,16 @@ for week in weekList:
             time_keyword = {}
             # 取前5高的點擊，可設定抓更多的數量
             time_keyword = getTime_KeyWord(topRankedCount)
-            out = output_fill(time_keyword)
-
             # 輸出用的list
-            # wite into hot_word file
+            out = []
 
+            # wite into hot_word file
+            for time in time_keyword :
+                out.append(time_keyword[time])
             # with open('../hot_word/3/0.csv','w') as f:
             with open(result_file,'w') as f:
                 w = csv.writer(f)
                 w.writerows(out)
-
         except IOError:
-            print('no such file')
+            print 'no such file'
             pass

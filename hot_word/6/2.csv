@@ -1,6 +1,5 @@
-count,keywords
-16,based
-20,通知
-20,VLAN
-15,VLAN
-15,成員
+VLAN,通知
+IP,based,subnet
+based
+switch,分別
+VLAN,成員

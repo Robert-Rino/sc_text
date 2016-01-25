@@ -1,10 +1,5 @@
-count,keywords
-32,allocation
-32,clear
-32,request
-32,network
-28,allocation
-28,network
-28,NAV
-21,期間
-21,busy
+allocation,frame,request,network
+allocation,NAV,network
+期間,busy
+
+NAV

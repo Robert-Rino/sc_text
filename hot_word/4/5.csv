@@ -1,9 +1,5 @@
-count,keywords
-26,format
-26,frame
-34,802.11
-27,address
-27,802.11
-29,MAC
-29,802.11
-39,address
+address
+MAC,802.11
+802.11
+802.11,address
+frame,format

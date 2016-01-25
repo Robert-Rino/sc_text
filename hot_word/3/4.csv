@@ -1,8 +1,5 @@
-count,keywords
-40,結構圖
-33,preamble
-44,format
-44,frame
-29,format
-29,ethernet
-29,frame
+preamble
+結構圖
+
+ethernet,frame
+ethernet,frame

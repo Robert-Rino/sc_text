@@ -1,12 +1,5 @@
-count,keywords
-32,同軸電纜
-32,ethernet
-32,10base5
-35,bus
-35,同軸電纜
-35,segment
-35,ethernet
-29,bus
-29,segment
-29,ethernet
-39,ethernet
+ethernet,segment,同軸電纜,bus
+
+ethernet,segment,bus
+ethernet
+ethernet,10base5,同軸電纜

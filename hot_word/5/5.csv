@@ -1,9 +1,5 @@
-count,keywords
-17,spanning
-17,algorithm
-17,bridge
-20,id
-20,bridge
-14,byte
-14,MAC
-14,address
+bridge,id
+bridge,spanning,algorithm
+
+spanning,algorithm
+byte,MAC,address
