@@ -1,5 +1,8 @@
-bridge,LAN,bridge1,LAN1
-LAN
-
-source,address
-唯一,迴圈,兩點
+count,keywords
+40,LAN1
+40,bridge
+40,bridge1
+40,LAN
+20,source
+20,address
+23,LAN

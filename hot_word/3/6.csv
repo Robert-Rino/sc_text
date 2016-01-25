@@ -1,5 +1,10 @@
-access,multiple,sense,CSMA,CD
-CSMA,CD
-CSMA,CD
-collision,idle,一聽
-math
+count,keywords
+41,idle
+41,collision
+41,一聽
+42,access
+42,sense
+42,CSMA
+42,CD
+42,multiple
+37,math
