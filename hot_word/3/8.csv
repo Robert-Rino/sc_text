@@ -1,5 +1,6 @@
-
-ethernet,collision
-
-徹底,station,signal
-
+count,keywords
+45,signal
+45,station
+45,徹底
+46,collision
+46,ethernet

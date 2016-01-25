@@ -1,5 +1,10 @@
-10base2,10base5,ethernet
-ethernet
-cable
-ethernet,cable,10base2
-ethernet,baseband,10Mbps,10base5
+count,keywords
+40,cable
+40,10base2
+40,ethernet
+41,ethernet
+50,cable
+39,10Mbps
+39,ethernet
+39,baseband
+39,10base5

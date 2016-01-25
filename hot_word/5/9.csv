@@ -1,5 +1,9 @@
-root,可靠
-tree,spanning,root
-spanning,tree,扮演
-正常,spanning,bridge
-子收,bridge
+count,keywords
+29,root
+29,可靠
+22,spanning
+22,bridge
+22,正常
+21,spanning
+21,tree
+21,扮演

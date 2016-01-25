@@ -1,5 +1,11 @@
-direct,sequence
-天線,802.11,多通道,MIMO
-802.11,direct,sequence
-802.11
-802.11,2Mbps
+count,keywords
+33,多通道
+33,MIMO
+33,802.11
+33,天線
+30,802.11
+38,direct
+38,11Mbps
+29,direct
+29,11Mbps
+29,802.11
