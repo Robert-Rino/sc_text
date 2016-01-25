@@ -1,5 +1,11 @@
-allocation,frame,request,network
-allocation,NAV,network
-期間,busy
-
-NAV
+count,keywords
+32,request
+32,clear
+32,vector
+32,network
+28,NAV
+28,vector
+28,network
+21,busy
+21,期間
+21,這段

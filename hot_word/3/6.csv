@@ -1,5 +1,11 @@
-multiple,CSMA,CD,access,carrier,sense
-CSMA,CD
-CSMA,CD
-collision,idle,一聽
-math
+count,keywords
+41,collision
+41,一聽
+41,idle
+42,CD
+42,access
+42,CSMA
+42,multiple
+42,sense
+42,detection
+37,math

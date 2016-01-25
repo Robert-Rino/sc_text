@@ -1,5 +1,9 @@
-bridge
-bridge,id
-bridge,id
-
-spanning,tree,algorithm
+count,keywords
+25,bridge
+25,id
+19,tree
+19,spanning
+19,algorithm
+20,bridge
+22,bridge
+22,id

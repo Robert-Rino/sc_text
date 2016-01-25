@@ -1,5 +1,0 @@
-transmitter,receiver,PCF,station
-station,transmitter,coordinator,PCF,receiver,point
-level,ACK,MAC
-coordinator,point,receiver,來收
-polling

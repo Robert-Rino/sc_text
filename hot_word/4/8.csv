@@ -1,5 +1,11 @@
-protocol,CSMA
-CSMA,週期,PCF,protocol
-frame,super
-protocol,frame,CSMA,super
-protocol,CSMA
+count,keywords
+25,protocol
+25,CA
+26,protocol
+26,super
+26,frame
+26,CA
+27,週期
+27,protocol
+27,PCF
+27,CA
