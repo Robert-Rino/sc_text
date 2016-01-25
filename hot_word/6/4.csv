@@ -1,5 +1,10 @@
-先對,based,詳細
-device,VLAN,aware
-實做,VLAN,軟體,aware
-
-based,詳細
+count,keywords
+16,VLAN
+16,aware
+16,軟體
+18,VLAN
+18,device
+18,aware
+28,先對
+28,based
+28,詳細

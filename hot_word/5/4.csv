@@ -1,5 +1,11 @@
-bridge,可靠,loop
-filter,bridge,過濾,port1
-接成,可靠,loop
-bridge
-bridge,loop
+count,keywords
+17,loop
+17,接成
+17,可靠
+19,bridge
+19,過濾
+19,port1
+19,bridgeX
+20,bridge
+20,loop
+20,可靠

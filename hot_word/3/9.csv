@@ -1,5 +1,11 @@
-protocol
-idle,busy
-少數
-ethernet,protocol
-CSMA,ethernet,protocol,CD
+count,keywords
+40,CD
+40,protocol
+40,CSMA
+40,ethernet
+42,busy
+42,idle
+47,protocol
+47,ethernet
+37,少數
+55,protocol

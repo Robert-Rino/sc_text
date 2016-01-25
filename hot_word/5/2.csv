@@ -1,5 +1,12 @@
-bridge,frame,forwarding
-bridge,frame,forwarding,learning,address
-timer
-LAN,紫色
-
+count,keywords
+33,bridge
+33,forwarding
+33,frame
+18,timer
+19,12345
+19,LAN
+25,bridge
+25,learning
+25,address
+25,forwarding
+25,frame
