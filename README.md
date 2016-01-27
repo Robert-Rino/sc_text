@@ -23,4 +23,4 @@ run ```python filter_just_pass.py``` will generate
 
 * run ```python subtitlePrepeocess.py``` generate files to dir ```it_done```
 
-* run ```python generateHotKeyword.py``` generate files to dir ```hot_word``` 
+* run ```python generateHotKeyword.py``` generate files to dir ```hot_word```
