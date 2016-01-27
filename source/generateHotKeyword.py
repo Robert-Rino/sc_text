@@ -34,7 +34,6 @@ def makeElementUnique(keyWordList):
 # 得到依點擊高低排序的 time-keyword pair
 def getTime_KeyWord(biggestCountIndex):
     for rank in range(5): # 取前5高的點擊，可設定抓更多的數量
-        out = []
         index_count = biggestCountIndex[rank]
         startTime = index_count[0]*timeSegment
         endTime = (index_count[0]+1)*timeSegment
@@ -49,12 +48,11 @@ def getTime_KeyWord(biggestCountIndex):
     return time_keyword
 
 def output_fill(time_keyword):
-    out = []
-    out.append(['count','keywords'])
+    tmp_list = []
     for counts in time_keyword.keys():
         for words in time_keyword[counts]:
-            out.append([counts,words])
-    return out
+            tmp_list.append([counts,words])
+    return tmp_list
 
 # create weekdir in resultdir if not exists
 # week_dirs = os.listdir(keyword_dir)
@@ -69,11 +67,13 @@ for week in weekList:
     weekDir = subtitle_dir+'/'+week
     create_dir_ifNotExist(result_dir+'/'+week) # create week dir in ../hot_word/
     lectureVideoList = os.listdir(weekDir)
+    result_file = result_dir+'/'+week+'.csv'
+    out = []
+    out.append(['count','keywords'])
     for lectureVideo in lectureVideoList:
         keyword_file = subtitle_dir+'/'+week+'/'+lectureVideo
         fileName = lectureVideo.split('.')[0]
         timeline_file = timeLine_dir+'/'+week+'/'+fileName+'.csv'
-        result_file = result_dir+'/'+week+'/'+fileName+'.csv'
         # print keyword_file
         # print timeline_file
         # print result_file
@@ -109,12 +109,10 @@ for week in weekList:
             time_keyword = {}
             # 取前5高的點擊，可設定抓更多的數量
             time_keyword = getTime_KeyWord(topRankedCount)
-            out = output_fill(time_keyword)
-
+            out.extend(output_fill(time_keyword))
             # 輸出用的list
             # wite into hot_word file
 
-            # with open('../hot_word/3/0.csv','w') as f:
             with open(result_file,'w') as f:
                 w = csv.writer(f)
                 w.writerows(out)
