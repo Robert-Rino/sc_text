@@ -69,7 +69,7 @@ for week in weekList:
     lectureVideoList = os.listdir(weekDir)
     result_file = result_dir+'/'+week+'.csv'
     out = []
-    out.append(['count','keywords'])
+    out.append(['text','size'])
     for lectureVideo in lectureVideoList:
         keyword_file = subtitle_dir+'/'+week+'/'+lectureVideo
         fileName = lectureVideo.split('.')[0]
