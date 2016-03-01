@@ -75,7 +75,7 @@ for week in weekList:
     lectureVideoList = os.listdir(weekDir)
     result_file = result_dir+'/'+week+'.csv'
     detail_data = [] #detail data every week
-    week_data = course_json[int(week)+1] # the video name and url every week
+    week_data = course_json[int(week)] # the video name and url every week
     # print(week_data)
     # out = []
     # out.append(['size','text'])
@@ -137,12 +137,12 @@ for week in weekList:
                 count_group["total_count"] = data[3]
                 word_list[each_word] = count_group
 
-    week_name = int(week)+1
+    week_name = int(week)
     # week_name = int(week)+1
     with open('../hot_word/' + str(week_name) + '.txt', 'w') as outfile:
         json.dump(word_list, outfile, ensure_ascii=False)
 
-    weekly[int(week)+1] = word_list
+    weekly[int(week)] = word_list
 # print(weekly)
 
 with open('../hot_word/tagcloud.txt', 'w') as outfile:
