@@ -1,0 +1,17 @@
+IEEE802.3
+ethernet
+拓墣
+bus
+star
+星狀
+tap
+transceiver
+IEEE
+802系列
+connectionless
+ATM網路
+NACK
+匯流排
+收發器
+終端器
+terminator
