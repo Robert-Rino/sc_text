@@ -1,6 +1,8 @@
 #-*- coding=utf-8 -*-
 import csv,sys,os
 import datetime
+import requests
+import json
 
 subtitle_dir = '../it_done'
 timeLine_dir = '../to_weeks_preprocessed'
@@ -14,7 +16,7 @@ def return_big_index_list(timelineCount):
         tmp.append((index,int(count)))
     # print tmp
     sorted_index_list = sorted(tmp , key = lambda x :x[1],reverse=True)
-    #print sorted_index_list
+    # print(sorted_index_list)
     return sorted_index_list
 
 def get_key_word(scale_start,scale_end,video_start,video_end):
@@ -22,9 +24,9 @@ def get_key_word(scale_start,scale_end,video_start,video_end):
         if scale_end >= video_start:
             return video_start,video_end
 
-def create_dir_ifNotExist(dir_path):
-    if not os.path.exists(dir_path):
-        os.makedirs(dir_path)
+# def create_dir_ifNotExist(dir_path):
+#     if not os.path.exists(dir_path):
+#         os.makedirs(dir_path)
 
 def makeElementUnique(keyWordList):
     tmeSet = set(keyWordList)
@@ -32,7 +34,11 @@ def makeElementUnique(keyWordList):
     return uniqueList
 
 # 得到依點擊高低排序的 time-keyword pair
-def getTime_KeyWord(biggestCountIndex):
+def getTime_KeyWord(biggestCountIndex,lecture_data):
+    # 一個sequence是幾秒
+    timeSegment = 5
+    # 最後的關鍵字列表
+    time_keyword = {}
     for rank in range(5): # 取前5高的點擊，可設定抓更多的數量
         index_count = biggestCountIndex[rank]
         startTime = index_count[0]*timeSegment
@@ -40,11 +46,11 @@ def getTime_KeyWord(biggestCountIndex):
         timePair = (startTime,endTime) #make it tuple
         keyWordTmp = []
         for timeTuple in time_keyList:
-            # print 'start is :%s , end is %s' %(timeTuple[0],timeTuple[1])
             keyWordTimeTmp = get_key_word(startTime,endTime,timeTuple[0],timeTuple[1])
             if keyWordTimeTmp != None:
                 keyWordTmp.extend(time_keyList[keyWordTimeTmp])
         time_keyword[index_count[1]] = makeElementUnique(keyWordTmp)
+        detail_data.append([lecture_data['vname'],lecture_data['vhash'],startTime,index_count[1],time_keyword[index_count[1]]])
     return time_keyword
 
 def output_fill(time_keyword):
@@ -56,31 +62,30 @@ def output_fill(time_keyword):
 
 # create weekdir in resultdir if not exists
 # week_dirs = os.listdir(keyword_dir)
-# for dirName in week_dirs:
-#     create_dir_ifNotExist(result_dir+'/'+dirName)
-#     keyword_files = keyword_dir+'/'+dirName
-#     for fileName in os.listdir(keyword_files):
-#         print dirName+'/'+fileName
+# for dirName in week_dirs:LAN 1000 eng
+
+sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash') #get sharecourse video name and url
+course_json = sc_course.json()
 
 weekList = os.listdir(subtitle_dir)
+weekly = {}
 for week in weekList:
     weekDir = subtitle_dir+'/'+week
-    create_dir_ifNotExist(result_dir+'/'+week) # create week dir in ../hot_word/
+    # create_dir_ifNotExist(result_dir+'/'+week) # create week dir in ../hot_word/
     lectureVideoList = os.listdir(weekDir)
     result_file = result_dir+'/'+week+'.csv'
-    out = []
-    out.append(['text','size'])
+    detail_data = [] #detail data every week
+    week_data = course_json[int(week)] # the video name and url every week
+    # print(week_data)
+    # out = []
+    # out.append(['size','text'])
     for lectureVideo in lectureVideoList:
         keyword_file = subtitle_dir+'/'+week+'/'+lectureVideo
         fileName = lectureVideo.split('.')[0]
         timeline_file = timeLine_dir+'/'+week+'/'+fileName+'.csv'
-        # print keyword_file
-        # print timeline_file
-        # print result_file
-        # print '---'
-# keyword_file = '../it_done/3/0.txt'
-# timeline_file = '../to_weeks_preprocessed/3/0-13680.csv'
-        # store keyword list to %time_keyList
+        lecture_data = week_data[int(fileName)] # the lecture video name and url
+        # print(lecture_data)
+        # store keyword list to time_keyword = {}
         with open(keyword_file,'r') as f :
             time_keyList = {}
             lines = f.readlines()
@@ -88,7 +93,6 @@ for week in weekList:
                 timeInTuple = eval(line.split(':')[0]) # make time to tuple
                 keyList = eval(line.split(':')[1])  # make keyword to list
                 time_keyList[timeInTuple] = keyList
-            # print time_keyList
         try:
             # store timeline to %timeList %countList 2 list separately
             with open(timeline_file,'r') as f:
@@ -102,21 +106,44 @@ for week in weekList:
 
             # get biggest count index
             topRankedCount = return_big_index_list(countList)
-            # 一個sequence是幾秒
-            timeSegment = 5
-
-            # 最後的關鍵字列表
-            time_keyword = {}
             # 取前5高的點擊，可設定抓更多的數量
-            time_keyword = getTime_KeyWord(topRankedCount)
-            out.extend(output_fill(time_keyword))
-            # 輸出用的list
-            # wite into hot_word file
+            time_keyword = getTime_KeyWord(topRankedCount,lecture_data)
 
-            with open(result_file,'w') as f:
-                w = csv.writer(f)
-                w.writerows(out)
+            # out.extend(output_fill(time_keyword))
+            # # 輸出用的list
+            # # wite into hot_word file
+            #
+            # with open(result_file,'w') as f:
+            #     w = csv.writer(f)
+            #     w.writerows(out)
 
         except IOError:
             print('no such file')
             pass
+
+    word_list = {}
+    for data in detail_data:
+        for each_word in data[4]:
+            #data[0] : video name ; data[1] : video url ; data[2] : start time ; data[3] : count ; data[4] : key word
+            count_group = {}
+            if each_word in word_list:
+                word_list[each_word]["vid_list"].append([data[0],data[1],data[2],data[3]])
+                word_list[each_word]["total_count"] +=  data[3]
+                  # count_group["vid_list"].append([data[0],data[1]])
+            else:
+                time_group = []
+                time_group.append([data[0],data[1],data[2],data[3]])
+                count_group["vid_list"] = time_group
+                count_group["total_count"] = data[3]
+                word_list[each_word] = count_group
+
+    week_name = int(week)
+    # week_name = int(week)+1
+    with open('../hot_word/' + str(week_name) + '.txt', 'w') as outfile:
+        json.dump(word_list, outfile, ensure_ascii=False)
+
+    weekly[int(week)] = word_list
+# print(weekly)
+
+with open('../hot_word/tagcloud.txt', 'w') as outfile:
+    json.dump(weekly, outfile, ensure_ascii=False)
