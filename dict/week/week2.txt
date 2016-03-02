@@ -15,3 +15,7 @@ NACK
 收發器
 終端器
 terminator
+segment
+網段
+transmitter
+receiver
