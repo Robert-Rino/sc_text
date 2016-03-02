@@ -3,6 +3,7 @@ import csv,sys,os
 import datetime
 import requests
 import json
+import operator
 
 subtitle_dir = '../it_done'
 timeLine_dir = '../to_weeks_preprocessed'
@@ -60,6 +61,35 @@ def output_fill(time_keyword):
             tmp_list.append([counts,words])
     return tmp_list
 
+def output_json_file():
+    word_list = {}
+    for data in detail_data:
+        for each_word in data[4]:
+            #data[0] : video name ; data[1] : video url ; data[2] : start time ; data[3] : count ; data[4] : key word
+            count_group = {}
+            if each_word in word_list:
+                word_list[each_word]["vid_list"].append([data[0],data[1],data[2],data[3]])
+                word_list[each_word]["total_count"] +=  data[3]
+                  # count_group["vid_list"].append([data[0],data[1]])
+            else:
+                time_group = []
+                time_group.append([data[0],data[1],data[2],data[3]])
+                count_group["vid_list"] = time_group
+                count_group["total_count"] = data[3]
+                word_list[each_word] = count_group
+
+    word_list_order = {}
+    for k_w in word_list.keys():
+        word_list_order[k_w] = word_list[k_w]["total_count"]
+
+    sorted_count = sorted(word_list_order.items(), key=operator.itemgetter(1))
+
+    num = 1
+    for i in sorted_count:
+        word_list[i[0]]["order"] = num/len(sorted_count)
+        num += 1
+    return word_list
+
 # create weekdir in resultdir if not exists
 # week_dirs = os.listdir(keyword_dir)
 # for dirName in week_dirs:LAN 1000 eng
@@ -109,41 +139,18 @@ for week in weekList:
             # 取前5高的點擊，可設定抓更多的數量
             time_keyword = getTime_KeyWord(topRankedCount,lecture_data)
 
-            # out.extend(output_fill(time_keyword))
-            # # 輸出用的list
-            # # wite into hot_word file
-            #
-            # with open(result_file,'w') as f:
-            #     w = csv.writer(f)
-            #     w.writerows(out)
 
         except IOError:
             print('no such file')
             pass
 
-    word_list = {}
-    for data in detail_data:
-        for each_word in data[4]:
-            #data[0] : video name ; data[1] : video url ; data[2] : start time ; data[3] : count ; data[4] : key word
-            count_group = {}
-            if each_word in word_list:
-                word_list[each_word]["vid_list"].append([data[0],data[1],data[2],data[3]])
-                word_list[each_word]["total_count"] +=  data[3]
-                  # count_group["vid_list"].append([data[0],data[1]])
-            else:
-                time_group = []
-                time_group.append([data[0],data[1],data[2],data[3]])
-                count_group["vid_list"] = time_group
-                count_group["total_count"] = data[3]
-                word_list[each_word] = count_group
+    word_list = output_json_file()
 
     week_name = int(week)
-    # week_name = int(week)+1
     with open('../hot_word/' + str(week_name) + '.txt', 'w') as outfile:
         json.dump(word_list, outfile, ensure_ascii=False)
 
     weekly[int(week)] = word_list
-# print(weekly)
 
 with open('../hot_word/tagcloud.txt', 'w') as outfile:
     json.dump(weekly, outfile, ensure_ascii=False)
