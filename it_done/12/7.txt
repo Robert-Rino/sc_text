@@ -79,7 +79,7 @@
 (282,289) : {'HTTP'}
 (289,292) : {'protocol'}
 (292,295) : {'application'}
-(295,299) : {'application', 'HTTP', 'protocol'}
+(295,299) : {'application', 'protocol', 'HTTP'}
 (299,300) : set()
 (300,304) : {'FTP'}
 (304,309) : set()

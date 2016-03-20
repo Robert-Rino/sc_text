@@ -1,15 +1,15 @@
 (9,11) : set()
-(11,13) : {'congestion', 'control', 'TCP'}
+(11,13) : {'TCP', 'control', 'congestion'}
 (13,16) : set()
 (16,18) : set()
 (18,21) : set()
 (21,23) : set()
 (23,27) : {'TCP'}
 (27,31) : set()
-(31,33) : {'window', 'congestion'}
+(31,33) : {'congestion', 'window'}
 (33,36) : set()
 (36,38) : {'RTT'}
-(38,40) : {'window', 'congestion'}
+(38,40) : {'congestion', 'window'}
 (41,44) : set()
 (45,48) : {'RTT'}
 (48,51) : {'RTT'}
@@ -74,7 +74,7 @@
 (213,215) : set()
 (215,217) : set()
 (217,221) : set()
-(221,223) : {'window', 'congestion'}
+(221,223) : {'congestion', 'window'}
 (223,227) : {'封包'}
 (227,228) : set()
 (228,231) : {'TCP'}
@@ -118,7 +118,7 @@
 (334,337) : set()
 (337,339) : set()
 (339,342) : {'ack'}
-(343,345) : {'window', 'congestion'}
+(343,345) : {'congestion', 'window'}
 (346,351) : set()
 (351,356) : {'RTT'}
 (357,362) : {'RTT'}
@@ -132,11 +132,11 @@
 (385,387) : {'ack'}
 (387,389) : set()
 (389,392) : {'ack'}
-(392,394) : {'封包', 'ack'}
-(394,396) : {'封包', 'ack'}
+(392,394) : {'ack', '封包'}
+(394,396) : {'ack', '封包'}
 (396,399) : set()
 (399,401) : {'ack'}
-(401,404) : {'window', 'congestion'}
+(401,404) : {'congestion', 'window'}
 (404,408) : set()
 (409,411) : set()
 (411,414) : set()
@@ -146,40 +146,40 @@
 (424,426) : {'ack'}
 (426,428) : {'ack'}
 (429,432) : {'RTT'}
-(432,433) : {'congestion', 'control'}
+(432,433) : {'control', 'congestion'}
 (434,435) : set()
 (435,438) : {'RTT'}
-(438,441) : {'congestion', 'control'}
+(438,441) : {'control', 'congestion'}
 (441,444) : set()
 (444,446) : set()
 (446,448) : {'封包'}
-(449,451) : {'封包', 'ack'}
+(449,451) : {'ack', '封包'}
 (451,453) : {'ack'}
-(453,456) : {'window', 'congestion'}
+(453,456) : {'congestion', 'window'}
 (457,459) : {'封包'}
 (459,460) : {'封包'}
-(461,465) : {'封包', 'ack'}
+(461,465) : {'ack', '封包'}
 (465,467) : set()
 (467,470) : {'ack'}
 (470,473) : {'封包'}
-(474,476) : {'封包', 'ack'}
+(474,476) : {'ack', '封包'}
 (477,480) : {'ack'}
 (480,482) : {'ack'}
 (483,485) : {'封包'}
 (485,488) : {'封包'}
 (488,489) : set()
 (489,491) : set()
-(491,495) : {'封包', 'RTT'}
+(491,495) : {'RTT', '封包'}
 (495,498) : {'RTT'}
-(500,504) : {'封包', 'RTT'}
-(504,506) : {'封包', 'RTT'}
-(507,509) : {'封包', 'RTT'}
+(500,504) : {'RTT', '封包'}
+(504,506) : {'RTT', '封包'}
+(507,509) : {'RTT', '封包'}
 (509,510) : {'封包'}
 (510,514) : {'RTT'}
 (514,516) : set()
-(517,520) : {'window', 'congestion', 'RTT'}
+(517,520) : {'congestion', 'RTT', 'window'}
 (521,524) : {'ack'}
-(525,528) : {'window', 'congestion', 'ack'}
+(525,528) : {'congestion', 'ack', 'window'}
 (528,532) : set()
 (532,536) : set()
 (537,541) : set()
@@ -201,7 +201,7 @@
 (591,593) : {'ack'}
 (594,598) : {'ack'}
 (598,601) : {'封包'}
-(601,603) : {'window', 'congestion'}
+(601,603) : {'congestion', 'window'}
 (603,606) : set()
 (606,610) : set()
 (611,613) : set()
@@ -209,24 +209,24 @@
 (617,622) : {'ack'}
 (622,624) : {'封包'}
 (624,628) : set()
-(628,631) : {'window', 'congestion'}
+(628,631) : {'congestion', 'window'}
 (632,634) : set()
 (635,637) : set()
 (637,639) : set()
 (639,642) : set()
 (642,646) : set()
 (647,650) : {'網路阻塞'}
-(650,654) : {'window', 'congestion'}
+(650,654) : {'congestion', 'window'}
 (654,656) : set()
 (657,659) : set()
-(659,660) : {'window', 'congestion'}
+(659,660) : {'congestion', 'window'}
 (660,662) : set()
 (663,666) : set()
 (666,669) : {'網路阻塞'}
 (669,673) : set()
 (673,677) : set()
 (677,680) : set()
-(680,685) : {'window', 'congestion'}
+(680,685) : {'congestion', 'window'}
 (685,690) : {'star'}
 (690,693) : set()
 (693,696) : set()
@@ -234,7 +234,7 @@
 (699,702) : {'threshold'}
 (703,705) : {'threshold'}
 (705,707) : set()
-(707,709) : {'window', 'congestion'}
+(707,709) : {'congestion', 'window'}
 (710,712) : set()
 (712,714) : set()
 (714,718) : set()
@@ -242,23 +242,23 @@
 (720,723) : {'threshold'}
 (723,725) : set()
 (725,727) : set()
-(727,730) : {'window', 'congestion'}
+(727,730) : {'congestion', 'window'}
 (730,733) : set()
 (733,737) : set()
-(737,739) : {'window', 'congestion'}
+(737,739) : {'congestion', 'window'}
 (740,742) : set()
 (742,744) : set()
-(744,747) : {'congestion', 'control', 'TCP'}
+(744,747) : {'TCP', 'control', 'congestion'}
 (747,749) : set()
-(750,754) : {'window', 'congestion'}
+(750,754) : {'congestion', 'window'}
 (754,757) : {'threshold'}
 (757,759) : set()
 (761,764) : set()
-(765,767) : {'window', 'congestion'}
+(765,767) : {'congestion', 'window'}
 (767,769) : {'threshold'}
 (769,773) : set()
 (773,775) : set()
-(775,776) : {'congestion', 'avoidance'}
+(775,776) : {'avoidance', 'congestion'}
 (777,780) : set()
 (780,782) : set()
 (782,784) : {'threshold'}
@@ -269,16 +269,16 @@
 (798,801) : {'ack'}
 (801,806) : {'ack'}
 (806,809) : {'window'}
-(810,813) : {'window', 'threshold'}
+(810,813) : {'threshold', 'window'}
 (813,818) : set()
 (818,820) : set()
 (821,822) : set()
 (823,825) : {'threshold'}
-(826,829) : {'window', 'congestion'}
+(826,829) : {'congestion', 'window'}
 (829,831) : set()
 (832,834) : set()
 (834,838) : set()
-(838,842) : {'congestion', 'control', 'TCP'}
+(838,842) : {'TCP', 'control', 'congestion'}
 (842,843) : set()
 (844,846) : set()
 (846,848) : set()
@@ -287,7 +287,7 @@
 (854,856) : {'RTT'}
 (857,860) : set()
 (860,862) : set()
-(862,866) : {'window', 'congestion'}
+(862,866) : {'congestion', 'window'}
 (866,868) : {'RTT'}
 (870,872) : {'RTT'}
 (872,874) : set()
@@ -295,19 +295,19 @@
 (878,881) : set()
 (881,884) : set()
 (884,887) : {'ack'}
-(888,890) : {'封包', 'ack'}
+(888,890) : {'ack', '封包'}
 (890,893) : set()
 (893,894) : set()
 (895,897) : set()
 (897,900) : set()
 (900,903) : set()
-(903,905) : {'window', 'congestion'}
+(903,905) : {'congestion', 'window'}
 (905,907) : set()
 (907,910) : set()
 (911,913) : set()
 (913,915) : set()
-(915,918) : {'window', 'congestion'}
-(918,923) : {'window', 'congestion'}
+(915,918) : {'congestion', 'window'}
+(918,923) : {'congestion', 'window'}
 (923,925) : {'threshold'}
 (926,928) : {'threshold'}
 (928,930) : set()
@@ -340,6 +340,6 @@
 (1021,1023) : set()
 (1023,1026) : set()
 (1027,1030) : set()
-(1030,1034) : {'congestion', 'control', 'TCP'}
+(1030,1034) : {'TCP', 'control', 'congestion'}
 (1034,1035) : set()
 (1035,1037) : set()

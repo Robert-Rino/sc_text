@@ -15,10 +15,10 @@
 (87,92) : {'application'}
 (92,96) : {'application'}
 (96,100) : {'application'}
-(100,108) : {'封包', 'application'}
-(108,114) : {'封包', 'application'}
+(100,108) : {'application', '封包'}
+(108,114) : {'application', '封包'}
 (114,118) : {'application'}
-(118,124) : {'封包', 'application'}
+(118,124) : {'application', '封包'}
 (124,127) : {'application'}
 (127,133) : {'application'}
 (133,141) : {'reliable', 'service'}
@@ -28,7 +28,7 @@
 (154,161) : {'封包'}
 (161,164) : {'window'}
 (164,169) : {'window', 'receiver'}
-(169,176) : {'封包', 'window', 'receiver'}
+(169,176) : {'window', '封包', 'receiver'}
 (176,183) : set()
 (183,187) : {'window'}
 (187,194) : {'window'}
@@ -84,7 +84,7 @@
 (463,468) : set()
 (468,473) : set()
 (473,479) : {'封包'}
-(479,484) : {'封包', '通訊'}
+(479,484) : {'通訊', '封包'}
 (484,491) : {'封包'}
 (491,497) : set()
 (497,503) : {'封包'}
@@ -120,7 +120,7 @@
 (678,683) : set()
 (683,689) : {'封包'}
 (689,695) : {'buffer'}
-(695,703) : {'封包', 'segment'}
+(695,703) : {'segment', '封包'}
 (703,709) : {'segment'}
 (709,716) : {'TCP'}
 (716,722) : set()
@@ -134,7 +134,7 @@
 (773,777) : set()
 (777,784) : set()
 (784,791) : {'buffer', 'receiver'}
-(791,796) : {'receiver', 'buffer'}
+(791,796) : {'buffer', 'receiver'}
 (796,802) : {'application'}
 (802,807) : set()
 (807,813) : {'application', 'buffer'}
@@ -183,8 +183,8 @@
 (1073,1079) : {'receiver'}
 (1079,1087) : {'封包'}
 (1087,1096) : set()
-(1096,1103) : {'congestion', 'control'}
-(1103,1110) : {'internet', 'receiver', 'congestion'}
+(1096,1103) : {'control', 'congestion'}
+(1103,1110) : {'congestion', 'internet', 'receiver'}
 (1110,1114) : {'internet', 'congestion'}
 (1114,1119) : set()
 (1119,1127) : set()

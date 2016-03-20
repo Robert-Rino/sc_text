@@ -16,14 +16,14 @@
 (49,51) : set()
 (51,54) : set()
 (54,57) : set()
-(57,59) : {'window', 'protocol'}
+(57,59) : {'protocol', 'window'}
 (59,61) : set()
 (61,65) : {'window'}
 (65,72) : {'reliable'}
 (72,72) : {'reliable'}
 (72,74) : set()
 (74,77) : set()
-(77,82) : {'window', 'protocol'}
+(77,82) : {'protocol', 'window'}
 (82,84) : set()
 (84,86) : {'reliable', 'transmission'}
 (86,89) : {'reliable', 'transmission'}
