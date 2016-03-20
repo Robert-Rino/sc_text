@@ -9,7 +9,7 @@
 (24,29) : {'IPv6', 'IPv4'}
 (29,32) : set()
 (32,34) : set()
-(34,36) : {'translation', 'network'}
+(34,36) : {'network', 'translation'}
 (36,40) : {'gateway'}
 (40,44) : {'gateway'}
 (44,45) : set()

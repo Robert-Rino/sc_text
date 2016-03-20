@@ -32,8 +32,8 @@
 (138,142) : set()
 (142,146) : set()
 (146,149) : set()
-(149,154) : {'hidden', 'node'}
-(154,157) : {'hidden', 'node'}
+(149,154) : {'terminal', 'node', 'hidden'}
+(154,157) : {'node', 'hidden'}
 (157,161) : set()
 (161,167) : set()
 (167,169) : set()
@@ -44,7 +44,7 @@
 (184,187) : set()
 (187,190) : set()
 (190,193) : set()
-(193,196) : {'hidden'}
+(193,196) : {'terminal', 'hidden'}
 (196,198) : set()
 (198,203) : {'node'}
 (204,208) : set()
@@ -55,7 +55,7 @@
 (225,227) : {'node'}
 (227,232) : {'node'}
 (232,236) : set()
-(236,240) : {'hidden', 'node'}
+(236,240) : {'node', 'hidden'}
 (240,243) : set()
 (243,246) : set()
 (246,249) : set()
@@ -68,11 +68,11 @@
 (277,281) : set()
 (282,284) : set()
 (284,288) : set()
-(288,292) : {'hidden', 'node'}
+(288,292) : {'node', 'hidden'}
 (292,297) : set()
-(297,302) : {'hidden', 'node'}
+(297,302) : {'node', 'hidden'}
 (302,304) : set()
-(304,308) : {'hidden', 'node'}
+(304,308) : {'node', 'hidden'}
 (308,311) : set()
 (311,316) : set()
 (316,321) : set()
@@ -84,15 +84,15 @@
 (340,344) : set()
 (344,348) : set()
 (348,352) : {'collision', '封包'}
-(352,355) : {'hidden', 'node'}
-(355,360) : {'hidden', 'node'}
-(360,365) : {'hidden', 'node'}
+(352,355) : {'node', 'hidden'}
+(355,360) : {'node', 'hidden'}
+(360,365) : {'node', 'hidden'}
 (365,369) : set()
 (369,373) : set()
 (373,374) : {'collision'}
-(374,377) : {'hidden', 'node'}
+(374,377) : {'node', 'hidden'}
 (377,378) : set()
-(378,381) : {'hidden', 'node'}
+(378,381) : {'node', 'hidden'}
 (381,383) : set()
 (385,391) : set()
 (391,393) : set()
@@ -152,7 +152,7 @@
 (567,572) : {'collision', 'jam'}
 (572,578) : set()
 (578,583) : {'collision'}
-(583,587) : {'hidden', 'node'}
+(583,587) : {'node', 'hidden'}
 (587,591) : {'collision'}
 (591,594) : set()
 (594,597) : set()
@@ -171,18 +171,18 @@
 (645,648) : set()
 (648,653) : {'封包'}
 (653,657) : {'collision'}
-(657,659) : {'hidden'}
+(657,659) : {'terminal', 'hidden'}
 (659,663) : {'collision'}
 (663,666) : set()
 (666,671) : {'collision', 'detection'}
 (671,674) : {'collision'}
 (674,677) : set()
 (677,680) : set()
-(680,684) : {'hidden', 'node'}
+(680,684) : {'node', 'hidden'}
 (684,687) : set()
 (687,689) : set()
-(689,692) : {'node', 'exposed'}
-(692,695) : {'hidden', 'node'}
+(689,692) : {'exposed', 'node'}
+(692,695) : {'node', 'hidden'}
 (695,699) : set()
 (699,701) : {'exposed'}
 (701,706) : set()
@@ -194,7 +194,7 @@
 (730,733) : {'communication'}
 (733,738) : set()
 (738,742) : set()
-(742,746) : {'node', 'exposed'}
+(742,746) : {'exposed', 'node'}
 (746,750) : set()
 (750,755) : set()
 (755,757) : set()
@@ -202,7 +202,7 @@
 (761,766) : {'collision', '封包'}
 (766,770) : {'collision'}
 (770,773) : set()
-(773,777) : {'node', 'exposed'}
+(773,777) : {'exposed', 'node'}
 (777,779) : set()
 (779,785) : set()
 (785,787) : set()
@@ -217,7 +217,7 @@
 (822,826) : set()
 (826,832) : set()
 (832,837) : set()
-(837,842) : {'collision', 'node', 'exposed'}
+(837,842) : {'collision', 'exposed', 'node'}
 (842,848) : set()
 (848,851) : set()
 (851,855) : set()
@@ -234,22 +234,22 @@
 (894,902) : set()
 (902,904) : {'collision'}
 (904,909) : {'protocol'}
-(909,912) : {'hidden', 'node'}
-(912,915) : {'node', 'exposed'}
+(909,912) : {'node', 'hidden'}
+(912,915) : {'exposed', 'node'}
 (915,917) : set()
 (917,920) : set()
 (920,924) : set()
 (924,927) : {'protocol'}
-(927,931) : {'CA', 'CSMA'}
+(927,931) : {'CSMA', 'CA'}
 (931,935) : set()
 (935,938) : set()
 (938,940) : set()
-(940,943) : {'hidden', 'node'}
-(943,947) : {'node', 'exposed'}
+(940,943) : {'node', 'hidden'}
+(943,947) : {'exposed', 'node'}
 (947,953) : set()
-(953,955) : {'carrier', 'sense'}
+(953,955) : {'sense', 'carrier'}
 (955,958) : {'collision', 'avoidance'}
-(958,963) : {'collision', 'CA', 'avoidance', 'CSMA'}
+(958,963) : {'avoidance', 'collision', 'CSMA', 'CA'}
 (963,968) : {'collision'}
 (968,971) : {'collision', 'detection'}
 (971,974) : set()
@@ -258,7 +258,7 @@
 (982,986) : {'collision'}
 (986,989) : {'collision'}
 (989,993) : {'collision'}
-(993,996) : {'collision', 'avoidance'}
+(993,996) : {'avoidance', 'collision'}
 (996,1001) : {'collision'}
 (1001,1005) : {'collision'}
 (1005,1007) : set()

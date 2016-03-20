@@ -27,6 +27,7 @@ control
 reliable
 service
 可靠
+terminal
 router
 request
 流量

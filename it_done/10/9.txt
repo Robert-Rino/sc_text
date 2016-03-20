@@ -9,7 +9,7 @@
 (30,33) : {'封包'}
 (33,35) : set()
 (35,37) : {'IP'}
-(37,39) : {'translation', 'algorithm'}
+(37,39) : {'algorithm', 'translation'}
 (39,44) : set()
 (44,47) : set()
 (47,50) : set()

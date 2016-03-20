@@ -17,7 +17,7 @@
 (74,79) : {'routing'}
 (79,81) : {'網路阻塞'}
 (81,83) : set()
-(83,86) : {'封包', 'router'}
+(83,86) : {'router', '封包'}
 (86,89) : set()
 (89,92) : {'封包'}
 (92,94) : set()
@@ -26,7 +26,7 @@
 (101,107) : {'第四層'}
 (107,109) : {'reliable', 'service'}
 (109,112) : set()
-(112,118) : {'transmission', 'control', 'TCP', 'protocol'}
+(112,118) : {'transmission', 'protocol', 'control', 'TCP'}
 (118,123) : {'可靠', 'TCP'}
 (123,128) : {'可靠', 'TCP'}
 (128,132) : set()
@@ -46,9 +46,9 @@
 (186,190) : set()
 (190,193) : set()
 (193,197) : {'可靠'}
-(197,200) : {'service', 'unreliable'}
-(200,205) : {'UDP', '第四層', 'protocol'}
-(205,207) : {'datagram', 'protocol'}
+(197,200) : {'unreliable', 'service'}
+(200,205) : {'UDP', 'protocol', '第四層'}
+(205,207) : {'protocol', 'datagram'}
 (207,213) : {'UDP', '可靠', 'TCP'}
 (213,215) : set()
 (215,218) : {'transport'}
@@ -58,12 +58,12 @@
 (233,238) : {'第四層'}
 (238,244) : {'router', 'layer3'}
 (244,249) : {'router'}
-(249,253) : {'封包', 'IP'}
+(249,253) : {'IP', '封包'}
 (253,255) : {'routing'}
 (255,258) : set()
 (258,264) : {'封包'}
 (264,268) : {'TCP'}
-(268,273) : {'transport', 'router', 'protocol'}
+(268,273) : {'protocol', 'router', 'transport'}
 (273,275) : {'router'}
 (275,279) : {'UDP', 'TCP'}
 (279,283) : {'UDP', 'TCP'}
@@ -120,21 +120,21 @@
 (465,467) : {'七層'}
 (467,470) : {'application'}
 (470,473) : set()
-(473,477) : {'domain', 'service', 'ftp'}
+(473,477) : {'domain', 'ftp', 'service'}
 (477,481) : {'HTTP'}
 (481,483) : {'application'}
 (483,486) : set()
 (486,490) : {'transport'}
-(490,492) : {'session', 'transport'}
+(490,492) : {'transport', 'session'}
 (492,494) : {'application', 'presentation'}
 (494,500) : set()
-(500,507) : {'router', 'IP'}
+(500,507) : {'IP', 'router'}
 (507,511) : {'第二層', 'switch'}
 (511,514) : set()
 (514,518) : {'layer2', 'layer3'}
 (518,524) : {'七層'}
 (524,528) : {'transport', 'TCP'}
-(528,531) : {'session', 'application', 'presentation'}
+(528,531) : {'application', 'presentation', 'session'}
 (531,536) : {'transport'}
 (536,540) : {'七層'}
 (540,542) : {'七層'}
@@ -143,7 +143,7 @@
 (548,550) : set()
 (550,554) : set()
 (554,557) : set()
-(557,562) : {'封包', 'application'}
+(557,562) : {'application', '封包'}
 (562,565) : set()
 (565,569) : {'封包'}
 (569,571) : {'encapsulation'}
@@ -155,7 +155,7 @@
 (587,589) : {'architecture'}
 (589,593) : set()
 (593,597) : {'protocol'}
-(597,602) : {'UDP', 'transport', 'IP', 'network', 'TCP'}
+(597,602) : {'network', 'UDP', 'IP', 'transport', 'TCP'}
 (602,604) : {'application'}
 (604,607) : {'protocol'}
 (607,610) : {'protocol'}
@@ -199,7 +199,7 @@
 (750,752) : set()
 (752,755) : {'應用層'}
 (755,758) : set()
-(758,761) : {'session', 'application', 'presentation'}
+(758,761) : {'application', 'presentation', 'session'}
 (761,764) : set()
 (764,769) : {'UDP', 'application', 'TCP'}
 (769,771) : set()
@@ -218,7 +218,7 @@
 (808,812) : set()
 (812,814) : set()
 (814,817) : {'IP'}
-(817,820) : {'IP', 'routing'}
+(817,820) : {'routing', 'IP'}
 (820,823) : set()
 (823,826) : {'IP'}
 (826,830) : set()
@@ -241,7 +241,7 @@
 (884,887) : {'IP', 'TCP'}
 (887,889) : set()
 (889,891) : {'application'}
-(891,897) : {'IP', 'network'}
+(891,897) : {'network', 'IP'}
 (897,899) : {'MAC'}
 (899,903) : set()
 (903,906) : set()
@@ -306,7 +306,7 @@
 (1104,1109) : {'protocol'}
 (1109,1112) : {'protocol'}
 (1112,1113) : {'UDP'}
-(1113,1118) : {'TCP', 'protocol'}
+(1113,1118) : {'protocol', 'TCP'}
 (1118,1120) : {'protocol'}
 (1120,1124) : {'protocol'}
 (1124,1128) : set()
