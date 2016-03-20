@@ -43,7 +43,7 @@ def preprocessing_file(file_path):
     totalSeq = int(round(float(totalTime)/float(timeSequence)))#count sequence num
     with open(file_path,'r') as f_in:
         out = []
-        f_in.next()# read start from 2nd line
+        f_in.next()# reaterminald start from 2nd line
         for line in csv.reader(f_in):#iterate over all line of original file
             endTime = line[2]
             ratio = round(float(endTime))/timeSequence
@@ -72,7 +72,7 @@ weeks_dir_path_in = '../to_weeks/'
 weeks_dir_path_out = '../to_weeks_preprocessed/'
 
 # outfile_dir =inFileName+'precessed.csv'
-timeSequence = 5#every 5 second is a sequence
+timeSequence = 40#every 5 second is a sequence
 totalTime = 0
 outHash = {}
 
