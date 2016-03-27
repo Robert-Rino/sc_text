@@ -72,7 +72,7 @@ weeks_dir_path_in = '../to_weeks/'
 weeks_dir_path_out = '../to_weeks_preprocessed/'
 
 # outfile_dir =inFileName+'precessed.csv'
-timeSequence = 40#every 5 second is a sequence
+timeSequence = 30#every 5 second is a sequence
 totalTime = 0
 outHash = {}
 

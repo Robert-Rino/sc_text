@@ -9,7 +9,7 @@
 (31,33) : set()
 (33,36) : set()
 (36,40) : {'ack'}
-(40,43) : {'congestion', 'window'}
+(40,43) : {'window', 'congestion'}
 (43,46) : {'封包'}
 (46,49) : {'封包'}
 (50,53) : {'封包'}
@@ -24,7 +24,7 @@
 (82,85) : {'RTT'}
 (85,87) : {'封包'}
 (88,89) : {'congestion', 'window'}
-(89,93) : {'congestion', 'window'}
+(89,93) : {'window', 'congestion'}
 (93,94) : set()
 (95,97) : {'RTT'}
 (97,100) : {'RTT'}
@@ -35,12 +35,12 @@
 (110,113) : {'TCP'}
 (113,117) : set()
 (117,119) : set()
-(119,122) : {'congestion', 'RTT', 'window'}
+(119,122) : {'RTT', 'window', 'congestion'}
 (122,126) : {'translation', 'rate'}
 (127,129) : {'RTT'}
-(130,134) : {'congestion', 'window'}
+(130,134) : {'window', 'congestion'}
 (134,136) : set()
-(136,137) : {'congestion', 'window'}
+(136,137) : {'window', 'congestion'}
 (137,141) : {'RTT'}
 (141,144) : set()
 (144,147) : set()
@@ -53,25 +53,25 @@
 (168,170) : set()
 (170,172) : set()
 (172,175) : {'封包'}
-(175,178) : {'congestion', 'window'}
+(175,178) : {'window', 'congestion'}
 (178,179) : set()
 (179,181) : set()
 (182,185) : set()
 (185,190) : {'RTT'}
 (190,193) : {'RTT'}
 (193,197) : set()
-(197,200) : {'congestion', 'window'}
+(197,200) : {'window', 'congestion'}
 (200,201) : set()
 (202,204) : {'RTT'}
 (204,208) : {'RTT'}
 (208,212) : set()
-(212,216) : {'congestion', 'window'}
+(212,216) : {'window', 'congestion'}
 (216,220) : {'RTT'}
 (221,223) : {'ack'}
 (223,225) : set()
 (225,227) : {'RTT'}
-(227,230) : {'ack', '封包'}
-(230,234) : {'congestion', 'RTT', 'window'}
+(227,230) : {'封包', 'ack'}
+(230,234) : {'RTT', 'window', 'congestion'}
 (234,236) : set()
 (236,239) : set()
 (239,246) : {'ack'}
@@ -84,12 +84,12 @@
 (263,266) : set()
 (266,268) : set()
 (268,272) : set()
-(272,275) : {'congestion', 'window'}
+(272,275) : {'window', 'congestion'}
 (275,278) : set()
 (278,281) : set()
 (281,286) : set()
-(286,291) : {'congestion', 'window'}
-(291,294) : {'congestion', 'window'}
+(286,291) : {'window', 'congestion'}
+(291,294) : {'window', 'congestion'}
 (294,297) : set()
 (297,302) : {'ack'}
 (303,305) : set()
@@ -98,33 +98,33 @@
 (314,316) : {'TCP'}
 (316,320) : {'封包'}
 (320,323) : set()
-(323,326) : {'congestion', 'window'}
+(323,326) : {'window', 'congestion'}
 (326,329) : {'封包'}
 (329,332) : {'封包'}
 (333,336) : {'封包'}
-(336,337) : {'congestion', 'window'}
+(336,337) : {'window', 'congestion'}
 (337,342) : {'封包'}
 (342,345) : set()
-(345,348) : {'ack', '封包'}
+(345,348) : {'封包', 'ack'}
 (348,351) : {'ack'}
 (351,353) : {'ack'}
 (354,357) : {'ack'}
 (357,358) : set()
 (359,360) : set()
 (360,364) : {'RTT'}
-(364,368) : {'congestion', 'window'}
+(364,368) : {'window', 'congestion'}
 (368,370) : set()
 (371,376) : {'ack'}
 (376,377) : {'ack'}
 (377,381) : {'ack'}
 (381,383) : set()
-(384,387) : {'congestion', 'window'}
+(384,387) : {'window', 'congestion'}
 (387,389) : set()
 (389,391) : set()
 (392,393) : {'ack'}
 (393,396) : {'ack'}
 (396,398) : set()
-(398,401) : {'congestion', 'window'}
+(398,401) : {'window', 'congestion'}
 (401,405) : set()
 (405,407) : set()
 (407,410) : set()
@@ -137,22 +137,22 @@
 (427,429) : set()
 (429,432) : set()
 (432,434) : set()
-(434,438) : {'congestion', 'window'}
+(434,438) : {'window', 'congestion'}
 (438,441) : set()
 (441,442) : set()
-(443,445) : {'congestion', 'window'}
+(443,445) : {'window', 'congestion'}
 (445,446) : set()
 (447,449) : set()
-(449,452) : {'congestion', 'window'}
+(449,452) : {'window', 'congestion'}
 (452,455) : set()
 (455,457) : set()
-(458,461) : {'congestion', 'window'}
+(458,461) : {'window', 'congestion'}
 (461,466) : {'ack'}
 (466,467) : set()
-(467,470) : {'congestion', 'window'}
+(467,470) : {'window', 'congestion'}
 (470,473) : {'ack'}
 (473,475) : set()
-(475,479) : {'congestion', 'window'}
+(475,479) : {'window', 'congestion'}
 (479,481) : set()
 (481,484) : {'window'}
 (484,485) : {'window'}
@@ -162,7 +162,7 @@
 (496,498) : set()
 (499,502) : set()
 (502,503) : {'congestion', 'window'}
-(503,506) : {'congestion', 'window'}
+(503,506) : {'window', 'congestion'}
 (506,509) : set()
 (509,514) : {'封包'}
 (514,518) : set()

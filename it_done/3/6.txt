@@ -14,7 +14,7 @@
 (53,58) : {'collision'}
 (58,61) : {'CSMA'}
 (61,63) : {'protocol', 'CA'}
-(63,65) : {'collision', 'avoidance'}
+(63,65) : {'avoidance', 'collision'}
 (65,69) : {'衝撞'}
 (69,73) : {'衝撞'}
 (73,76) : set()
@@ -62,10 +62,10 @@
 (226,229) : set()
 (229,235) : set()
 (235,238) : {'CSMA', 'CA'}
-(238,241) : {'sense', 'carrier'}
-(241,243) : {'collision', 'avoidance'}
+(238,241) : {'carrier', 'sense'}
+(241,243) : {'avoidance', 'collision'}
 (243,249) : {'CSMA'}
-(249,252) : {'sense', 'carrier'}
+(249,252) : {'carrier', 'sense'}
 (252,256) : set()
 (256,258) : set()
 (258,261) : set()
@@ -75,29 +75,29 @@
 (273,274) : set()
 (274,277) : set()
 (277,282) : {'avoidance', 'collision'}
-(282,285) : {'collision', 'detection'}
+(282,285) : {'detection', 'collision'}
 (285,288) : set()
 (288,291) : set()
 (291,294) : {'衝撞'}
-(294,298) : {'collision', 'detection'}
+(294,298) : {'detection', 'collision'}
 (298,301) : set()
 (301,304) : {'collision'}
-(304,308) : {'collision', 'detection'}
+(304,308) : {'detection', 'collision'}
 (308,309) : set()
 (309,312) : {'avoidance', 'collision'}
 (312,314) : set()
-(314,318) : {'avoidance', 'collision', '衝撞避免'}
+(314,318) : {'avoidance', '衝撞避免', 'collision'}
 (318,325) : {'衝撞'}
 (325,328) : {'衝撞'}
 (328,330) : {'衝撞'}
 (330,333) : {'DCF'}
-(333,337) : {'CD', 'protocol', 'CSMA'}
+(333,337) : {'CSMA', 'protocol', 'CD'}
 (337,342) : {'node'}
 (342,345) : set()
 (345,348) : {'DCF'}
 (348,352) : {'DCF'}
 (352,355) : set()
-(355,359) : {'DCF', '通訊'}
+(355,359) : {'通訊', 'DCF'}
 (359,363) : {'DCF'}
 (363,367) : set()
 (367,370) : set()
@@ -192,15 +192,15 @@
 (691,696) : {'PIFS', 'frame'}
 (696,699) : {'DCF'}
 (699,704) : {'封包', 'frame'}
-(704,711) : {'PCF', 'DIFS', '封包'}
+(704,711) : {'DIFS', '封包', 'PCF'}
 (711,717) : {'DIFS'}
 (717,719) : {'PCF'}
 (719,723) : set()
 (723,728) : set()
 (728,732) : {'CSMA', 'CA'}
 (732,734) : set()
-(734,737) : {'sense', 'carrier'}
-(737,739) : {'sense', 'carrier'}
+(734,737) : {'carrier', 'sense'}
+(737,739) : {'carrier', 'sense'}
 (739,742) : set()
 (742,746) : set()
 (746,750) : set()
