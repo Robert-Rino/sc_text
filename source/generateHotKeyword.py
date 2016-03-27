@@ -37,7 +37,7 @@ def makeElementUnique(keyWordList):
 # 得到依點擊高低排序的 time-keyword pair
 def getTime_KeyWord(biggestCountIndex,lecture_data):
     # 一個sequence是幾秒
-    timeSegment = 40
+    timeSegment = 30 #10.20.25
     # 最後的關鍵字列表
     time_keyword = {}
     for rank in range(5): # 取前5高的點擊，可設定抓更多的數量
