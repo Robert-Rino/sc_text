@@ -129,7 +129,7 @@
 (438,442) : {'node'}
 (442,445) : {'beacon', 'frame'}
 (445,447) : set()
-(447,451) : {'transmission', 'rate'}
+(447,451) : {'rate', 'transmission'}
 (451,454) : set()
 (454,458) : set()
 (458,462) : set()

@@ -10,7 +10,7 @@
 (35,40) : {'application', 'protocol'}
 (40,43) : set()
 (43,47) : {'protocol'}
-(47,54) : {'FTP', 'HTTP'}
+(47,54) : {'HTTP', 'FTP'}
 (54,58) : {'application', 'protocol'}
 (58,62) : set()
 (62,65) : {'application', 'protocol'}

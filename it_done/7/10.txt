@@ -5,7 +5,7 @@
 (23,28) : set()
 (28,29) : set()
 (29,32) : set()
-(32,36) : {'routing', 'protocol', 'router'}
+(32,36) : {'router', 'routing', 'protocol'}
 (36,39) : set()
 (39,42) : {'network'}
 (42,45) : set()
@@ -33,7 +33,7 @@
 (114,116) : set()
 (116,119) : set()
 (119,123) : set()
-(123,129) : {'routing', 'router'}
+(123,129) : {'router', 'routing'}
 (129,131) : set()
 (131,132) : set()
 (132,134) : set()

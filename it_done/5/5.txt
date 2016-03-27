@@ -29,11 +29,11 @@
 (106,108) : set()
 (108,113) : {'tree', 'spanning'}
 (113,116) : set()
-(116,120) : {'tree', 'spanning', 'IEEE'}
+(116,120) : {'tree', 'IEEE', 'spanning'}
 (120,122) : {'tree', 'spanning'}
 (122,127) : set()
-(127,130) : {'LAN', 'bridge'}
-(130,134) : {'switch', 'bridge'}
+(127,130) : {'bridge', 'LAN'}
+(130,134) : {'bridge', 'switch'}
 (134,135) : set()
 (135,136) : set()
 (136,141) : {'可靠性'}
@@ -62,16 +62,16 @@
 (215,218) : {'tree', 'spanning'}
 (218,220) : set()
 (220,224) : set()
-(224,230) : {'tree', 'spanning', '封包'}
+(224,230) : {'封包', 'tree', 'spanning'}
 (230,233) : {'tree', 'spanning'}
-(233,236) : {'tree', 'loop', 'spanning'}
+(233,236) : {'tree', 'spanning', 'loop'}
 (236,240) : set()
 (240,241) : set()
-(241,246) : {'routing', 'path'}
-(246,250) : {'tree', 'path', 'spanning'}
-(250,256) : {'tree', 'spanning', '封包'}
+(241,246) : {'path', 'routing'}
+(246,250) : {'path', 'tree', 'spanning'}
+(250,256) : {'封包', 'tree', 'spanning'}
 (256,259) : {'tree', 'spanning'}
-(259,263) : {'routing', 'tree', 'spanning'}
+(259,263) : {'tree', 'routing', 'spanning'}
 (263,265) : {'routing'}
 (265,266) : {'tree', 'spanning'}
 (266,271) : {'tree', 'spanning'}
@@ -80,7 +80,7 @@
 (274,275) : {'tree', 'spanning'}
 (275,278) : {'tree', 'spanning'}
 (278,284) : set()
-(284,287) : {'switch', 'bridge'}
+(284,287) : {'bridge', 'switch'}
 (287,291) : {'tree', 'spanning'}
 (291,294) : {'tree', 'spanning'}
 (294,296) : {'tree', 'spanning'}
@@ -95,7 +95,7 @@
 (323,325) : set()
 (325,329) : set()
 (329,331) : set()
-(331,339) : {'tree', 'spanning', '封包'}
+(331,339) : {'封包', 'tree', 'spanning'}
 (339,347) : {'tree', 'spanning'}
 (347,350) : set()
 (350,355) : set()
@@ -103,7 +103,7 @@
 (359,362) : {'tree', 'spanning'}
 (362,367) : set()
 (367,371) : set()
-(371,375) : {'tree', 'spanning', 'node'}
+(371,375) : {'tree', 'node', 'spanning'}
 (375,378) : {'tree', 'spanning'}
 (378,379) : set()
 (379,383) : {'node'}
@@ -114,7 +114,7 @@
 (398,401) : {'tree', 'spanning'}
 (401,404) : set()
 (404,409) : {'tree', 'spanning'}
-(409,415) : {'routing', 'path', 'spanning', 'tree'}
+(409,415) : {'path', 'tree', 'routing', 'spanning'}
 (415,417) : set()
 (417,422) : set()
 (422,426) : set()
@@ -146,10 +146,10 @@
 (534,537) : {'tree', 'spanning'}
 (537,544) : set()
 (544,550) : {'bridge'}
-(550,554) : {'switch', '封包'}
+(550,554) : {'封包', 'switch'}
 (554,562) : {'封包'}
 (562,564) : set()
-(564,570) : {'switch', 'bridge'}
+(564,570) : {'bridge', 'switch'}
 (570,575) : set()
 (575,579) : set()
 (579,581) : set()
@@ -172,7 +172,7 @@
 (644,647) : set()
 (647,650) : set()
 (650,651) : set()
-(651,656) : {'bridge', '封包'}
+(651,656) : {'封包', 'bridge'}
 (656,658) : {'封包'}
 (658,663) : set()
 (663,665) : set()
