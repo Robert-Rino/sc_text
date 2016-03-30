@@ -33,7 +33,7 @@
 (121,123) : set()
 (123,125) : set()
 (125,128) : {'receiver'}
-(128,131) : {'receiver', 'acknowledgement'}
+(128,131) : {'acknowledgement', 'receiver'}
 (131,133) : set()
 (133,137) : {'ACK'}
 (137,140) : {'ACK'}
@@ -107,7 +107,7 @@
 (357,362) : set()
 (362,365) : set()
 (365,367) : {'封包'}
-(367,372) : {'receiver', 'window'}
+(367,372) : {'window', 'receiver'}
 (372,377) : {'封包'}
 (377,381) : set()
 (381,383) : set()
@@ -159,9 +159,9 @@
 (537,542) : set()
 (542,547) : {'protocol'}
 (547,550) : set()
-(550,553) : {'protocol', 'window'}
+(550,553) : {'window', 'protocol'}
 (553,555) : set()
-(555,561) : {'reliable', '可靠', 'transmission'}
+(555,561) : {'可靠', 'transmission', 'reliable'}
 (561,564) : set()
 (564,568) : {'receiver', 'ACK'}
 (568,571) : {'封包'}
@@ -179,10 +179,10 @@
 (617,621) : set()
 (621,623) : set()
 (623,626) : {'protocol'}
-(626,630) : {'protocol', 'window'}
+(626,630) : {'window', 'protocol'}
 (630,635) : set()
 (635,637) : set()
-(637,641) : {'protocol', 'window'}
+(637,641) : {'window', 'protocol'}
 (641,645) : {'control', '流量'}
 (645,647) : {'流量'}
 (647,650) : set()
@@ -199,7 +199,7 @@
 (685,691) : set()
 (691,695) : {'window'}
 (695,698) : {'window'}
-(698,703) : {'receiver', 'window'}
+(698,703) : {'window', 'receiver'}
 (703,709) : set()
 (709,713) : {'buffer'}
 (713,716) : {'封包'}
@@ -215,7 +215,7 @@
 (744,747) : {'window'}
 (747,753) : set()
 (753,757) : set()
-(757,763) : {'流量', 'receiver'}
+(757,763) : {'receiver', '流量'}
 (763,769) : {'receiver'}
 (769,772) : set()
 (772,776) : {'receiver'}
@@ -238,7 +238,7 @@
 (834,836) : {'acknowledgement'}
 (836,839) : set()
 (839,841) : {'acknowledgement'}
-(841,844) : {'reliable', 'transmission'}
+(841,844) : {'transmission', 'reliable'}
 (844,846) : {'封包', 'ACK'}
 (846,852) : {'ACK'}
 (852,855) : {'retransmission'}
@@ -246,7 +246,7 @@
 (858,863) : {'protocol'}
 (863,866) : {'封包'}
 (866,868) : {'acknowledgement'}
-(868,870) : {'reliable', '可靠'}
+(868,870) : {'可靠', 'reliable'}
 (870,874) : {'throughput'}
 (874,879) : {'封包'}
 (879,882) : {'封包', 'ACK'}
@@ -254,12 +254,12 @@
 (885,888) : set()
 (888,890) : {'frame'}
 (890,893) : {'封包'}
-(893,895) : {'封包', 'delay'}
-(895,899) : {'ACK', 'delay'}
-(899,905) : {'ACK', 'delay'}
+(893,895) : {'delay', '封包'}
+(895,899) : {'delay', 'ACK'}
+(899,905) : {'delay', 'ACK'}
 (905,906) : set()
 (906,910) : {'reliable', 'protocol'}
-(910,914) : {'protocol', 'window'}
+(910,914) : {'window', 'protocol'}
 (914,917) : set()
 (917,919) : set()
 (919,923) : {'frame'}
@@ -272,7 +272,7 @@
 (943,948) : {'window'}
 (948,954) : set()
 (954,957) : {'window'}
-(957,962) : {'delay', 'bandwidth', 'pipe'}
+(957,962) : {'delay', 'pipe', 'bandwidth'}
 (962,963) : set()
 (963,968) : {'acknowledgement'}
 (968,970) : {'frame'}
@@ -289,7 +289,7 @@
 (999,1002) : {'frame'}
 (1002,1007) : set()
 (1007,1008) : set()
-(1008,1013) : {'receiver', 'window'}
+(1008,1013) : {'window', 'receiver'}
 (1013,1014) : set()
 (1014,1018) : set()
 (1018,1023) : {'receiver'}
@@ -334,7 +334,7 @@
 (1172,1178) : {'receiver'}
 (1178,1182) : {'receiver'}
 (1182,1187) : {'protocol'}
-(1187,1190) : set()
+(1187,1190) : {'Protocol'}
 (1190,1193) : set()
 (1193,1194) : {'acknowledgement'}
 (1194,1197) : {'封包'}
@@ -349,9 +349,9 @@
 (1224,1227) : {'ACK'}
 (1227,1232) : set()
 (1232,1236) : set()
-(1236,1239) : {'protocol', 'window'}
+(1236,1239) : {'window', 'protocol'}
 (1239,1242) : set()
-(1242,1246) : {'reliable', '可靠', 'transmission'}
+(1242,1246) : {'可靠', 'transmission', 'reliable'}
 (1246,1250) : set()
 (1250,1252) : set()
 (1252,1257) : set()
@@ -365,14 +365,14 @@
 (1284,1290) : {'流量'}
 (1290,1292) : {'rate'}
 (1292,1296) : set()
-(1296,1302) : {'protocol', 'window'}
+(1296,1302) : {'window', 'protocol'}
 (1302,1306) : set()
 (1306,1311) : {'區域網路'}
 (1311,1315) : set()
 (1315,1318) : {'TCP'}
-(1318,1322) : {'reliable', 'transmission'}
-(1322,1325) : {'TCP', 'reliable', 'transmission'}
-(1325,1328) : {'TCP', 'window'}
+(1318,1322) : {'transmission', 'reliable'}
+(1322,1325) : {'TCP', 'transmission', 'reliable'}
+(1325,1328) : {'window', 'TCP'}
 (1328,1330) : set()
 (1330,1334) : {'TCP'}
 (1334,1337) : {'封包'}

@@ -2,7 +2,7 @@
 (13,17) : {'foundation'}
 (17,20) : set()
 (20,24) : {'application'}
-(24,27) : {'connectivity', 'network'}
+(24,27) : {'network', 'connectivity'}
 (27,29) : set()
 (29,33) : {'architecture', 'network'}
 (33,37) : set()
@@ -164,13 +164,13 @@
 (506,509) : set()
 (509,512) : {'url'}
 (512,514) : {'protocol', 'HTTP'}
-(515,518) : {'hyper', 'transfer', 'protocol'}
+(515,518) : {'hyper', 'protocol', 'transfer'}
 (518,522) : set()
 (522,525) : {'protocol'}
 (525,528) : {'TCP', 'HTTP'}
-(529,533) : {'TCP', 'transport', 'protocol'}
-(533,535) : {'control', 'protocol', 'transmission'}
-(535,539) : {'第四層', 'protocol', 'TCP'}
+(529,533) : {'TCP', 'protocol', 'transport'}
+(533,535) : {'control', 'transmission', 'protocol'}
+(535,539) : {'TCP', '第四層', 'protocol'}
 (539,542) : set()
 (542,546) : {'TCP', '通訊'}
 (546,548) : set()
@@ -195,7 +195,7 @@
 (599,601) : set()
 (601,602) : {'TCP'}
 (602,605) : set()
-(605,608) : {'url', 'request'}
+(605,608) : {'request', 'url'}
 (609,611) : set()
 (611,615) : set()
 (615,618) : {'流量'}
@@ -205,7 +205,7 @@
 (628,630) : {'domain'}
 (631,634) : {'domain'}
 (634,637) : set()
-(637,639) : {'domain', 'service'}
+(637,639) : {'service', 'domain'}
 (639,641) : set()
 (641,643) : {'domain'}
 (643,645) : {'domain'}
@@ -230,7 +230,7 @@
 (698,702) : set()
 (702,706) : {'HTTP'}
 (706,710) : set()
-(710,714) : {'HTTP', 'request'}
+(710,714) : {'request', 'HTTP'}
 (714,716) : set()
 (716,718) : set()
 (718,722) : set()

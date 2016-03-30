@@ -24,7 +24,7 @@
 (84,87) : set()
 (87,90) : set()
 (90,95) : {'format', 'frame'}
-(95,99) : {'封包', 'architecture', 'MAC'}
+(95,99) : {'MAC', 'architecture', '封包'}
 (99,104) : set()
 (104,108) : set()
 (108,112) : set()
@@ -42,15 +42,15 @@
 (152,156) : {'封包', 'collision'}
 (156,158) : set()
 (158,161) : set()
-(161,166) : {'architecture', 'MAC'}
+(161,166) : {'MAC', 'architecture'}
 (166,168) : set()
 (168,169) : set()
 (169,172) : {'DCF'}
 (172,179) : set()
 (179,181) : {'protocol'}
 (181,185) : {'CSMA', 'CD'}
-(185,190) : {'detection', 'collision'}
-(190,192) : {'detection', 'collision'}
+(185,190) : {'collision', 'detection'}
+(190,192) : {'collision', 'detection'}
 (192,195) : {'collision'}
 (195,200) : {'CSMA', 'CA'}
 (200,202) : {'avoidance', 'collision'}
@@ -136,7 +136,7 @@
 (481,483) : set()
 (483,485) : set()
 (485,489) : set()
-(489,492) : {'LAN', 'wireless'}
+(489,492) : {'wireless', 'LAN'}
 (492,498) : set()
 (498,501) : set()
 (501,506) : set()

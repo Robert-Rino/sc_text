@@ -27,8 +27,8 @@
 (150,154) : set()
 (154,161) : {'封包'}
 (161,164) : {'window'}
-(164,169) : {'receiver', 'window'}
-(169,176) : {'封包', 'receiver', 'window'}
+(164,169) : {'window', 'receiver'}
+(169,176) : {'window', '封包', 'receiver'}
 (176,183) : set()
 (183,187) : {'window'}
 (187,194) : {'window'}
@@ -80,7 +80,7 @@
 (441,445) : set()
 (445,450) : set()
 (450,458) : {'通訊'}
-(458,463) : {'封包', 'TCP'}
+(458,463) : {'TCP', '封包'}
 (463,468) : set()
 (468,473) : set()
 (473,479) : {'封包'}
@@ -97,8 +97,8 @@
 (536,542) : {'封包'}
 (542,548) : set()
 (548,554) : set()
-(554,562) : {'封包', 'acknowledgement'}
-(562,566) : {'封包', 'acknowledgement'}
+(554,562) : {'acknowledgement', '封包'}
+(562,566) : {'acknowledgement', '封包'}
 (566,570) : {'acknowledgement'}
 (570,579) : set()
 (579,587) : {'acknowledgement'}
@@ -127,7 +127,7 @@
 (722,726) : set()
 (726,735) : {'buffer'}
 (735,740) : set()
-(740,750) : {'application', 'TCP'}
+(740,750) : {'TCP', 'application'}
 (750,756) : {'buffer'}
 (756,767) : {'buffer'}
 (767,773) : set()
@@ -184,7 +184,7 @@
 (1079,1087) : {'封包'}
 (1087,1096) : set()
 (1096,1103) : {'control', 'congestion'}
-(1103,1110) : {'receiver', 'internet', 'congestion'}
+(1103,1110) : {'internet', 'receiver', 'congestion'}
 (1110,1114) : {'internet', 'congestion'}
 (1114,1119) : set()
 (1119,1127) : set()

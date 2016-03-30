@@ -1,6 +1,6 @@
 (0,3) : {'protocol'}
 (3,6) : {'protocol'}
-(6,10) : {'protocol'}
+(6,10) : {'Generic', 'protocol'}
 (10,14) : {'application'}
 (14,20) : set()
 (20,23) : {'protocol'}
@@ -10,7 +10,7 @@
 (35,40) : {'application', 'protocol'}
 (40,43) : set()
 (43,47) : {'protocol'}
-(47,54) : {'HTTP', 'FTP'}
+(47,54) : {'FTP', 'HTTP'}
 (54,58) : {'application', 'protocol'}
 (58,62) : set()
 (62,65) : {'application', 'protocol'}
@@ -19,7 +19,7 @@
 (72,77) : {'protocol'}
 (77,79) : set()
 (79,83) : set()
-(83,87) : {'IP'}
+(83,87) : {'firewall', 'IP'}
 (87,89) : set()
 (89,92) : set()
 (92,95) : set()

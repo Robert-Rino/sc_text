@@ -13,8 +13,8 @@
 (48,50) : set()
 (50,54) : {'protocol'}
 (54,57) : set()
-(57,62) : {'unreliable', 'service'}
-(62,66) : {'reliable', '可靠', 'service'}
+(57,62) : {'service', 'unreliable'}
+(62,66) : {'可靠', 'reliable', 'service'}
 (66,69) : set()
 (69,74) : {'protocol'}
 (74,79) : {'第四層', 'protocol'}
@@ -24,14 +24,14 @@
 (89,94) : set()
 (94,98) : set()
 (98,102) : set()
-(102,104) : {'protocol', '可靠'}
+(102,104) : {'可靠', 'protocol'}
 (104,107) : {'TCP'}
 (107,111) : set()
 (111,114) : set()
 (114,117) : set()
 (117,122) : set()
 (122,125) : {'internet'}
-(125,128) : {'unreliable', 'internet'}
+(125,128) : {'internet', 'unreliable'}
 (128,131) : set()
 (131,135) : {'protocol'}
 (135,142) : {'可靠'}
@@ -70,7 +70,7 @@
 (285,290) : set()
 (290,297) : {'control', 'receiver'}
 (297,299) : {'control', '流量'}
-(299,305) : {'流量', 'receiver'}
+(299,305) : {'receiver', '流量'}
 (305,311) : {'流量'}
 (311,314) : {'封包'}
 (314,318) : set()
@@ -103,7 +103,7 @@
 (433,439) : {'internet'}
 (439,446) : {'router', 'congestion'}
 (446,448) : {'封包', 'router'}
-(448,454) : {'封包', 'internet'}
+(448,454) : {'internet', '封包'}
 (454,459) : {'封包'}
 (459,463) : set()
 (463,467) : set()
@@ -114,7 +114,7 @@
 (486,492) : set()
 (492,494) : {'封包'}
 (494,497) : set()
-(497,500) : {'router', 'fragmentation'}
+(497,500) : {'fragmentation', 'router'}
 (500,505) : set()
 (505,508) : set()
 (508,511) : {'封包', 'network'}
@@ -122,7 +122,7 @@
 (515,518) : {'封包'}
 (518,520) : set()
 (520,522) : {'router'}
-(522,524) : {'router', 'routing'}
+(522,524) : {'routing', 'router'}
 (524,528) : {'routing'}
 (528,529) : set()
 (529,534) : {'routing', 'protocol'}
@@ -132,8 +132,8 @@
 (545,550) : {'delay'}
 (550,551) : set()
 (551,554) : {'service', 'network'}
-(554,559) : {'unreliable', 'service'}
-(559,564) : {'unreliable', 'service', 'network'}
+(554,559) : {'service', 'unreliable'}
+(559,564) : {'service', 'network', 'unreliable'}
 (564,569) : {'protocol'}
 (569,572) : set()
 (572,575) : {'network'}
@@ -141,12 +141,12 @@
 (577,583) : set()
 (583,585) : {'protocol'}
 (585,587) : set()
-(587,593) : {'unreliable', 'service'}
+(587,593) : {'service', 'unreliable'}
 (593,599) : {'可靠'}
 (599,601) : set()
 (601,604) : {'network'}
 (604,609) : set()
-(609,615) : {'application', 'delay'}
+(609,615) : {'delay', 'application'}
 (615,617) : set()
 (617,620) : {'可靠'}
 (620,625) : set()
@@ -242,7 +242,7 @@
 (1034,1039) : {'application'}
 (1039,1042) : {'queue'}
 (1042,1046) : {'封包', 'queue'}
-(1046,1051) : {'封包', '排隊'}
+(1046,1051) : {'排隊', '封包'}
 (1051,1055) : {'application'}
 (1055,1062) : {'queue'}
 (1062,1066) : {'封包', 'queue'}
