@@ -19,7 +19,7 @@
 (72,76) : {'LAN'}
 (76,79) : set()
 (79,82) : {'LAN'}
-(82,87) : {'tree', 'BPDU', 'spanning'}
+(82,87) : {'tree', 'spanning', 'BPDU'}
 (87,90) : set()
 (90,93) : {'BPDU'}
 (93,97) : {'BPDU', 'bridge'}
@@ -72,7 +72,7 @@
 (255,261) : {'root'}
 (261,264) : {'root'}
 (264,271) : set()
-(271,272) : {'tree', 'spanning'}
+(271,272) : {'spanning', 'tree'}
 (272,275) : {'tree', 'spanning'}
 (275,276) : set()
 (276,279) : {'root', 'bridge'}
@@ -81,9 +81,9 @@
 (284,288) : {'root'}
 (288,291) : {'BPDU'}
 (291,294) : {'bridge'}
-(294,296) : {'root', 'bridge', 'BPDU'}
+(294,296) : {'root', 'BPDU', 'bridge'}
 (296,302) : set()
-(302,306) : {'bridge', 'root'}
+(302,306) : {'root', 'bridge'}
 (306,309) : set()
 (309,312) : {'root'}
 (312,315) : {'BPDU'}
@@ -97,13 +97,13 @@
 (340,343) : set()
 (343,349) : {'LAN'}
 (349,352) : {'tree', 'spanning'}
-(352,353) : {'tree', 'spanning'}
+(352,353) : {'spanning', 'tree'}
 (353,356) : set()
 (356,360) : set()
 (360,364) : {'tree', 'spanning'}
-(364,369) : {'tree', 'root', 'bridge', 'spanning'}
+(364,369) : {'root', 'tree', 'spanning', 'bridge'}
 (369,373) : {'root'}
-(373,377) : {'tree', 'root', 'bridge', 'spanning'}
+(373,377) : {'root', 'tree', 'spanning', 'bridge'}
 (377,379) : set()
 (379,382) : {'root', 'bridge'}
 (382,386) : {'封包'}
@@ -123,7 +123,7 @@
 (426,427) : {'tree', 'spanning'}
 (427,430) : set()
 (430,434) : {'tree', 'spanning'}
-(434,438) : {'bridge', 'LAN'}
+(434,438) : {'LAN', 'bridge'}
 (438,442) : set()
 (442,446) : {'tree', 'spanning'}
 (446,449) : set()
@@ -133,14 +133,14 @@
 (462,466) : set()
 (466,468) : {'tree', 'spanning'}
 (468,469) : set()
-(469,472) : {'tree', 'spanning'}
+(469,472) : {'spanning', 'tree'}
 (472,475) : {'tree', 'spanning'}
 (475,481) : {'LAN'}
 (481,486) : {'LAN'}
 (486,489) : {'tree', 'spanning'}
 (489,492) : set()
 (492,494) : set()
-(494,497) : {'bridge', 'LAN'}
+(494,497) : {'LAN', 'bridge'}
 (497,499) : {'LAN'}
 (499,501) : set()
 (501,506) : set()
@@ -153,23 +153,23 @@
 (530,532) : {'LAN'}
 (532,536) : {'tree', 'spanning'}
 (536,537) : set()
-(537,541) : {'tree', 'algorithm', 'spanning'}
+(537,541) : {'tree', 'spanning', 'algorithm'}
 (541,543) : set()
 (543,547) : {'bridge'}
-(547,550) : {'layer2', 'bridge'}
-(550,554) : {'封包', 'MAC'}
-(554,558) : {'第二層', 'MAC'}
-(558,561) : {'forwarding', 'MAC'}
-(561,565) : {'filtering', 'bridge'}
-(565,568) : {'bridge', 'LAN'}
+(547,550) : {'bridge', 'layer2'}
+(550,554) : {'MAC', '封包'}
+(554,558) : {'MAC', '第二層'}
+(558,561) : {'MAC', 'forwarding'}
+(561,565) : {'bridge', 'filtering'}
+(565,568) : {'LAN', 'bridge'}
 (568,572) : {'LAN'}
-(572,574) : {'logical', 'LAN'}
+(572,574) : {'LAN', 'logical'}
 (574,578) : {'LAN'}
 (578,583) : {'LAN'}
 (583,587) : {'MAC'}
-(587,592) : {'bridge', 'LAN'}
+(587,592) : {'LAN', 'bridge'}
 (592,597) : set()
-(597,600) : {'logical', 'LAN'}
+(597,600) : {'LAN', 'logical'}
 (600,604) : {'bridge'}
 (604,606) : {'封包', 'forwarding'}
 (606,608) : {'filtering'}
@@ -186,8 +186,8 @@
 (644,647) : set()
 (647,649) : set()
 (649,652) : set()
-(652,656) : {'algorithm', 'bridge'}
-(656,658) : {'tree', 'algorithm', 'spanning'}
+(652,656) : {'bridge', 'algorithm'}
+(656,658) : {'tree', 'spanning', 'algorithm'}
 (658,659) : set()
 (659,662) : {'封包', 'bridge'}
 (662,666) : {'bridge'}
@@ -198,12 +198,12 @@
 (677,679) : {'bridge'}
 (679,682) : {'root', 'bridge'}
 (682,684) : {'tree', 'spanning'}
-(684,687) : {'root', 'bridge', 'LAN'}
+(684,687) : {'root', 'LAN', 'bridge'}
 (687,691) : {'tree', 'spanning'}
 (691,693) : {'tree', 'spanning'}
 (693,696) : {'bridge'}
 (696,699) : {'LAN'}
-(699,702) : {'tree', 'spanning'}
+(699,702) : {'spanning', 'tree'}
 (702,705) : set()
 (705,707) : set()
 (707,711) : set()
@@ -220,20 +220,20 @@
 (738,741) : {'tree', 'spanning'}
 (741,743) : set()
 (743,745) : {'tree', 'spanning'}
-(745,747) : {'tree', 'spanning'}
+(745,747) : {'spanning', 'tree'}
 (747,749) : {'root'}
 (749,753) : {'BPDU'}
 (753,758) : {'BPDU', 'bridge'}
-(758,761) : {'bridge', 'LAN'}
+(758,761) : {'LAN', 'bridge'}
 (761,763) : {'BPDU'}
 (763,766) : set()
 (766,770) : set()
 (770,774) : {'bridge'}
-(774,778) : {'tree', 'LAN'}
+(774,778) : {'LAN', 'tree'}
 (778,782) : set()
 (782,784) : set()
 (784,788) : set()
-(788,791) : {'bridge', 'LAN'}
+(788,791) : {'LAN', 'bridge'}
 (791,793) : set()
 (793,796) : set()
 (796,800) : {'tree'}
@@ -241,13 +241,13 @@
 (802,804) : set()
 (804,808) : set()
 (808,811) : set()
-(811,814) : {'bridge', 'LAN'}
+(811,814) : {'LAN', 'bridge'}
 (814,817) : set()
 (817,821) : set()
 (821,824) : {'tree', 'spanning'}
 (824,826) : {'tree', 'spanning'}
 (826,828) : set()
 (828,830) : set()
-(830,833) : {'tree', 'bridge', 'spanning'}
+(830,833) : {'tree', 'spanning', 'bridge'}
 (833,835) : set()
 (835,837) : set()

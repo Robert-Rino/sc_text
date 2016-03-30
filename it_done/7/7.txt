@@ -152,11 +152,11 @@
 (514,518) : set()
 (518,521) : set()
 (521,524) : set()
-(524,528) : {'router', 'routing'}
+(524,528) : {'routing', 'router'}
 (528,532) : set()
-(532,536) : {'router', 'routing'}
+(532,536) : {'routing', 'router'}
 (536,538) : {'router'}
-(538,542) : {'router', 'routing'}
+(538,542) : {'routing', 'router'}
 (542,545) : {'routing'}
 (545,546) : set()
 (546,548) : set()

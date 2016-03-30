@@ -1,7 +1,7 @@
 (9,11) : set()
 (11,14) : set()
 (14,16) : {'TCP'}
-(16,18) : {'reliable', 'transmission'}
+(16,18) : {'transmission', 'reliable'}
 (18,21) : {'封包'}
 (21,22) : {'timer'}
 (22,24) : {'timer'}
@@ -16,13 +16,13 @@
 (44,45) : set()
 (45,47) : {'timer'}
 (47,49) : set()
-(49,51) : {'封包', 'acknowledgement'}
+(49,51) : {'acknowledgement', '封包'}
 (51,53) : set()
 (53,55) : set()
 (55,57) : {'retransmission'}
 (57,60) : {'timer'}
 (61,64) : {'封包'}
-(64,66) : {'封包', 'acknowledgement'}
+(64,66) : {'acknowledgement', '封包'}
 (67,68) : set()
 (68,71) : set()
 (71,74) : set()
@@ -44,7 +44,7 @@
 (112,113) : {'封包'}
 (114,116) : {'ack'}
 (116,118) : set()
-(118,120) : {'ack', 'segment'}
+(118,120) : {'segment', 'ack'}
 (120,121) : set()
 (121,123) : set()
 (123,125) : set()

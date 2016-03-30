@@ -1,40 +1,40 @@
 (8,13) : {'router'}
 (13,15) : {'router'}
-(15,20) : {'router', 'routing', 'network'}
+(15,20) : {'routing', 'router', 'network'}
 (20,23) : set()
 (23,26) : {'routing', 'network'}
 (26,28) : {'routing', 'network'}
-(28,32) : {'protocol', 'network'}
+(28,32) : {'network', 'protocol'}
 (32,36) : {'IP'}
-(36,38) : {'protocol'}
-(38,41) : {'protocol'}
-(41,43) : {'IP'}
+(36,38) : {'IPX', 'protocol'}
+(38,41) : {'IPX', 'protocol'}
+(41,43) : {'IPX', 'IP'}
 (43,47) : {'router'}
-(47,51) : {'protocol', 'network'}
+(47,51) : {'network', 'protocol'}
 (51,53) : set()
 (53,55) : set()
-(55,60) : {'broadcast', 'multicast', 'MAC'}
+(55,60) : {'MAC', 'broadcast', 'multicast'}
 (60,65) : {'LAN'}
-(65,70) : {'封包', '廣播'}
+(65,70) : {'封包', '群播', '廣播'}
 (70,71) : set()
-(71,76) : {'bridge', 'switch'}
+(71,76) : {'switch', 'bridge'}
 (76,79) : {'broadcast', 'multicast'}
 (79,80) : set()
 (80,84) : {'multicast'}
 (84,86) : set()
-(86,90) : {'bridge', 'switch'}
-(90,92) : {'廣播', 'multicast'}
+(86,90) : {'switch', 'bridge'}
+(90,92) : {'multicast', '廣播'}
 (92,93) : {'廣播'}
 (93,97) : set()
 (97,99) : set()
 (99,102) : {'router'}
 (102,105) : {'router'}
-(105,109) : {'封包', '廣播', 'router'}
+(105,109) : {'封包', 'router', '廣播'}
 (109,111) : {'封包', 'multicast'}
 (111,115) : set()
 (115,118) : {'廣播'}
 (118,122) : set()
-(122,129) : {'router', 'broadcast', 'multicast', 'MAC'}
+(122,129) : {'MAC', 'broadcast', 'router', 'multicast'}
 (129,131) : {'封包'}
 (131,135) : {'router'}
 (135,136) : set()
@@ -43,7 +43,7 @@
 (144,148) : set()
 (148,153) : set()
 (153,156) : {'router'}
-(156,160) : {'router', 'fragmentation'}
+(156,160) : {'fragmentation', 'router'}
 (160,163) : {'封包'}
 (163,168) : {'router'}
 (168,173) : set()
@@ -106,7 +106,7 @@
 (380,383) : set()
 (383,387) : {'router'}
 (387,390) : {'router'}
-(390,395) : {'routing', 'protocol', 'IP'}
+(390,395) : {'routing', 'IP', 'protocol'}
 (395,396) : set()
 (396,400) : set()
 (400,404) : set()
@@ -150,12 +150,12 @@
 (515,518) : set()
 (518,521) : set()
 (521,524) : set()
-(524,529) : {'router', 'control', 'congestion'}
+(524,529) : {'control', 'router', 'congestion'}
 (529,533) : {'control'}
 (533,538) : {'router'}
 (538,542) : set()
 (542,544) : {'封包'}
-(544,548) : {'封包', 'control', 'congestion'}
+(544,548) : {'control', '封包', 'congestion'}
 (548,550) : {'封包'}
 (550,555) : set()
 (555,558) : set()
@@ -171,7 +171,7 @@
 (588,590) : set()
 (590,593) : {'router'}
 (593,595) : {'routing', 'protocol'}
-(595,600) : {'router', 'routing', 'protocol'}
+(595,600) : {'routing', 'router', 'protocol'}
 (600,603) : {'protocol'}
 (603,606) : {'router'}
 (606,609) : set()
@@ -211,7 +211,7 @@
 (720,724) : {'RIP'}
 (724,726) : {'routing', 'protocol'}
 (726,731) : set()
-(731,737) : {'path', 'OSPF', 'shortest'}
+(731,737) : {'shortest', 'OSPF', 'path'}
 (737,740) : {'state'}
 (740,744) : {'最短路徑'}
 (744,747) : {'router'}
@@ -219,7 +219,7 @@
 (748,752) : set()
 (752,753) : set()
 (753,756) : set()
-(756,761) : {'path', 'OSPF', 'shortest'}
+(756,761) : {'shortest', 'OSPF', 'path'}
 (761,763) : {'routing', 'protocol'}
 (763,770) : {'reliability'}
 (770,773) : set()
@@ -253,7 +253,7 @@
 (873,875) : {'switch'}
 (875,879) : {'router', '第二層'}
 (879,881) : set()
-(881,886) : {'第二層', 'bridge', 'switch'}
+(881,886) : {'switch', 'bridge', '第二層'}
 (886,888) : {'router'}
 (888,890) : set()
 (890,895) : set()
@@ -266,17 +266,17 @@
 (910,915) : {'protocol', 'bridge'}
 (915,918) : {'protocol'}
 (918,921) : set()
-(921,925) : {'IP'}
+(921,925) : {'IPX', 'IP'}
 (925,927) : set()
-(927,933) : {'封包', 'MAC'}
-(933,935) : {'IP'}
+(927,933) : {'MAC', '封包'}
+(933,935) : {'IPX', 'IP'}
 (935,938) : {'bridge'}
 (938,944) : {'router', 'protocol'}
-(944,947) : {'IP'}
+(944,947) : {'IPX', 'IP'}
 (947,950) : set()
 (950,954) : {'router', 'protocol'}
 (954,956) : set()
-(956,959) : {'bridge', 'switch'}
+(956,959) : {'switch', 'bridge'}
 (959,962) : set()
 (962,965) : set()
 (965,968) : set()
@@ -288,7 +288,7 @@
 (985,987) : {'IP'}
 (987,989) : set()
 (989,992) : {'switch'}
-(992,996) : {'封包', 'broadcast', 'multicast'}
+(992,996) : {'broadcast', '封包', 'multicast'}
 (996,999) : set()
 (999,1003) : {'router', 'multicast'}
 (1003,1005) : {'broadcast'}
@@ -307,7 +307,7 @@
 (1049,1051) : {'MAC'}
 (1051,1054) : set()
 (1054,1058) : {'control', 'congestion'}
-(1058,1060) : {'router', 'control', 'congestion'}
+(1058,1060) : {'control', 'router', 'congestion'}
 (1060,1063) : {'封包', 'router'}
 (1063,1066) : {'封包'}
 (1066,1069) : {'封包'}
@@ -318,7 +318,7 @@
 (1084,1086) : {'封包', '廣播'}
 (1086,1090) : {'node', '廣播'}
 (1090,1093) : set()
-(1093,1097) : {'router', 'security'}
+(1093,1097) : {'security', 'router'}
 (1097,1101) : {'control'}
 (1101,1106) : {'IP'}
 (1106,1110) : set()
@@ -334,7 +334,7 @@
 (1140,1143) : {'router'}
 (1143,1148) : {'router'}
 (1148,1154) : {'LAN'}
-(1154,1159) : {'router', 'LAN'}
+(1154,1159) : {'LAN', 'router'}
 (1159,1162) : {'router'}
 (1162,1165) : set()
 (1165,1170) : {'router', 'IP'}
@@ -347,30 +347,30 @@
 (1187,1194) : {'bridge'}
 (1194,1195) : {'區域網路'}
 (1195,1199) : {'router'}
-(1199,1202) : {'router', 'internet'}
+(1199,1202) : {'internet', 'router'}
 (1202,1205) : {'bridge'}
 (1205,1209) : {'frame', 'segmentation'}
-(1209,1211) : {'bridge', 'switch'}
+(1209,1211) : {'switch', 'bridge'}
 (1211,1214) : {'封包'}
 (1214,1218) : set()
 (1218,1221) : {'router'}
 (1221,1225) : set()
 (1225,1228) : {'routing'}
-(1228,1230) : {'bridge', 'switch'}
+(1228,1230) : {'switch', 'bridge'}
 (1230,1233) : {'loop'}
 (1233,1239) : {'algorithm'}
-(1239,1243) : {'tree', 'algorithm', 'IEEE', 'spanning'}
+(1239,1243) : {'tree', 'IEEE', 'spanning', 'algorithm'}
 (1243,1244) : set()
 (1244,1248) : {'tree', 'spanning'}
 (1248,1252) : {'tree', 'spanning'}
-(1252,1256) : {'router', 'tree', 'spanning'}
-(1256,1258) : {'router', 'routing', 'protocol'}
-(1258,1262) : {'OSPF', 'RIP'}
+(1252,1256) : {'tree', 'spanning', 'router'}
+(1256,1258) : {'routing', 'router', 'protocol'}
+(1258,1262) : {'RIP', 'OSPF'}
 (1262,1265) : set()
 (1265,1269) : set()
 (1269,1272) : set()
 (1272,1275) : {'最短路徑'}
-(1275,1279) : {'tree', 'bridge', 'spanning'}
+(1275,1279) : {'tree', 'spanning', 'bridge'}
 (1279,1281) : {'tree'}
 (1281,1284) : {'tree'}
 (1284,1286) : set()
@@ -380,7 +380,7 @@
 (1300,1301) : {'tree', 'spanning'}
 (1301,1303) : set()
 (1303,1307) : {'switch'}
-(1307,1312) : {'bridge', 'switch'}
+(1307,1312) : {'switch', 'bridge'}
 (1312,1314) : set()
 (1314,1316) : set()
 (1316,1320) : {'router'}
@@ -388,12 +388,12 @@
 (1323,1328) : {'router', 'IP'}
 (1328,1332) : {'IP'}
 (1332,1337) : {'router'}
-(1337,1342) : {'bridge', 'switch'}
+(1337,1342) : {'switch', 'bridge'}
 (1342,1344) : set()
 (1344,1347) : set()
 (1347,1352) : set()
 (1352,1355) : set()
-(1355,1359) : {'router', 'switch'}
+(1355,1359) : {'switch', 'router'}
 (1359,1362) : set()
 (1362,1366) : set()
 (1366,1368) : set()
