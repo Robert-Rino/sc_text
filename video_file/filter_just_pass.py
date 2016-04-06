@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 # this is a script to filter pass-liked seek action
-# if a person trigger seek 'action' in less than 2 second 
+# if a person trigger seek 'action' in less than 2 second
 # then i treat that data a pass-data ,which is not the essential
 # point of the video
 import csv
 import dateutil.parser
 import datetime
-def iso_to_dateobject(iso_string):#input string will return datetime.datetime-object
+
+#input string will return datetime.datetime-object
+
+
+def iso_to_dateobject(iso_string):
     t = dateutil.parser.parse(iso_string).replace(tzinfo=None)
     # 年：t.year
     # 月：t.month
@@ -17,7 +21,10 @@ def iso_to_dateobject(iso_string):#input string will return datetime.datetime-ob
     # 毫秒：t.microsecond
     return t
 
-def is_just_pass(early,late):#pass two datetime object return if duration is smaller than 2 sec
+#pass two datetime object return if duration is smaller than 2 sec
+
+
+def is_just_pass(early, late):
     duration = late-early
     d_day = duration.days
     d_sec = duration.seconds
@@ -30,11 +37,11 @@ out = []
 uid_record = {}
 raw_file = './video_record_12_7.csv'
 out_dir = './video_record_12_7_filtered.csv'
-with open(raw_file,'r') as f:
+with open(raw_file, 'r') as f:
     reader = csv.reader(f)
     title_line = next(reader)
     out.append(title_line)
-with open(raw_file,'r') as f:
+with open(raw_file, 'r') as f:
     reader = csv.reader(f)
     next(reader)
     next(reader)
@@ -44,7 +51,7 @@ with open(raw_file,'r') as f:
         endTime = line[2]
         vid = line[4]
         time_stamp = line[5]
-        if uid_record.get(uid) == None:
+        if uid_record.get(uid) = = None:
             uid_record[uid] = []
             uid_record[uid].append(line)
         else:
@@ -54,13 +61,14 @@ for uid in uid_record:
     record_list = uid_record[uid]
     for i in range(len(record_list)):
         next_index = i+1
-        if next_index >= len(record_list):#if is the end of list , then break .
+        #if is the end of list , then break .
+        if next_index >= len(record_list):
             break
         this_time_obj = iso_to_dateobject(record_list[i][5])
         next_time_obj = iso_to_dateobject(record_list[next_index][5])
-        if is_just_pass(this_time_obj,next_time_obj) == False:
+        if is_just_pass(this_time_obj, next_time_obj) = = False:
             out.append(record_list[i])
-with open(out_dir,'w') as f:
+with open(out_dir, 'w') as f:
     w = csv.writer(f)
     w.writerows(out)
 # print out
