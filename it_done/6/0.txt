@@ -1,5 +1,5 @@
 (9,10) : set()
-(10,14) : {'transmission', 'reliable'}
+(10,14) : {'reliable', 'transmission'}
 (14,16) : set()
 (16,19) : {'communication'}
 (19,21) : set()
@@ -7,12 +7,12 @@
 (24,26) : set()
 (26,28) : set()
 (28,32) : set()
-(32,35) : {'transmission', 'reliable'}
+(32,35) : {'reliable', 'transmission'}
 (35,37) : set()
 (37,39) : set()
 (39,42) : {'protocol'}
 (42,45) : set()
-(45,49) : {'transmission', 'reliable'}
+(45,49) : {'reliable', 'transmission'}
 (49,51) : set()
 (51,54) : set()
 (54,57) : set()
@@ -25,8 +25,8 @@
 (74,77) : set()
 (77,82) : {'window', 'protocol'}
 (82,84) : set()
-(84,86) : {'transmission', 'reliable'}
-(86,89) : {'transmission', 'reliable'}
+(84,86) : {'reliable', 'transmission'}
+(86,89) : {'reliable', 'transmission'}
 (89,93) : set()
 (93,98) : {'communication'}
 (98,101) : set()
@@ -85,14 +85,14 @@
 (254,255) : set()
 (255,258) : set()
 (258,259) : set()
-(259,264) : {'可靠', 'transmission', 'reliable'}
+(259,264) : {'reliable', 'transmission', '可靠'}
 (264,266) : {'可靠'}
 (266,272) : set()
 (272,277) : {'封包'}
 (277,279) : set()
-(279,282) : {'transmission', 'reliable'}
+(279,282) : {'reliable', 'transmission'}
 (282,285) : set()
-(285,291) : {'transmission', 'reliable'}
+(285,291) : {'reliable', 'transmission'}
 (291,294) : set()
 (294,296) : {'acknowledgement'}
 (296,300) : set()
@@ -137,23 +137,23 @@
 (408,409) : {'retransmission'}
 (409,413) : set()
 (413,416) : {'acknowledgement'}
-(416,419) : {'transmission', 'reliable'}
+(416,419) : {'reliable', 'transmission'}
 (419,422) : {'acknowledgement'}
-(422,429) : {'封包', 'receiver'}
+(422,429) : {'receiver', '封包'}
 (429,433) : set()
 (433,437) : {'acknowledgement'}
 (437,442) : {'ACK'}
 (442,443) : set()
 (443,446) : {'frame', 'ACK'}
-(446,448) : {'control', 'frame'}
+(446,448) : {'frame', 'control'}
 (448,452) : {'ACK'}
 (452,454) : {'封包'}
 (454,457) : {'ACK'}
-(457,459) : {'acknowledgement', 'ACK'}
+(457,459) : {'ACK', 'acknowledgement'}
 (459,462) : {'ACK'}
-(462,465) : {'control', 'frame'}
+(462,465) : {'frame', 'control'}
 (465,470) : set()
-(470,474) : {'control', 'frame'}
+(470,474) : {'frame', 'control'}
 (474,476) : set()
 (476,481) : {'通訊'}
 (481,484) : set()
@@ -162,23 +162,23 @@
 (488,491) : set()
 (491,493) : set()
 (493,498) : set()
-(498,501) : {'control', 'frame', 'ACK'}
+(498,501) : {'frame', 'ACK', 'control'}
 (501,504) : set()
 (504,508) : {'frame', '封包'}
-(508,509) : {'control', 'frame'}
+(508,509) : {'frame', 'control'}
 (509,513) : set()
 (513,516) : {'ACK'}
 (516,519) : {'ACK'}
 (519,522) : {'frame'}
 (522,526) : set()
-(526,529) : {'transmission', 'reliable'}
+(526,529) : {'reliable', 'transmission'}
 (529,533) : {'ACK'}
 (533,535) : set()
 (535,537) : set()
 (537,542) : {'封包'}
 (542,544) : set()
 (544,546) : {'ACK'}
-(546,549) : {'封包', 'ACK'}
+(546,549) : {'ACK', '封包'}
 (549,553) : set()
 (553,558) : set()
 (558,565) : {'timer'}
@@ -204,7 +204,7 @@
 (633,636) : set()
 (636,642) : {'acknowledgement'}
 (642,647) : set()
-(647,649) : {'transmission', 'reliable'}
+(647,649) : {'reliable', 'transmission'}
 (649,651) : {'protocol'}
 (651,655) : {'protocol'}
 (655,659) : set()
@@ -223,7 +223,7 @@
 (699,702) : set()
 (702,706) : set()
 (706,709) : {'封包'}
-(709,715) : {'封包', 'ACK'}
+(709,715) : {'ACK', '封包'}
 (715,718) : {'封包'}
 (718,720) : {'封包'}
 (720,722) : set()
@@ -248,7 +248,7 @@
 (778,781) : set()
 (781,784) : {'receiver'}
 (784,786) : set()
-(786,790) : {'封包', 'receiver'}
+(786,790) : {'receiver', '封包'}
 (790,794) : {'receiver', 'ACK'}
 (794,798) : {'ACK'}
 (798,803) : {'ACK'}
@@ -263,10 +263,10 @@
 (833,837) : {'timer', 'ACK'}
 (837,842) : {'ACK'}
 (842,845) : set()
-(845,848) : {'封包', 'ACK'}
-(848,851) : {'封包', 'ACK'}
-(851,855) : {'封包', 'ACK'}
-(855,857) : {'封包', 'ACK'}
+(845,848) : {'ACK', '封包'}
+(848,851) : {'ACK', '封包'}
+(851,855) : {'ACK', '封包'}
+(855,857) : {'ACK', '封包'}
 (857,863) : set()
 (863,869) : set()
 (869,871) : set()

@@ -1,36 +1,36 @@
 (9,11) : set()
-(11,14) : {'tree', 'spanning', 'bridge', 'algorithm'}
+(11,14) : {'bridge', 'algorithm', 'tree', 'spanning'}
 (14,16) : set()
 (16,21) : {'bridge'}
 (21,24) : {'bridge'}
-(24,27) : {'LAN', '區域網路'}
+(24,27) : {'區域網路', 'LAN'}
 (27,29) : {'LAN'}
 (29,31) : {'LAN'}
 (31,34) : {'LAN'}
 (34,37) : {'bridge'}
 (37,40) : {'bridge'}
 (40,43) : {'MAC'}
-(43,46) : {'封包', 'bridge'}
+(43,46) : {'bridge', '封包'}
 (46,49) : {'MAC', '封包'}
 (49,53) : {'MAC'}
 (53,57) : {'MAC'}
 (57,59) : {'MAC'}
 (59,62) : {'MAC'}
-(62,65) : {'封包', 'bridge'}
+(62,65) : {'bridge', '封包'}
 (65,68) : {'封包'}
 (68,72) : set()
 (72,75) : {'bridge'}
-(75,81) : {'LAN', 'bridge'}
-(81,84) : {'LAN', 'local'}
+(75,81) : {'bridge', 'LAN'}
+(81,84) : {'local', 'LAN'}
 (84,87) : {'bridge'}
-(87,92) : {'LAN', 'logical', 'bridge'}
-(92,96) : {'LAN', 'logical'}
+(87,92) : {'bridge', 'logical', 'LAN'}
+(92,96) : {'logical', 'LAN'}
 (96,98) : set()
-(98,101) : {'LAN', 'bridge'}
+(98,101) : {'bridge', 'LAN'}
 (101,105) : {'LAN'}
 (105,108) : {'bridge'}
-(108,112) : {'LAN', 'logical'}
-(112,113) : {'LAN', 'logical'}
+(108,112) : {'logical', 'LAN'}
+(112,113) : {'logical', 'LAN'}
 (113,116) : set()
 (116,119) : {'封包'}
 (119,124) : {'LAN'}
@@ -53,18 +53,18 @@
 (175,178) : set()
 (178,182) : set()
 (182,187) : {'LAN'}
-(187,190) : {'LAN', 'logical'}
+(187,190) : {'logical', 'LAN'}
 (190,192) : set()
 (192,194) : {'bridge'}
 (194,198) : {'bridge'}
 (198,200) : set()
-(200,204) : {'LAN', 'logical'}
+(200,204) : {'logical', 'LAN'}
 (204,206) : {'封包'}
-(206,208) : {'LAN', 'logical'}
-(208,213) : {'LAN', 'logical'}
+(206,208) : {'logical', 'LAN'}
+(208,213) : {'logical', 'LAN'}
 (213,218) : {'bridge'}
 (218,220) : set()
-(220,224) : {'frame', 'forwarding', 'bridge'}
+(220,224) : {'bridge', 'frame', 'forwarding'}
 (224,228) : {'封包'}
 (228,231) : {'filtering'}
 (231,234) : set()
@@ -87,13 +87,13 @@
 (280,281) : set()
 (281,284) : set()
 (284,289) : set()
-(289,292) : {'tree', 'spanning', 'algorithm'}
-(292,295) : {'tree', 'spanning', 'loop', 'algorithm'}
+(289,292) : {'tree', 'algorithm', 'spanning'}
+(292,295) : {'tree', 'algorithm', 'spanning', 'loop'}
 (295,297) : set()
 (297,301) : {'bridge'}
 (301,302) : set()
-(302,304) : {'control', 'congestion'}
-(304,307) : {'control', 'congestion'}
+(302,304) : {'congestion', 'control'}
+(304,307) : {'congestion', 'control'}
 (307,310) : {'bridge'}
 (310,313) : set()
 (313,316) : set()
@@ -102,7 +102,7 @@
 (322,326) : set()
 (326,328) : set()
 (328,331) : {'bridge', 'buffer'}
-(331,334) : {'control', 'congestion'}
+(331,334) : {'congestion', 'control'}
 (334,336) : {'filtering'}
 (336,340) : set()
 (340,343) : set()
@@ -121,7 +121,7 @@
 (380,383) : {'封包'}
 (383,386) : set()
 (386,388) : {'routing'}
-(388,391) : {'封包', 'bridge'}
+(388,391) : {'bridge', '封包'}
 (391,395) : set()
 (395,399) : {'bridge'}
 (399,402) : {'LAN'}
@@ -141,14 +141,14 @@
 (441,445) : {'bridge'}
 (445,448) : set()
 (448,451) : set()
-(451,456) : {'封包', 'bridge'}
+(451,456) : {'bridge', '封包'}
 (456,461) : {'封包'}
 (461,466) : set()
 (466,468) : set()
 (468,470) : set()
 (470,473) : {'bridge', 'buffer'}
 (473,479) : set()
-(479,485) : {'封包', 'buffer'}
+(479,485) : {'buffer', '封包'}
 (486,490) : {'routing'}
 (490,492) : {'routing'}
 (492,496) : {'封包'}
@@ -158,14 +158,14 @@
 (506,508) : set()
 (508,512) : {'bridge'}
 (512,515) : set()
-(515,521) : {'LAN', 'bridge'}
+(515,521) : {'bridge', 'LAN'}
 (521,524) : set()
-(524,526) : {'LAN', 'bridge', 'BLAN'}
-(526,529) : {'LAN', 'bridge', 'BLAN'}
-(529,534) : {'LAN', 'digital', 'bridge'}
+(524,526) : {'bridge', 'LAN', 'BLAN'}
+(526,529) : {'bridge', 'LAN', 'BLAN'}
+(529,534) : {'digital', 'bridge', 'LAN'}
 (534,538) : {'bridge'}
-(538,541) : {'LAN', 'bridge'}
-(541,546) : {'LAN', 'bridge'}
+(538,541) : {'bridge', 'LAN'}
+(541,546) : {'bridge', 'LAN'}
 (546,549) : set()
 (549,552) : {'reliability'}
 (552,557) : set()
@@ -186,13 +186,13 @@
 (599,603) : {'LAN'}
 (603,607) : {'repeater'}
 (607,610) : {'repeater'}
-(610,614) : {'LAN', 'repeater'}
+(610,614) : {'repeater', 'LAN'}
 (614,616) : {'LAN'}
 (616,619) : set()
 (619,623) : set()
 (623,625) : {'collision'}
 (625,628) : set()
-(628,630) : {'LAN', 'repeater'}
+(628,630) : {'repeater', 'LAN'}
 (630,633) : {'LAN'}
 (633,636) : {'collision'}
 (636,638) : {'bridge'}
@@ -239,7 +239,7 @@
 (764,766) : {'database', 'filtering'}
 (766,769) : {'database'}
 (769,771) : set()
-(771,774) : {'database', 'frame'}
+(771,774) : {'frame', 'database'}
 (774,778) : set()
 (778,781) : set()
 (781,782) : set()

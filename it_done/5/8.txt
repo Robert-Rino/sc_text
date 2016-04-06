@@ -23,8 +23,8 @@
 (74,77) : set()
 (77,80) : {'protocol'}
 (80,81) : {'GARP'}
-(81,85) : {'Registration', 'Generic', 'Attributes', 'Protocol'}
-(85,88) : {'VLAN', 'protocol'}
+(81,85) : {'Attributes', 'Protocol', 'Generic', 'Registration'}
+(85,88) : {'protocol', 'VLAN'}
 (88,91) : {'VLAN'}
 (91,93) : set()
 (93,98) : {'VLAN'}
@@ -44,7 +44,7 @@
 (145,150) : {'VLAN'}
 (150,155) : {'MAC'}
 (155,159) : {'MAC'}
-(159,162) : {'網卡', '第二層'}
+(159,162) : {'第二層', '網卡'}
 (162,164) : {'MAC'}
 (164,167) : {'網卡'}
 (167,169) : set()
@@ -124,7 +124,7 @@
 (402,405) : set()
 (405,407) : {'tree', 'spanning'}
 (407,410) : set()
-(410,414) : {'switch', 'bridge'}
+(410,414) : {'bridge', 'switch'}
 (414,415) : set()
 (415,419) : {'VLAN'}
 (419,421) : set()
@@ -137,7 +137,7 @@
 (445,450) : {'VLAN'}
 (450,456) : {'VLAN'}
 (456,460) : set()
-(460,463) : {'VLAN', 'configuration'}
+(460,463) : {'configuration', 'VLAN'}
 (463,467) : set()
 (467,473) : set()
 (473,473) : set()

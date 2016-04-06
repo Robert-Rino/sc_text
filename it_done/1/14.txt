@@ -11,7 +11,7 @@
 (43,47) : set()
 (47,52) : set()
 (52,55) : {'delay', 'bandwidth'}
-(55,60) : {'delay', 'pipe', 'latency'}
+(55,60) : {'pipe', 'latency', 'delay'}
 (60,64) : set()
 (64,66) : {'pipe'}
 (66,69) : set()
@@ -39,15 +39,15 @@
 (147,153) : {'pipe'}
 (153,155) : {'delay', 'bandwidth'}
 (155,157) : set()
-(157,160) : {'bandwidth', 'latency'}
-(160,166) : {'bandwidth', 'latency'}
-(166,170) : {'transmission', 'bandwidth'}
-(170,173) : {'transmission', 'bandwidth'}
-(173,175) : {'propagation', 'latency'}
+(157,160) : {'latency', 'bandwidth'}
+(160,166) : {'latency', 'bandwidth'}
+(166,170) : {'bandwidth', 'transmission'}
+(170,173) : {'bandwidth', 'transmission'}
+(173,175) : {'latency', 'propagation'}
 (175,178) : set()
 (178,181) : {'delay', '頻寬'}
 (181,186) : {'pipe'}
-(186,189) : {'頻寬', 'latency'}
+(186,189) : {'latency', '頻寬'}
 (189,191) : set()
 (191,195) : set()
 (195,197) : set()
@@ -69,7 +69,7 @@
 (247,249) : {'delay'}
 (249,252) : set()
 (252,257) : {'jitter'}
-(257,262) : {'delay', 'jitter'}
+(257,262) : {'jitter', 'delay'}
 (262,264) : {'pipe'}
 (264,267) : set()
 (267,269) : set()
@@ -81,8 +81,8 @@
 (283,285) : set()
 (285,288) : {'封包'}
 (288,293) : set()
-(293,299) : {'latency', 'jitter'}
-(299,302) : {'variance', 'latency'}
+(293,299) : {'jitter', 'latency'}
+(299,302) : {'latency', 'variance'}
 (302,305) : set()
 (305,307) : set()
 (307,312) : set()
@@ -237,8 +237,8 @@
 (787,791) : {'七層'}
 (791,794) : set()
 (794,797) : {'network', 'transport'}
-(797,799) : {'presentation', 'session'}
-(799,800) : {'application', '七層'}
+(797,799) : {'session', 'presentation'}
+(799,800) : {'七層', 'application'}
 (800,806) : set()
 (806,808) : set()
 (808,811) : set()
@@ -264,11 +264,11 @@
 (870,873) : {'routing'}
 (873,877) : {'transport'}
 (877,882) : set()
-(882,885) : {'TCP', 'UDP'}
+(882,885) : {'UDP', 'TCP'}
 (885,888) : set()
 (888,892) : set()
 (892,895) : set()
-(895,897) : {'頻寬', 'bandwidth'}
+(895,897) : {'bandwidth', '頻寬'}
 (897,902) : {'頻寬'}
 (902,904) : set()
 (904,907) : {'delay'}

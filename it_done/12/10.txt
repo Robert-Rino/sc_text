@@ -13,9 +13,9 @@
 (35,39) : set()
 (39,42) : set()
 (42,44) : set()
-(44,46) : {'firewall', 'network'}
+(44,46) : {'network', 'firewall'}
 (46,51) : set()
-(51,55) : {'firewall', 'network'}
+(51,55) : {'network', 'firewall'}
 (55,59) : set()
 (59,63) : set()
 (63,64) : set()
@@ -70,13 +70,13 @@
 (224,227) : {'封包'}
 (227,229) : set()
 (229,233) : {'firewall'}
-(233,235) : {'firewall', 'network'}
-(235,238) : {'firewall', 'network'}
+(233,235) : {'network', 'firewall'}
+(235,238) : {'network', 'firewall'}
 (238,243) : {'網卡'}
 (243,244) : {'網卡'}
 (244,249) : set()
 (249,251) : set()
-(251,253) : {'firewall', 'network'}
+(251,253) : {'network', 'firewall'}
 (253,258) : set()
 (258,261) : set()
 (261,265) : set()
@@ -89,7 +89,7 @@
 (282,284) : set()
 (284,287) : set()
 (287,289) : set()
-(289,291) : {'firewall', 'network'}
+(289,291) : {'network', 'firewall'}
 (291,294) : set()
 (294,298) : {'firewall', '封包'}
 (298,299) : set()

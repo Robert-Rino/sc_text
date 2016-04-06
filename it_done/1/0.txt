@@ -4,7 +4,7 @@
 (20,24) : {'application'}
 (24,27) : {'network', 'connectivity'}
 (27,29) : set()
-(29,33) : {'architecture', 'network'}
+(29,33) : {'network', 'architecture'}
 (33,37) : set()
 (37,39) : set()
 (39,42) : set()
@@ -16,7 +16,7 @@
 (53,56) : set()
 (56,58) : set()
 (58,59) : set()
-(59,64) : {'performance', 'network'}
+(59,64) : {'network', 'performance'}
 (64,65) : set()
 (65,69) : set()
 (69,70) : {'bandwidth'}
@@ -163,18 +163,18 @@
 (503,506) : set()
 (506,509) : set()
 (509,512) : {'url'}
-(512,514) : {'protocol', 'HTTP'}
-(515,518) : {'hyper', 'protocol', 'transfer'}
+(512,514) : {'HTTP', 'protocol'}
+(515,518) : {'hyper', 'transfer', 'protocol'}
 (518,522) : set()
 (522,525) : {'protocol'}
 (525,528) : {'TCP', 'HTTP'}
-(529,533) : {'TCP', 'protocol', 'transport'}
-(533,535) : {'control', 'transmission', 'protocol'}
+(529,533) : {'TCP', 'transport', 'protocol'}
+(533,535) : {'protocol', 'transmission', 'control'}
 (535,539) : {'TCP', '第四層', 'protocol'}
 (539,542) : set()
-(542,546) : {'TCP', '通訊'}
+(542,546) : {'通訊', 'TCP'}
 (546,548) : set()
-(548,552) : {'TCP', 'reliable', 'service'}
+(548,552) : {'reliable', 'service', 'TCP'}
 (552,556) : {'TCP', '可靠'}
 (556,559) : set()
 (559,562) : set()
@@ -224,7 +224,7 @@
 (682,684) : set()
 (684,687) : {'TCP'}
 (687,689) : set()
-(689,693) : {'syn', 'ack'}
+(689,693) : {'ack', 'syn'}
 (693,697) : set()
 (697,698) : set()
 (698,702) : set()

@@ -6,35 +6,35 @@
 (25,30) : set()
 (30,34) : {'VLAN'}
 (34,39) : {'VLAN'}
-(39,43) : {'VID', 'VLAN'}
+(39,43) : {'VLAN', 'VID'}
 (43,46) : {'VLAN'}
 (46,50) : set()
 (50,55) : {'VLAN'}
 (55,56) : set()
 (56,60) : set()
-(60,63) : {'VLAN', 'bridge'}
+(60,63) : {'bridge', 'VLAN'}
 (63,65) : {'VLAN'}
 (65,69) : set()
 (69,72) : {'VLAN'}
 (72,75) : {'compatibility'}
 (75,77) : set()
 (77,78) : set()
-(78,83) : {'VLAN', 'bridge'}
+(78,83) : {'bridge', 'VLAN'}
 (83,85) : set()
 (85,88) : {'VLAN'}
 (89,93) : {'VLAN'}
-(93,96) : {'VLAN', 'bridge'}
+(93,96) : {'bridge', 'VLAN'}
 (96,98) : {'VLAN'}
 (98,100) : set()
 (100,106) : {'VLAN'}
 (106,108) : set()
 (109,114) : {'VLAN'}
 (114,120) : {'VLAN'}
-(120,130) : {'VLAN', 'bridge'}
+(120,130) : {'bridge', 'VLAN'}
 (130,132) : {'VLAN'}
-(132,135) : {'VLAN', 'bridge'}
+(132,135) : {'bridge', 'VLAN'}
 (135,136) : {'VLAN'}
-(136,139) : {'VLAN', 'bridge'}
+(136,139) : {'bridge', 'VLAN'}
 (139,144) : {'bridge'}
 (144,146) : {'VLAN'}
 (146,149) : set()
@@ -43,7 +43,7 @@
 (154,157) : set()
 (157,160) : set()
 (160,164) : {'VLAN'}
-(164,169) : {'VLAN', 'bridge'}
+(164,169) : {'bridge', 'VLAN'}
 (169,172) : set()
 (172,175) : {'VLAN'}
 (175,178) : set()
@@ -70,7 +70,7 @@
 (231,235) : set()
 (235,238) : set()
 (238,240) : set()
-(240,243) : {'tree', 'IEEE', 'spanning'}
+(240,243) : {'IEEE', 'tree', 'spanning'}
 (243,245) : {'tree', 'spanning'}
 (245,247) : {'封包'}
 (247,249) : {'Plug'}
@@ -95,21 +95,21 @@
 (297,300) : {'VLAN'}
 (300,303) : {'service'}
 (303,306) : {'LAN', 'Virtual'}
-(306,309) : {'Bridged', 'LANs'}
-(309,312) : {'LAN', 'bridge'}
+(306,309) : {'LANs', 'Bridged'}
+(309,312) : {'bridge', 'LAN'}
 (312,315) : {'Bridged', 'LAN', 'BLAN'}
 (315,321) : {'service'}
 (321,323) : {'service'}
-(323,326) : {'LAN', 'bridge', 'Virtual'}
+(323,326) : {'bridge', 'LAN', 'Virtual'}
 (326,328) : {'bridge'}
-(328,332) : {'LAN', 'bridge'}
+(328,332) : {'bridge', 'LAN'}
 (332,335) : {'switch'}
-(335,340) : {'switch', 'bridge'}
+(335,340) : {'bridge', 'switch'}
 (341,345) : set()
-(345,349) : {'switch', 'bridge'}
-(349,354) : {'封包', 'forwarding'}
+(345,349) : {'bridge', 'switch'}
+(349,354) : {'forwarding', '封包'}
 (354,357) : set()
-(357,360) : {'switch', 'bridge'}
+(357,360) : {'bridge', 'switch'}
 (360,362) : {'封包'}
 (362,365) : {'MAC'}
 (365,366) : {'第二層'}
@@ -128,10 +128,10 @@
 (397,399) : {'封包'}
 (399,400) : set()
 (400,402) : {'VLAN'}
-(402,405) : {'VLAN', '廣播'}
+(402,405) : {'廣播', 'VLAN'}
 (405,408) : {'VLAN'}
 (408,411) : set()
-(411,418) : {'封包', 'VLAN', 'bridge'}
+(411,418) : {'bridge', '封包', 'VLAN'}
 (418,421) : set()
 (421,422) : {'VLAN'}
 (422,424) : set()
@@ -156,7 +156,7 @@
 (472,474) : {'VLAN'}
 (474,477) : set()
 (477,483) : {'forwarding'}
-(483,489) : {'VLAN', 'switch', 'bridge'}
+(483,489) : {'bridge', 'switch', 'VLAN'}
 (489,493) : {'forwarding'}
 (493,494) : {'VLAN'}
 (495,499) : {'Filtering', 'Database'}
@@ -179,7 +179,7 @@
 (547,549) : {'VLAN'}
 (549,556) : {'database'}
 (556,558) : set()
-(558,562) : {'VLAN', 'service'}
+(558,562) : {'service', 'VLAN'}
 (562,563) : {'VLAN'}
 (563,565) : {'protocol'}
 (565,567) : {'protocol'}
@@ -234,7 +234,7 @@
 (695,699) : {'protocol'}
 (700,707) : {'VLAN'}
 (707,708) : set()
-(708,714) : {'VLAN', 'structure'}
+(708,714) : {'structure', 'VLAN'}
 (714,721) : {'configuration'}
 (721,722) : set()
 (722,724) : set()
@@ -249,7 +249,7 @@
 (750,754) : set()
 (754,758) : set()
 (758,761) : {'distribution'}
-(761,766) : {'protocol', 'declaration'}
+(761,766) : {'declaration', 'protocol'}
 (766,768) : {'Declaration'}
 (768,770) : set()
 (770,774) : {'VLAN'}
