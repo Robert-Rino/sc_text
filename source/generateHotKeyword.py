@@ -45,7 +45,7 @@ def makeElementUnique(keyWordList):
 
 def getTime_KeyWord(biggestCountIndex, lecture_data):
     # 一個sequence是幾秒
-    timeSegment = 30  # 10.20.25
+    timeSegment = 40
     # 最後的關鍵字列表
     time_keyword = {}
     for rank in range(5):  # 取前5高的點擊，可設定抓更多的數量
@@ -115,7 +115,7 @@ def output_json_file():
 # week_dirs = os.listdir(keyword_dir)
 # for dirName in week_dirs:LAN 1000 eng
 
-# get sharecourse video name and url
+#get sharecourse video name and url
 sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash')
 course_json = sc_course.json()
 
