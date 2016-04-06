@@ -59,7 +59,7 @@ def getTime_KeyWord(biggestCountIndex, lecture_data):
                                           endTime,
                                           timeTuple[0],
                                           timeTuple[1])
-            if keyWordTimeTmp ! = None:
+            if keyWordTimeTmp != None:
                 keyWordTmp.extend(time_keyList[keyWordTimeTmp])
         time_keyword[index_count[1]] = makeElementUnique(keyWordTmp)
         detail_data.append([lecture_data['vname'],
@@ -109,6 +109,8 @@ def output_json_file():
     for i in sorted_count:
         word_list[i[0]]["order"] = num/len(sorted_count)
         num += 1
+    sort_word = sorted(word_list.items(), key=lambda x: x[1]["total_count"], reverse=True)
+    # print(sort_word)
     return word_list
 
 # create weekdir in resultdir if not exists

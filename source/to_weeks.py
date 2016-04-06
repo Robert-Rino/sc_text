@@ -24,7 +24,7 @@ with open(chapter_video_dir, 'r') as f:
         content_order = int(line[3])
         vid = int(line[4])
         order_vid = (content_order, vid)
-        if weeks_vid.get(week) = = None:
+        if weeks_vid.get(week) == None:
             weeks_vid[week] = [order_vid]
         else:
             weeks_vid[week].append(order_vid)

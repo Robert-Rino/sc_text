@@ -51,7 +51,7 @@ with open(raw_file, 'r') as f:
         endTime = line[2]
         vid = line[4]
         time_stamp = line[5]
-        if uid_record.get(uid) = = None:
+        if uid_record.get(uid) == None:
             uid_record[uid] = []
             uid_record[uid].append(line)
         else:
@@ -66,7 +66,7 @@ for uid in uid_record:
             break
         this_time_obj = iso_to_dateobject(record_list[i][5])
         next_time_obj = iso_to_dateobject(record_list[next_index][5])
-        if is_just_pass(this_time_obj, next_time_obj) = = False:
+        if is_just_pass(this_time_obj, next_time_obj) == False:
             out.append(record_list[i])
 with open(out_dir, 'w') as f:
     w = csv.writer(f)

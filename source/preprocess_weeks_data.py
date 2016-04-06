@@ -56,13 +56,13 @@ def preprocessing_file(file_path):
             remain = round(float(endTime)) % timeSequence
             if remain > 0:
                 ratio = round(ratio+1)
-            if outHash.get(ratio) = = None:
+            if outHash.get(ratio) == None:
                 outHash[ratio] = 1
             else:
                 outHash[ratio] += 1
         out.append(['time', 'count'])
         for i in range(totalSeq+2):
-            if outHash.get(i) = = None:
+            if outHash.get(i) == None:
                 out.append([timeSequence*i, 0])
             else:
                 out.append([timeSequence*i, outHash[i]])
