@@ -162,7 +162,7 @@
 (544,547) : set()
 (547,550) : set()
 (550,552) : set()
-(552,556) : set()
+(552,556) : {'last-in-first-out', 'spanning tree', 'hidden terminal'}
 (556,559) : set()
 (559,560) : set()
 (560,562) : set()

@@ -356,7 +356,7 @@ TCP的SYN封包就是建連線的封包
 
 91
 00:05:13,350 --> 00:05:17,850
-一般我們所謂的ALC (Access control list)
+一般我們所謂的ALC Access control list
 
 92
 00:05:17,850 --> 00:05:20,250
@@ -745,4 +745,3 @@ UDP port 53 就是Domain name server DNS的服務
 188
 00:11:06,149 --> 00:11:08,000
  Subtitles End: mo.dbxdb.com
-

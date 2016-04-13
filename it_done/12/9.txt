@@ -157,7 +157,7 @@
 (564,567) : set()
 (567,573) : set()
 (573,577) : set()
-(577,579) : set()
+(577,579) : {'last-in-first-out', 'spanning tree', 'hidden terminal'}
 (579,586) : {'security'}
 (586,591) : set()
 (591,595) : {'security'}
@@ -187,7 +187,7 @@
 (666,670) : set()
 (670,671) : set()
 (671,675) : set()
-(675,679) : {'security', 'control'}
+(675,679) : {'control', 'security'}
 (679,682) : set()
 (682,686) : set()
 (686,690) : set()

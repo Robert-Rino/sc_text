@@ -10,7 +10,7 @@
 (29,31) : set()
 (31,33) : set()
 (33,35) : set()
-(35,40) : set()
+(35,40) : {'hidden node', 'spanning tree', 'exposed node', 'hidden terminal'}
 (40,44) : set()
 (44,46) : set()
 (46,49) : set()
@@ -34,7 +34,7 @@
 (100,104) : set()
 (104,108) : set()
 (108,110) : set()
-(110,113) : set()
+(110,113) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
 (113,118) : set()
 (118,124) : set()
 (124,128) : set()

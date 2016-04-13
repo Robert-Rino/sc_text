@@ -7,13 +7,13 @@
 (23,26) : set()
 (26,31) : set()
 (31,35) : {'protocol'}
-(35,40) : {'application', 'protocol'}
+(35,40) : {'protocol', 'application'}
 (40,43) : set()
 (43,47) : {'protocol'}
 (47,54) : {'HTTP', 'FTP'}
-(54,58) : {'application', 'protocol'}
+(54,58) : {'protocol', 'application'}
 (58,62) : set()
-(62,65) : {'application', 'protocol'}
+(62,65) : {'protocol', 'application'}
 (65,69) : {'protocol'}
 (69,72) : set()
 (72,77) : {'protocol'}
@@ -79,7 +79,7 @@
 (282,289) : {'HTTP'}
 (289,292) : {'protocol'}
 (292,295) : {'application'}
-(295,299) : {'HTTP', 'application', 'protocol'}
+(295,299) : {'protocol', 'HTTP', 'application'}
 (299,300) : set()
 (300,304) : {'FTP'}
 (304,309) : set()

@@ -1,12 +1,12 @@
-(9,13) : {'routing', 'protocol'}
-(13,16) : {'routing', 'router', 'protocol'}
+(9,13) : {'protocol', 'routing'}
+(13,16) : {'protocol', 'routing', 'router'}
 (16,19) : set()
 (19,25) : {'router'}
 (25,27) : {'router'}
 (27,32) : {'router'}
 (32,34) : set()
 (34,37) : {'routing'}
-(37,40) : {'routing', 'protocol'}
+(37,40) : {'protocol', 'routing'}
 (40,46) : {'forwarding'}
 (46,48) : {'routing'}
 (48,51) : {'forwarding'}
@@ -27,7 +27,7 @@
 (96,101) : {'routing'}
 (101,106) : {'routing'}
 (106,108) : {'routing'}
-(108,109) : {'routing', 'protocol'}
+(108,109) : {'protocol', 'routing'}
 (109,111) : set()
 (111,113) : {'router'}
 (113,116) : set()
@@ -43,8 +43,8 @@
 (142,148) : set()
 (148,151) : set()
 (151,154) : set()
-(154,157) : {'MAC', 'router'}
-(157,163) : {'MAC', 'IP', 'router'}
+(154,157) : {'router', 'MAC'}
+(157,163) : {'router', 'MAC', 'IP'}
 (163,166) : set()
 (166,169) : set()
 (169,172) : {'封包'}
@@ -65,12 +65,12 @@
 (210,214) : set()
 (214,220) : {'網卡'}
 (220,226) : {'MAC'}
-(226,230) : {'MAC', 'router'}
+(226,230) : {'router', 'MAC'}
 (230,232) : set()
 (232,233) : {'MAC'}
 (233,236) : {'AP'}
 (236,237) : {'AP'}
-(237,242) : {'MAC', 'AP', 'wireless'}
+(237,242) : {'AP', 'MAC', 'wireless'}
 (242,245) : {'forwarding'}
 (245,250) : set()
 (250,254) : {'network'}
@@ -90,7 +90,7 @@
 (305,309) : {'MAC'}
 (309,312) : set()
 (312,315) : {'forwarding'}
-(315,320) : {'IP', '封包'}
+(315,320) : {'封包', 'IP'}
 (320,323) : {'IP'}
 (323,326) : set()
 (326,328) : set()
@@ -101,12 +101,12 @@
 (339,342) : {'routing'}
 (342,345) : set()
 (345,348) : {'routing'}
-(348,352) : {'routing', 'protocol'}
+(348,352) : {'protocol', 'routing'}
 (352,355) : {'routing'}
 (355,361) : {'routing', 'algorithm'}
 (361,365) : {'algorithm'}
-(365,370) : {'routing', 'protocol'}
-(370,375) : {'routing', 'protocol'}
+(365,370) : {'protocol', 'routing'}
+(370,375) : {'protocol', 'routing'}
 (375,378) : {'router'}
 (378,379) : set()
 (379,383) : set()
@@ -122,7 +122,7 @@
 (412,415) : set()
 (415,420) : {'IP'}
 (420,425) : set()
-(425,428) : {'IP', '網段'}
+(425,428) : {'網段', 'IP'}
 (428,430) : {'IP'}
 (430,434) : {'routing'}
 (434,438) : {'router'}
@@ -149,17 +149,17 @@
 (498,501) : set()
 (501,505) : set()
 (505,507) : set()
-(507,512) : set()
+(507,512) : {'CSMA/CD', 'CF-Down', 'CF-UP'}
 (512,517) : set()
 (517,522) : set()
-(522,525) : {'node'}
+(522,525) : {'hidden node', 'exposed node'}
 (525,529) : set()
-(529,533) : set()
+(529,533) : {'CSMA/CD', 'CF-Down', 'CF-UP'}
 (533,537) : set()
 (537,541) : set()
 (541,542) : set()
 (542,545) : {'delay'}
-(545,548) : set()
+(545,548) : {'CSMA/CD', 'CF-Down', 'CF-UP'}
 (548,552) : {'router'}
 (552,554) : set()
 (554,556) : {'router'}
@@ -190,7 +190,7 @@
 (633,638) : {'router'}
 (638,642) : {'path'}
 (642,647) : {'最短路徑'}
-(647,652) : set()
+(647,652) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
 (652,656) : set()
 (656,663) : set()
 (663,667) : set()
@@ -202,18 +202,18 @@
 (687,690) : set()
 (690,693) : set()
 (693,696) : set()
-(696,701) : set()
+(696,701) : {'CSMA/CD', 'CF-Down', 'CF-UP'}
 (701,705) : set()
-(705,712) : set()
+(705,712) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
 (712,713) : set()
 (713,717) : set()
-(717,720) : set()
-(720,723) : set()
-(723,728) : set()
-(728,732) : set()
+(717,720) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
+(720,723) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
+(723,728) : {'CSMA/CD', 'CF-Down', 'CF-UP'}
+(728,732) : {'CSMA/CD', 'CF-Down', 'CF-UP'}
 (732,736) : set()
 (736,741) : set()
-(741,748) : {'routing', 'node'}
+(741,748) : {'hidden node', 'routing', 'exposed node'}
 (748,752) : set()
 (752,756) : set()
 (756,760) : {'routing'}
@@ -222,7 +222,7 @@
 (767,770) : {'router'}
 (770,774) : set()
 (774,776) : {'router'}
-(776,780) : {'routing', 'protocol'}
+(776,780) : {'protocol', 'routing'}
 (780,782) : {'router'}
 (782,786) : {'router'}
 (786,788) : set()
@@ -230,26 +230,26 @@
 (790,795) : {'router'}
 (795,797) : set()
 (797,800) : set()
-(800,803) : {'node'}
+(800,803) : {'hidden node', 'exposed node'}
 (803,805) : set()
 (805,809) : set()
 (809,811) : set()
 (811,814) : set()
-(814,817) : {'shortest', 'path'}
+(814,817) : {'path', 'shortest'}
 (817,821) : {'點對點'}
-(821,825) : {'node'}
+(821,825) : {'hidden node', 'exposed node'}
 (825,826) : set()
-(826,829) : {'node'}
+(826,829) : {'hidden node', 'exposed node'}
 (829,832) : set()
 (832,834) : set()
 (834,836) : set()
 (836,838) : set()
 (838,841) : set()
 (841,843) : set()
-(843,845) : {'node', 'router'}
+(843,845) : {'hidden node', 'router', 'exposed node'}
 (845,848) : set()
 (848,852) : set()
-(852,855) : {'node'}
+(852,855) : {'hidden node', 'exposed node'}
 (855,859) : {'router'}
 (859,862) : set()
 (862,866) : set()
@@ -289,5 +289,5 @@
 (973,975) : {'state'}
 (975,977) : set()
 (977,981) : set()
-(981,984) : {'routing', 'protocol'}
-(984,987) : {'routing', 'protocol', 'state'}
+(981,984) : {'protocol', 'routing'}
+(984,987) : {'protocol', 'routing', 'state'}

@@ -72,7 +72,7 @@
 
 20
 00:01:01,280 --> 00:01:05,349
-內部受到的保護(protected network)
+內部受到的保護 protected network
 
 21
 00:01:05,349 --> 00:01:09,580
@@ -321,4 +321,3 @@ network communications
 82
 00:04:56,509 --> 00:04:58,000
  Subtitles End: mo.dbxdb.com
-

@@ -4,7 +4,7 @@
 
 3
 00:00:03,850 --> 00:00:06,380
-NAT(Network Address Translation)
+NAT Network Address Translation
 
 4
 00:00:06,380 --> 00:00:11,180
@@ -461,4 +461,3 @@ even像是Linux的這個作業系統
 117
 00:06:08,079 --> 00:06:12,000
 所以Rule越多就越不容易設 這個複雜度會越高 Subtitles End: mo.dbxdb.com
-

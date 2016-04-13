@@ -116,7 +116,7 @@
 
 31
 00:01:32,410 --> 00:01:38,250
-包含說TCP、UDP、Domain name server(DNS)的服務
+包含說TCP、UDP、Domain name server的服務
 
 32
 00:01:38,250 --> 00:01:41,980
@@ -489,4 +489,3 @@ SYN、SYN-ACK
 124
 00:06:43,910 --> 00:06:45,000
  Subtitles End: mo.dbxdb.com
-
