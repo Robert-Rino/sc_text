@@ -304,11 +304,11 @@ client本身會送出這個等一下會介紹 叫做connection request
 
 78
 00:06:27,810 --> 00:06:36,310
-那acknowledgement X+1就代表說我等一下就是等你的data他的sequence number必須是X+1開始的意思
+那acknowledgement X加1就代表說我等一下就是等你的data他的sequence number必須是X加1開始的意思
 
 79
 00:06:36,310 --> 00:06:43,980
-所以X+1就是告訴對方說 我等一下就是在等那個data從Ｘ＋1開始
+所以X加1就是告訴對方說 我等一下就是在等那個data從Ｘ＋1開始
 
 80
 00:06:43,980 --> 00:06:53,579

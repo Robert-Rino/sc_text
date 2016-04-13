@@ -5,20 +5,20 @@
 (22,27) : {'光速'}
 (27,30) : {'delay'}
 (30,33) : set()
-(33,37) : {'delay', 'bandwidth'}
+(33,37) : {'bandwidth', 'delay'}
 (37,39) : {'頻寬'}
 (39,43) : set()
 (43,47) : set()
 (47,52) : set()
-(52,55) : {'delay', 'bandwidth'}
+(52,55) : {'bandwidth', 'delay'}
 (55,60) : {'pipe', 'latency', 'delay'}
 (60,64) : set()
 (64,66) : {'pipe'}
 (66,69) : set()
 (69,74) : {'pipe', 'latency'}
-(74,78) : {'pipe', 'bandwidth'}
+(74,78) : {'bandwidth', 'pipe'}
 (78,81) : set()
-(81,84) : {'delay', 'bandwidth'}
+(81,84) : {'bandwidth', 'delay'}
 (84,90) : {'pipe'}
 (90,92) : {'pipe'}
 (92,97) : set()
@@ -35,17 +35,17 @@
 (133,136) : set()
 (136,141) : {'bandwidth'}
 (141,144) : {'pipe'}
-(144,147) : {'delay', 'bandwidth'}
+(144,147) : {'bandwidth', 'delay'}
 (147,153) : {'pipe'}
-(153,155) : {'delay', 'bandwidth'}
+(153,155) : {'bandwidth', 'delay'}
 (155,157) : set()
-(157,160) : {'latency', 'bandwidth'}
-(160,166) : {'latency', 'bandwidth'}
+(157,160) : {'bandwidth', 'latency'}
+(160,166) : {'bandwidth', 'latency'}
 (166,170) : {'bandwidth', 'transmission'}
 (170,173) : {'bandwidth', 'transmission'}
 (173,175) : {'latency', 'propagation'}
 (175,178) : set()
-(178,181) : {'delay', '頻寬'}
+(178,181) : {'頻寬', 'delay'}
 (181,186) : {'pipe'}
 (186,189) : {'latency', '頻寬'}
 (189,191) : set()
@@ -81,8 +81,8 @@
 (283,285) : set()
 (285,288) : {'封包'}
 (288,293) : set()
-(293,299) : {'jitter', 'latency'}
-(299,302) : {'latency', 'variance'}
+(293,299) : {'latency', 'jitter'}
+(299,302) : {'last-in-first-out', 'latency', 'spanning tree', 'variance', 'hidden terminal'}
 (302,305) : set()
 (305,307) : set()
 (307,312) : set()
@@ -94,7 +94,7 @@
 (326,329) : {'variance'}
 (329,331) : {'jitter'}
 (331,335) : {'jitter'}
-(335,340) : {'delay', '封包'}
+(335,340) : {'封包', 'delay'}
 (340,341) : {'jitter'}
 (341,345) : {'jitter'}
 (345,350) : set()
@@ -125,12 +125,12 @@
 (425,427) : {'buffer'}
 (427,430) : set()
 (430,432) : {'jitter'}
-(432,436) : {'delay', 'bandwidth'}
+(432,436) : {'bandwidth', 'delay'}
 (436,441) : {'pipe'}
 (441,444) : set()
 (444,447) : {'pipe'}
 (447,450) : set()
-(450,455) : {'delay', 'bandwidth'}
+(450,455) : {'bandwidth', 'delay'}
 (455,460) : set()
 (460,462) : set()
 (462,463) : set()
@@ -141,7 +141,7 @@
 (477,480) : {'latency'}
 (480,485) : set()
 (485,487) : set()
-(487,490) : {'RTT'}
+(487,490) : {'RTT', 'round-trip'}
 (490,493) : set()
 (493,496) : {'ACK'}
 (496,498) : set()
@@ -174,7 +174,7 @@
 (590,593) : {'throughput'}
 (593,596) : {'throughput'}
 (596,599) : {'RTT'}
-(599,602) : {'RTT'}
+(599,602) : {'RTT', 'round-trip'}
 (602,607) : set()
 (607,610) : {'RTT'}
 (610,614) : set()
@@ -214,8 +214,8 @@
 (717,723) : set()
 (723,726) : set()
 (726,728) : set()
-(728,731) : {'delay', 'bandwidth'}
-(731,733) : {'delay', 'bandwidth'}
+(728,731) : {'bandwidth', 'delay'}
+(731,733) : {'bandwidth', 'delay'}
 (733,736) : set()
 (736,740) : {'ACK'}
 (740,742) : {'throughput'}
@@ -227,7 +227,7 @@
 (755,757) : {'throughput'}
 (757,763) : set()
 (763,765) : set()
-(765,768) : {'delay', 'bandwidth'}
+(765,768) : {'bandwidth', 'delay'}
 (768,770) : {'throughput'}
 (770,773) : set()
 (773,776) : set()
@@ -236,9 +236,9 @@
 (782,787) : {'OSI'}
 (787,791) : {'七層'}
 (791,794) : set()
-(794,797) : {'network', 'transport'}
-(797,799) : {'session', 'presentation'}
-(799,800) : {'七層', 'application'}
+(794,797) : {'transport', 'network'}
+(797,799) : {'presentation', 'session'}
+(799,800) : {'application', '七層'}
 (800,806) : set()
 (806,808) : set()
 (808,811) : set()
@@ -257,14 +257,14 @@
 (850,852) : set()
 (852,856) : {'routing', 'router'}
 (856,859) : {'router'}
-(859,862) : {'routing', 'protocol'}
-(862,864) : {'routing', 'protocol'}
+(859,862) : {'protocol', 'routing'}
+(862,864) : {'protocol', 'routing'}
 (864,868) : {'routing'}
 (868,870) : {'router'}
 (870,873) : {'routing'}
 (873,877) : {'transport'}
 (877,882) : set()
-(882,885) : {'UDP', 'TCP'}
+(882,885) : {'TCP', 'UDP'}
 (885,888) : set()
 (888,892) : set()
 (892,895) : set()
@@ -273,8 +273,8 @@
 (902,904) : set()
 (904,907) : {'delay'}
 (907,910) : set()
-(910,914) : {'delay', 'bandwidth'}
-(914,917) : {'delay', 'bandwidth'}
+(910,914) : {'bandwidth', 'delay'}
+(914,917) : {'bandwidth', 'delay'}
 (917,922) : {'通訊'}
 (922,929) : {'pipe'}
 (929,935) : set()

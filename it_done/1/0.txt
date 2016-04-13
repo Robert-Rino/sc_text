@@ -2,9 +2,9 @@
 (13,17) : {'foundation'}
 (17,20) : set()
 (20,24) : {'application'}
-(24,27) : {'network', 'connectivity'}
+(24,27) : {'connectivity', 'network'}
 (27,29) : set()
-(29,33) : {'network', 'architecture'}
+(29,33) : {'architecture', 'network'}
 (33,37) : set()
 (37,39) : set()
 (39,42) : set()
@@ -16,7 +16,7 @@
 (53,56) : set()
 (56,58) : set()
 (58,59) : set()
-(59,64) : {'network', 'performance'}
+(59,64) : {'performance', 'network'}
 (64,65) : set()
 (65,69) : set()
 (69,70) : {'bandwidth'}
@@ -151,9 +151,9 @@
 (462,466) : set()
 (466,468) : set()
 (468,471) : {'應用層'}
-(471,475) : {'application', 'protocol'}
+(471,475) : {'protocol', 'application'}
 (475,478) : {'url'}
-(478,483) : {'url', 'domain'}
+(478,483) : {'domain', 'url'}
 (483,485) : set()
 (485,490) : set()
 (490,495) : {'url'}
@@ -163,18 +163,18 @@
 (503,506) : set()
 (506,509) : set()
 (509,512) : {'url'}
-(512,514) : {'HTTP', 'protocol'}
-(515,518) : {'hyper', 'transfer', 'protocol'}
+(512,514) : {'protocol', 'HTTP'}
+(515,518) : {'transfer', 'protocol', 'hyper'}
 (518,522) : set()
 (522,525) : {'protocol'}
 (525,528) : {'TCP', 'HTTP'}
-(529,533) : {'TCP', 'transport', 'protocol'}
+(529,533) : {'transport', 'protocol', 'TCP'}
 (533,535) : {'protocol', 'transmission', 'control'}
-(535,539) : {'TCP', '第四層', 'protocol'}
+(535,539) : {'protocol', 'TCP', '第四層'}
 (539,542) : set()
 (542,546) : {'通訊', 'TCP'}
 (546,548) : set()
-(548,552) : {'reliable', 'service', 'TCP'}
+(548,552) : {'reliable', 'TCP', 'service'}
 (552,556) : {'TCP', '可靠'}
 (556,559) : set()
 (559,562) : set()
@@ -200,31 +200,31 @@
 (611,615) : set()
 (615,618) : {'流量'}
 (618,622) : set()
-(622,627) : {'封包'}
+(622,627) : {'封包', 'round-trip'}
 (627,628) : set()
 (628,630) : {'domain'}
-(631,634) : {'domain'}
-(634,637) : set()
-(637,639) : {'service', 'domain'}
+(631,634) : {'domain', 'round-trip'}
+(634,637) : {'round-trip'}
+(637,639) : {'domain', 'service'}
 (639,641) : set()
 (641,643) : {'domain'}
 (643,645) : {'domain'}
-(645,650) : set()
-(650,654) : set()
+(645,650) : {'round-trip'}
+(650,654) : {'round-trip'}
 (654,656) : {'TCP'}
-(656,659) : set()
+(656,659) : {'round-trip'}
 (659,663) : set()
-(663,666) : set()
+(663,666) : {'round-trip'}
 (666,668) : set()
 (668,670) : set()
 (670,672) : {'domain'}
-(672,678) : {'url', 'domain'}
-(678,679) : set()
+(672,678) : {'domain', 'url', 'round-trip'}
+(678,679) : {'round-trip'}
 (679,682) : set()
 (682,684) : set()
 (684,687) : {'TCP'}
 (687,689) : set()
-(689,693) : {'ack', 'syn'}
+(689,693) : {'syn', 'back-off'}
 (693,697) : set()
 (697,698) : set()
 (698,702) : set()
@@ -248,7 +248,7 @@
 (749,752) : set()
 (752,757) : {'url'}
 (757,760) : {'url'}
-(760,763) : set()
+(760,763) : {'round-trip'}
 (763,765) : set()
 (765,769) : set()
 (769,774) : set()

@@ -180,7 +180,7 @@ overflow 就是滿溢 就是滿掉
 
 47
 00:02:32,680 --> 00:02:41,250
-再把他做control+c control+v貼到這個url上面
+再把他做control加c control加v貼到這個url上面
 
 48
 00:02:41,250 --> 00:02:44,650
@@ -481,4 +481,3 @@ Nmap他其實是叫做Network Mapper
 122
 00:06:52,980 --> 00:06:54,000
  Subtitles End: mo.dbxdb.com
-

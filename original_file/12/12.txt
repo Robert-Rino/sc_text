@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:00,000
-Youtube subtitles download by mo.dbxdb.com 
+Youtube subtitles download by mo.dbxdb.com
 
 2
 00:00:00,000 --> 00:00:04,780
@@ -132,7 +132,7 @@ source IP是這個IPv6的位置的 我們就接受
 
 34
 00:02:10,349 --> 00:02:13,349
-它會有兩個table (iptable、ip6table)
+它會有兩個table iptable、ip6table
 
 35
 00:02:13,349 --> 00:02:17,110
@@ -153,4 +153,3 @@ source IP是這個IPv6的位置的 我們就接受
 39
 00:02:26,509 --> 00:02:28,000
  Subtitles End: mo.dbxdb.com
-

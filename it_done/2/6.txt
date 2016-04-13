@@ -1,21 +1,21 @@
 (8,10) : set()
-(10,13) : {'CD', 'CSMA'}
-(13,16) : {'CD', 'CSMA'}
-(16,20) : {'carrier', 'sense', 'collision', 'detection'}
+(10,13) : {'CSMA/CD'}
+(13,16) : {'CSMA/CD'}
+(16,20) : {'detection', 'collision', 'sense', 'carrier'}
 (20,24) : set()
 (24,29) : {'網卡'}
 (29,33) : set()
 (33,38) : {'網段'}
 (38,40) : set()
 (40,44) : {'封包'}
-(44,46) : {'carrier', 'sense'}
+(44,46) : {'sense', 'carrier'}
 (46,51) : set()
 (51,55) : set()
 (55,59) : set()
 (59,60) : set()
 (60,65) : {'封包'}
-(65,66) : {'carrier', 'sense'}
-(66,71) : {'collision', 'detection', '封包'}
+(65,66) : {'sense', 'carrier'}
+(66,71) : {'detection', 'collision', '封包'}
 (71,76) : {'封包'}
 (76,79) : set()
 (79,82) : set()
@@ -30,8 +30,8 @@
 (104,107) : set()
 (107,111) : {'封包'}
 (111,116) : set()
-(116,120) : {'collision', '封包'}
-(120,123) : {'collision', 'detection'}
+(116,120) : {'封包', 'collision'}
+(120,123) : {'detection', 'collision'}
 (123,126) : {'封包'}
 (126,130) : set()
 (130,136) : {'網卡'}
@@ -55,8 +55,8 @@
 (189,192) : set()
 (192,196) : {'封包'}
 (196,200) : {'封包'}
-(200,203) : set()
-(203,208) : set()
+(200,203) : {'spanning tree', 'exposed node', 'round-trip'}
+(203,208) : {'spanning tree', 'exposed node', 'round-trip'}
 (208,210) : {'sense'}
 (210,215) : {'封包'}
 (215,216) : set()
@@ -79,26 +79,26 @@
 (265,268) : set()
 (268,270) : {'collision'}
 (270,275) : {'封包'}
-(275,280) : set()
-(280,284) : set()
-(284,288) : set()
-(288,293) : set()
+(275,280) : {'spanning tree', 'exposed node', 'round-trip'}
+(280,284) : {'spanning tree', 'exposed node', 'round-trip'}
+(284,288) : {'spanning tree', 'exposed node', 'round-trip'}
+(288,293) : {'spanning tree', 'exposed node', 'round-trip'}
 (293,298) : {'封包'}
 (298,302) : {'封包'}
 (302,304) : set()
 (304,306) : {'封包'}
 (306,309) : set()
-(309,312) : set()
+(309,312) : {'spanning tree', 'exposed node', 'round-trip'}
 (312,316) : set()
 (316,319) : {'collision'}
-(319,322) : set()
+(319,322) : {'spanning tree', 'exposed node', 'round-trip'}
 (322,325) : set()
 (325,329) : {'collision'}
 (329,332) : set()
-(332,337) : {'CD', 'CSMA'}
+(332,337) : {'CSMA/CD'}
 (337,342) : {'control'}
 (342,345) : set()
-(345,350) : {'CD', 'CSMA'}
+(345,350) : {'CSMA/CD'}
 (350,353) : set()
 (353,356) : set()
 (356,358) : set()
@@ -130,7 +130,7 @@
 (441,444) : set()
 (444,445) : {'collision'}
 (445,448) : set()
-(448,452) : {'collision', 'CD', 'detection', 'CSMA'}
+(448,452) : {'detection', 'collision', 'CSMA/CD'}
 (452,455) : set()
 (455,459) : set()
 (459,463) : set()
@@ -153,12 +153,12 @@
 (511,514) : {'封包'}
 (514,517) : {'封包', '衝撞'}
 (517,518) : set()
-(518,522) : {'網卡', '封包'}
+(518,522) : {'封包', '網卡'}
 (522,526) : set()
 (526,529) : {'封包'}
 (529,532) : {'衝撞'}
 (532,534) : set()
-(534,536) : {'collision', '封包'}
+(534,536) : {'封包', 'collision'}
 (536,538) : set()
 (538,540) : set()
 (540,543) : {'封包', '衝撞'}
@@ -252,12 +252,12 @@
 (836,839) : set()
 (839,842) : set()
 (842,847) : set()
-(847,850) : set()
+(847,850) : {'round-trip'}
 (850,852) : {'collision', 'window'}
-(852,858) : {'collision', 'window', '網段'}
+(852,858) : {'網段', 'collision', 'window'}
 (858,862) : set()
 (862,866) : set()
-(866,871) : {'collision', '封包'}
+(866,871) : {'封包', 'collision'}
 (871,876) : set()
 (876,878) : set()
 (878,881) : {'collision'}
@@ -277,18 +277,18 @@
 (937,942) : set()
 (942,948) : set()
 (948,952) : set()
-(952,956) : set()
-(956,960) : set()
-(960,967) : set()
+(952,956) : {'last-in-first-out', 'spanning tree', 'exposed node'}
+(956,960) : {'last-in-first-out', 'spanning tree', 'exposed node'}
+(960,967) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (967,972) : set()
 (972,975) : set()
-(975,980) : set()
+(975,980) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (980,984) : set()
-(984,989) : set()
-(989,994) : set()
+(984,989) : {'last-in-first-out', 'spanning tree', 'exposed node'}
+(989,994) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (994,997) : set()
 (997,1001) : set()
-(1001,1011) : set()
+(1001,1011) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (1011,1015) : set()
 (1015,1019) : set()
 (1019,1022) : set()
@@ -297,14 +297,14 @@
 (1032,1033) : {'封包'}
 (1033,1036) : {'collision'}
 (1036,1038) : {'collision'}
-(1038,1042) : {'collision', '封包'}
-(1042,1045) : {'collision', '封包'}
+(1038,1042) : {'封包', 'collision'}
+(1042,1045) : {'封包', 'collision'}
 (1045,1046) : {'collision'}
-(1046,1049) : {'collision', '封包'}
+(1046,1049) : {'封包', 'collision'}
 (1049,1052) : {'封包'}
 (1052,1055) : {'封包'}
-(1055,1060) : set()
-(1060,1067) : set()
+(1055,1060) : {'last-in-first-out', 'spanning tree', 'exposed node'}
+(1060,1067) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (1067,1071) : set()
 (1071,1074) : set()
 (1074,1078) : set()
@@ -315,10 +315,10 @@
 (1092,1094) : {'封包'}
 (1094,1097) : {'collision'}
 (1097,1102) : set()
-(1102,1107) : set()
+(1102,1107) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (1107,1113) : set()
 (1113,1119) : {'封包'}
-(1119,1125) : set()
+(1119,1125) : {'last-in-first-out', 'spanning tree', 'exposed node'}
 (1125,1127) : set()
 (1127,1129) : {'封包'}
 (1129,1131) : set()

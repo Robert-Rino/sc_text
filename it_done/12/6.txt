@@ -21,15 +21,15 @@
 (65,68) : set()
 (68,71) : set()
 (71,72) : set()
-(72,77) : {'application', '封包'}
+(72,77) : {'封包', 'application'}
 (77,81) : set()
-(81,84) : {'network', '封包'}
+(81,84) : {'封包', 'network'}
 (84,87) : {'IP'}
 (87,91) : {'TCP'}
 (91,93) : {'application'}
 (93,95) : {'gateway', 'application'}
 (95,100) : {'application'}
-(100,106) : {'application', '封包'}
+(100,106) : {'封包', 'application'}
 (106,109) : set()
 (109,113) : set()
 (113,116) : {'application'}
@@ -62,7 +62,7 @@
 (204,209) : set()
 (209,214) : set()
 (214,217) : set()
-(217,221) : set()
+(217,221) : {'back-off'}
 (221,225) : set()
 (225,230) : set()
 (230,234) : set()
@@ -90,15 +90,15 @@
 (321,324) : {'application'}
 (327,327) : {'application'}
 (327,332) : {'application'}
-(332,336) : {'application', 'protocol'}
+(332,336) : {'protocol', 'application'}
 (336,338) : set()
 (338,341) : set()
 (341,345) : set()
 (345,350) : {'protocol'}
 (350,354) : set()
-(354,358) : {'application'}
+(354,358) : {'CSMA/CD', 'application'}
 (358,362) : {'application'}
-(362,365) : {'application', 'protocol'}
+(362,365) : {'protocol', 'application'}
 (365,368) : {'protocol'}
 (368,370) : set()
 (370,374) : set()
@@ -127,6 +127,6 @@
 (446,449) : set()
 (449,453) : set()
 (453,457) : {'application'}
-(457,461) : {'application', 'protocol'}
+(457,461) : {'protocol', 'application'}
 (461,463) : set()
 (463,464) : set()

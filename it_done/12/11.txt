@@ -4,7 +4,7 @@
 (9,11) : set()
 (11,16) : set()
 (16,19) : set()
-(19,25) : {'網卡', '封包'}
+(19,25) : {'封包', '網卡'}
 (25,29) : {'網卡'}
 (29,32) : {'網卡'}
 (32,33) : set()
@@ -15,25 +15,25 @@
 (58,62) : {'封包'}
 (62,64) : set()
 (64,67) : set()
-(67,72) : set()
+(67,72) : {'CSMA/CD'}
 (72,78) : set()
 (78,81) : set()
 (81,82) : set()
 (82,85) : set()
 (85,88) : set()
 (88,91) : set()
-(91,97) : set()
+(91,97) : {'CSMA/CD'}
 (97,100) : set()
 (100,101) : set()
 (101,104) : set()
 (104,105) : set()
 (105,108) : set()
 (108,109) : set()
-(109,114) : set()
+(109,114) : {'hidden node', 'last-in-first-out', 'spanning tree', 'hidden terminal', 'round-trip'}
 (114,117) : {'網卡'}
 (117,121) : set()
-(121,127) : {'IP'}
-(127,130) : {'IP'}
+(121,127) : {'last-in-first-out', 'IP', 'spanning tree', 'exposed node'}
+(127,130) : {'last-in-first-out', 'IP', 'spanning tree', 'exposed node'}
 (130,136) : {'IP'}
 (136,138) : {'IP'}
 (138,141) : set()
@@ -53,7 +53,7 @@
 (186,188) : set()
 (188,190) : set()
 (190,196) : set()
-(196,201) : set()
+(196,201) : {'CSMA/CD'}
 (201,208) : {'封包'}
 (208,212) : set()
 (212,216) : set()
@@ -64,7 +64,7 @@
 (231,235) : {'網卡'}
 (235,239) : {'封包'}
 (239,244) : set()
-(244,249) : set()
+(244,249) : {'CSMA/CD'}
 (249,251) : set()
 (251,255) : set()
 (255,263) : set()
@@ -88,16 +88,16 @@
 (318,322) : set()
 (322,325) : set()
 (325,328) : set()
-(328,331) : set()
-(331,336) : set()
+(328,331) : {'CF-UP', 'CF-Down'}
+(331,336) : {'CF-UP', 'CF-Down'}
 (336,340) : set()
-(340,346) : set()
+(340,346) : {'CSMA/CD', 'CF-Down'}
 (346,350) : set()
 (350,353) : set()
 (353,356) : set()
 (356,360) : set()
 (360,363) : set()
-(363,366) : set()
+(363,366) : {'CSMA/CD', 'CF-Down'}
 (366,368) : set()
 (368,371) : set()
 (371,374) : set()
@@ -106,18 +106,18 @@
 (378,380) : set()
 (380,382) : set()
 (382,385) : set()
-(385,387) : set()
+(385,387) : {'CSMA/CD', 'CF-Down'}
 (387,390) : set()
 (390,394) : set()
 (394,395) : set()
 (395,398) : set()
 (398,401) : set()
 (401,404) : set()
-(404,409) : set()
+(404,409) : {'CSMA/CD'}
 (409,411) : set()
 (411,412) : set()
 (412,416) : set()
-(416,420) : set()
+(416,420) : {'CSMA/CD'}
 (420,423) : set()
 (423,426) : set()
 (426,430) : set()
@@ -128,23 +128,23 @@
 (443,446) : set()
 (446,450) : set()
 (450,454) : set()
-(454,456) : set()
+(454,456) : {'back-off'}
 (456,458) : set()
 (458,460) : set()
 (460,462) : set()
 (462,464) : set()
 (464,470) : set()
-(470,473) : set()
-(473,477) : {'protocol'}
+(470,473) : {'spanning tree', 'exposed node', 'round-trip'}
+(473,477) : {'protocol', 'exposed node', 'spanning tree', 'round-trip'}
 (477,481) : {'protocol'}
 (481,483) : set()
 (483,485) : set()
 (485,490) : set()
 (490,498) : set()
 (498,500) : set()
-(500,505) : {'IP'}
+(500,505) : {'last-in-first-out', 'IP', 'spanning tree', 'exposed node'}
 (505,514) : set()
-(514,523) : set()
+(514,523) : {'hidden node', 'Plug-and-Play', 'exposed node', 'hidden terminal', 'round-trip'}
 (523,526) : set()
 (526,529) : set()
 (529,538) : set()
@@ -160,20 +160,20 @@
 (570,572) : set()
 (572,576) : set()
 (576,579) : set()
-(579,581) : {'TCP', 'protocol'}
+(579,581) : {'protocol', 'TCP'}
 (581,584) : set()
 (584,586) : {'IP'}
-(586,593) : {'IP', '網段'}
+(586,593) : {'網段', 'IP'}
 (593,596) : set()
 (596,598) : set()
 (598,602) : set()
 (602,605) : set()
-(605,609) : {'protocol'}
+(605,609) : {'protocol', 'spanning tree', 'exposed node', 'round-trip'}
 (609,612) : {'TCP', 'UDP'}
-(612,617) : {'IP'}
+(612,617) : {'last-in-first-out', 'IP', 'spanning tree', 'exposed node'}
 (617,619) : set()
-(619,624) : {'IP'}
-(624,629) : set()
+(619,624) : {'Plug-and-Play', 'hidden node', 'IP', 'exposed node', 'hidden terminal', 'round-trip'}
+(624,629) : {'hidden node', 'last-in-first-out', 'spanning tree', 'hidden terminal', 'round-trip'}
 (629,630) : set()
 (630,634) : set()
 (634,636) : set()

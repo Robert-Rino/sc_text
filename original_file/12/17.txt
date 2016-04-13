@@ -208,7 +208,7 @@ Cacti就是所謂的仙人掌
 
 54
 00:02:52,080 --> 00:02:56,410
-我們說甚至這個非常便宜的AP(Access Point)
+我們說甚至這個非常便宜的AP Access Point
 
 55
 00:02:56,410 --> 00:03:00,180
@@ -889,4 +889,3 @@ default gateway還有一個network的mask
 224
 00:12:13,809 --> 00:12:15,000
  Subtitles End: mo.dbxdb.com
-

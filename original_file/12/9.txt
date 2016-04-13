@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:00,000
-Youtube subtitles download by mo.dbxdb.com 
+Youtube subtitles download by mo.dbxdb.com
 
 2
 00:00:00,000 --> 00:00:04,110
@@ -136,7 +136,7 @@ forward packet還是要所謂的block packet
 
 35
 00:01:44,550 --> 00:01:47,450
-是根據什麼呢? 我們說根據這個policy
+是根據什麼呢 我們說根據這個policy
 
 36
 00:01:47,450 --> 00:01:50,110
@@ -708,7 +708,7 @@ DMZ叫做所謂的Demilitarized Zone
 
 178
 00:10:39,549 --> 00:10:45,409
-Network access control (NAC)
+Network access control NAC
 
 179
 00:10:45,409 --> 00:10:48,080
@@ -825,4 +825,3 @@ NAC就是通常來保護企業內部的
 207
 00:12:13,009 --> 00:12:15,000
   Subtitles End: mo.dbxdb.com
-

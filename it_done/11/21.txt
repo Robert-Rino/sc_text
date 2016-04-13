@@ -36,7 +36,7 @@
 (112,116) : set()
 (116,121) : set()
 (121,126) : set()
-(126,130) : set()
+(126,130) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'back-off', 'hidden terminal'}
 (130,133) : set()
 (133,140) : set()
 (140,145) : set()
@@ -61,12 +61,12 @@
 (210,213) : set()
 (213,215) : set()
 (215,220) : set()
-(220,228) : set()
+(220,228) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'back-off', 'hidden terminal'}
 (228,233) : set()
-(233,237) : set()
+(233,237) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'back-off', 'hidden terminal'}
 (237,242) : set()
 (242,242) : set()
-(242,246) : set()
+(242,246) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'hidden terminal', 'back-off'}
 (246,248) : set()
 (248,252) : set()
 (252,256) : set()
@@ -77,7 +77,7 @@
 (272,273) : set()
 (273,278) : set()
 (278,281) : set()
-(281,286) : set()
+(281,286) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'hidden terminal', 'back-off'}
 (286,289) : set()
 (289,293) : set()
 (293,302) : set()
@@ -94,12 +94,12 @@
 (341,343) : set()
 (343,348) : set()
 (348,352) : set()
-(352,356) : set()
+(352,356) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
 (356,360) : set()
 (360,365) : set()
 (365,368) : set()
 (368,373) : set()
-(373,378) : set()
+(373,378) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
 (378,384) : {'第一層'}
 (384,387) : set()
 (387,392) : set()
@@ -117,7 +117,7 @@
 (435,438) : set()
 (438,442) : set()
 (442,444) : set()
-(444,448) : set()
+(444,448) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'back-off', 'hidden terminal'}
 (448,454) : set()
 (454,457) : set()
 (457,459) : set()
@@ -127,7 +127,7 @@
 (474,478) : set()
 (478,483) : set()
 (483,487) : set()
-(487,490) : set()
+(487,490) : {'CF-UP', 'CF-Down', 'CSMA/CD'}
 (490,493) : set()
 (493,496) : set()
 (496,499) : set()
@@ -154,7 +154,7 @@
 (548,551) : set()
 (551,553) : set()
 (553,556) : set()
-(556,559) : set()
+(556,559) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'back-off', 'hidden terminal'}
 (559,563) : set()
 (563,567) : set()
 (567,570) : set()

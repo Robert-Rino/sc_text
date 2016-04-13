@@ -1,12 +1,12 @@
 (9,13) : set()
-(13,17) : {'LAN', 'wireless'}
+(13,17) : {'wireless', 'LAN'}
 (17,20) : set()
 (20,23) : set()
 (23,27) : set()
 (27,30) : set()
-(30,32) : {'LAN', 'wireless'}
+(30,32) : {'wireless', 'LAN'}
 (32,35) : set()
-(35,39) : {'LAN', 'wireless'}
+(35,39) : {'wireless', 'LAN'}
 (39,42) : set()
 (42,45) : set()
 (45,46) : set()
@@ -23,8 +23,8 @@
 (80,84) : set()
 (84,87) : set()
 (87,90) : set()
-(90,95) : {'frame', 'format'}
-(95,99) : {'MAC', 'architecture', '封包'}
+(90,95) : {'format', 'frame'}
+(95,99) : {'architecture', '封包', 'MAC'}
 (99,104) : set()
 (104,108) : set()
 (108,112) : set()
@@ -39,21 +39,21 @@
 (141,144) : {'collision'}
 (144,148) : set()
 (148,152) : set()
-(152,156) : {'collision', '封包'}
+(152,156) : {'封包', 'collision'}
 (156,158) : set()
 (158,161) : set()
-(161,166) : {'MAC', 'architecture'}
+(161,166) : {'architecture', 'MAC'}
 (166,168) : set()
 (168,169) : set()
 (169,172) : {'DCF'}
 (172,179) : set()
 (179,181) : {'protocol'}
-(181,185) : {'CD', 'CSMA'}
-(185,190) : {'collision', 'detection'}
-(190,192) : {'collision', 'detection'}
+(181,185) : {'CSMA/CD'}
+(185,190) : {'detection', 'collision'}
+(190,192) : {'detection', 'collision'}
 (192,195) : {'collision'}
-(195,200) : {'CSMA', 'CA'}
-(200,202) : {'collision', 'avoidance'}
+(195,200) : {'CA', 'CSMA/CD'}
+(200,202) : {'avoidance', 'collision'}
 (202,204) : {'collision'}
 (204,207) : set()
 (207,211) : {'PCF'}
@@ -79,13 +79,13 @@
 (277,280) : set()
 (280,284) : {'封包'}
 (284,288) : set()
-(288,289) : set()
+(288,289) : {'hidden node', 'exposed node'}
 (289,292) : set()
 (292,294) : set()
 (294,299) : set()
 (299,302) : set()
 (302,305) : set()
-(305,307) : set()
+(305,307) : {'hidden node', 'exposed node'}
 (307,310) : set()
 (310,312) : set()
 (312,314) : {'頻寬'}
@@ -136,7 +136,7 @@
 (481,483) : set()
 (483,485) : set()
 (485,489) : set()
-(489,492) : {'LAN', 'wireless'}
+(489,492) : {'wireless', 'LAN'}
 (492,498) : set()
 (498,501) : set()
 (501,506) : set()

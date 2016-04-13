@@ -3,13 +3,13 @@
 (14,16) : set()
 (16,21) : set()
 (21,23) : {'protocol'}
-(23,27) : {'collision', 'avoidance', 'CSMA', 'CA'}
+(23,27) : {'avoidance', 'CA', 'CSMA/CD', 'collision'}
 (27,30) : set()
 (30,33) : set()
 (33,38) : set()
 (38,45) : set()
-(45,51) : set()
-(51,55) : set()
+(45,51) : {'last-in-first-out', 'Plug-and-Play', 'spanning tree', 'back-off', 'hidden terminal'}
+(51,55) : {'Plug-and-Play', 'spanning tree'}
 (55,58) : set()
 (58,64) : set()
 (64,68) : {'MIMO'}
@@ -19,31 +19,31 @@
 (79,80) : set()
 (80,85) : set()
 (85,89) : set()
-(89,94) : {'LAN', 'wireless'}
+(89,94) : {'wireless', 'LAN'}
 (94,97) : set()
-(97,100) : {'LAN', 'wireless'}
+(97,100) : {'wireless', 'LAN'}
 (100,105) : set()
 (105,108) : {'區域網路'}
 (108,114) : set()
 (114,117) : set()
-(117,119) : {'hidden', 'node'}
-(119,121) : {'hidden', 'node'}
+(117,119) : {'hidden node', 'exposed node', 'hidden terminal'}
+(119,121) : {'hidden node', 'exposed node', 'hidden terminal'}
 (121,128) : set()
-(128,131) : {'node'}
+(128,131) : {'hidden node', 'exposed node'}
 (131,134) : set()
 (134,137) : set()
 (137,142) : set()
 (142,147) : {'collision'}
-(147,150) : {'hidden', 'node'}
+(147,150) : {'hidden node', 'exposed node', 'hidden terminal'}
 (150,154) : set()
 (154,158) : set()
 (158,160) : set()
 (160,163) : set()
 (163,165) : {'collision'}
 (165,167) : set()
-(167,172) : {'collision', '封包'}
+(167,172) : {'封包', 'collision'}
 (172,174) : set()
-(174,177) : {'node', 'exposed'}
+(174,177) : {'hidden node', 'exposed node'}
 (177,179) : set()
 (179,182) : set()
 (182,184) : set()
@@ -59,7 +59,7 @@
 (215,219) : set()
 (219,223) : set()
 (223,225) : set()
-(225,229) : {'collision', 'detection'}
+(225,229) : {'detection', 'collision'}
 (229,233) : {'封包'}
 (233,235) : {'衝撞'}
 (235,238) : {'collision'}
@@ -69,7 +69,7 @@
 (250,253) : {'封包'}
 (253,257) : set()
 (257,261) : set()
-(261,264) : {'LAN', 'wireless'}
+(261,264) : {'wireless', 'LAN'}
 (264,268) : {'collision'}
 (268,271) : set()
 (271,276) : {'collision'}
@@ -80,7 +80,7 @@
 (288,291) : {'collision'}
 (291,294) : {'封包'}
 (294,298) : set()
-(298,301) : {'collision', 'detection'}
+(298,301) : {'detection', 'collision'}
 (301,303) : set()
 (303,306) : {'封包'}
 (306,309) : {'衝撞'}
@@ -89,7 +89,7 @@
 (316,319) : {'衝撞'}
 (319,320) : {'ACK'}
 (320,323) : {'封包'}
-(323,325) : {'hidden', 'terminal'}
+(323,325) : {'hidden node', 'hidden terminal'}
 (325,327) : set()
 (327,329) : {'衝撞'}
 (329,333) : {'封包'}
@@ -133,21 +133,21 @@
 (466,470) : set()
 (470,473) : set()
 (473,477) : set()
-(477,482) : {'CSMA', 'CA', 'protocol'}
-(482,486) : {'collision', 'avoidance'}
+(477,482) : {'protocol', 'CA', 'CSMA/CD'}
+(482,486) : {'avoidance', 'collision'}
 (486,490) : {'collision'}
 (490,493) : set()
 (493,496) : {'collision'}
 (496,499) : set()
-(499,502) : {'collision', 'avoidance'}
+(499,502) : {'avoidance', 'collision'}
 (502,507) : {'衝撞'}
 (507,511) : {'衝撞'}
-(511,513) : {'hidden', 'terminal'}
+(511,513) : {'hidden node', 'hidden terminal'}
 (513,517) : {'collision'}
 (517,520) : set()
-(520,524) : {'CSMA'}
-(524,527) : {'carrier', 'sense'}
-(527,530) : {'carrier', 'sense'}
+(520,524) : {'CSMA/CD'}
+(524,527) : {'sense', 'carrier'}
+(527,530) : {'sense', 'carrier'}
 (530,535) : {'carrier'}
 (535,538) : set()
 (538,541) : set()
@@ -165,7 +165,7 @@
 (580,586) : {'DIFS'}
 (586,589) : set()
 (589,591) : {'DIFS'}
-(591,595) : set()
+(591,595) : {'back-off'}
 (595,599) : set()
 (599,602) : set()
 (602,605) : set()
@@ -173,7 +173,7 @@
 (609,611) : {'collision'}
 (611,615) : set()
 (615,618) : set()
-(618,622) : set()
+(618,622) : {'back-off'}
 (622,625) : set()
 (625,629) : set()
 (629,631) : set()
@@ -186,9 +186,9 @@
 (652,656) : set()
 (656,659) : {'封包'}
 (659,665) : set()
-(665,669) : set()
+(665,669) : {'back-off'}
 (669,672) : set()
-(672,674) : set()
+(672,674) : {'back-off'}
 (674,681) : set()
 (681,683) : {'delay'}
 (683,686) : set()
@@ -205,7 +205,7 @@
 (724,726) : set()
 (726,729) : set()
 (729,732) : {'request'}
-(732,736) : {'ACK', 'polling'}
+(732,736) : {'polling', 'ACK'}
 (736,740) : {'封包', 'polling'}
 (740,743) : set()
 (743,746) : {'IFS'}
@@ -216,16 +216,16 @@
 (763,769) : {'流量'}
 (769,773) : set()
 (773,778) : set()
-(778,784) : {'PIFS', '優先權'}
+(778,784) : {'優先權', 'PIFS'}
 (784,787) : {'DIFS'}
 (787,790) : set()
 (790,794) : set()
 (794,798) : set()
-(798,801) : {'CSMA', 'CA'}
+(798,801) : {'CA', 'CSMA/CD'}
 (801,803) : set()
 (803,806) : {'DIFS'}
 (806,809) : {'DIFS'}
-(809,812) : set()
+(809,812) : {'back-off'}
 (812,815) : set()
 (815,821) : {'DIFS'}
 (821,828) : set()
@@ -254,5 +254,5 @@
 (901,907) : set()
 (907,911) : set()
 (911,915) : set()
-(915,920) : {'CSMA', 'CA', 'protocol'}
+(915,920) : {'protocol', 'CA', 'CSMA/CD'}
 (920,922) : set()

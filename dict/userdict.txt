@@ -176,7 +176,6 @@ jitter
 variance
 response
 RTT
-round-trip
 ACK
 IEEE802.3
 拓墣
@@ -218,10 +217,8 @@ SCM
 CRC32
 window
 propagation
-back-off
 jam
 enforcement
-last-in-first-out
 throughput
 wireless
 mobility
@@ -269,8 +266,6 @@ IFS
 DIF
 superframe
 PIFS
-CF-Down
-CF-UP
 subtype
 collision
 avoidance
@@ -312,7 +307,6 @@ firewall
 router
 VID
 compatibility
-Plug-and-Play
 隨插即用
 Plug
 BLAN
@@ -345,3 +339,14 @@ eliminate
 routing
 TPID
 TCI
+Plug-and-Play
+CF-Down
+CF-UP
+back-off
+last-in-first-out
+hidden node
+hidden terminal
+exposed node
+round-trip
+CSMA/CD
+spanning tree
