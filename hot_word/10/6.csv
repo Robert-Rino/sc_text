@@ -1,0 +1,5 @@
+UDP,Teredo,轉成,v6,創造,包成
+IP,Teredo,public
+Router,Teredo,位址,它會
+Teredo
+Teredo,穿過,NAT

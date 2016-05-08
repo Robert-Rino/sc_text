@@ -1,0 +1,5 @@
+IP,protocol,包含,NAT,Address
+host,v4,dual
+router,NAT,同一
+PT,NAT
+包含,PT,NAT,Address

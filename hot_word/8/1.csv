@@ -1,0 +1,5 @@
+byte,TCP
+可靠,服務
+application,byte,TCP,上層
+application,不建
+上來,下去

@@ -1,0 +1,5 @@
+mapping,c0a80201
+出口,v4,位址,6to4
+出口,嵌入,v4,6to4
+Tunnel,6to4
+Domain,domain,講要,isolated,6to4

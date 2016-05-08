@@ -1,0 +1,5 @@
+stateful,NAT64,轉換,位址,IPv6
+NAT64,名叫
+Router,implement,NAT64,Juniper
+NAT64,名叫,位址,IPv6
+stateful,原理,轉換,甚麼

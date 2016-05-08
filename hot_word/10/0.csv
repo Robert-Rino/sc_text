@@ -1,0 +1,5 @@
+node,Destination,位址
+常常,Sites,Between
+Router,Automatic,第二種,IPv6
+Tunnel,ISATAP,Teredo,Broker,常用
+Destination,Source,要放,1.1

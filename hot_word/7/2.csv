@@ -1,0 +1,5 @@
+datagram,IP,header
+IP,protocol
+相對,片段,位移,offset
+屬性
+重要性,控制,屬性,precedence

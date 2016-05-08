@@ -1,0 +1,5 @@
+buffer,控制,receiver
+ack,RTT
+transmission,說好,rate,算法
+window,數量,congestion
+sender,receiver,TCP,window,advertisement,congestion
