@@ -1,6 +1,5 @@
-#-*- coding=utf-8 -*-
-import csv
-import sys
+# -*- coding=utf-8 -*-
+
 import os
 import re
 import jieba
@@ -40,17 +39,17 @@ def preprocessSubtitle():
                     end = datetime.datetime.strptime(time[1], "%H:%M:%S,%f")
                     video_start = start.minute*60 + start.second
                     video_end = end.minute*60 + end.second
-                    #keywords
+                    # keywords
                     words = jieba.cut(content_list[index + 1], cut_all=False)
                     tmp_word = []
                     for word in words:
-                        if word != ' ' and word != '-' and word != '.' and word != '/' and word != '^':
-                            if re.search(word, phrase_list):
-                                new_word = filter(lambda x: word in x,
-                                                  cut_phrase)
-                                tmp_word.extend(new_word)
-                            else:
-                                tmp_word.append(word)
+                        # if word != ' ' and word != '-' and word != '.' and word != '/' and word != '^':
+                        #     if re.search(word, phrase_list):
+                        #         new_word = filter(lambda x: word in x,
+                        #                           cut_phrase)
+                        #         tmp_word.extend(new_word)
+                        #     else:
+                        tmp_word.append(word)
                     key = set(tmp_word).intersection(set(key_list))
                     fw.write('(' + str(video_start) + ',' + str(video_end)
                                  + ')' + ' : ' + str(key) + '\n')

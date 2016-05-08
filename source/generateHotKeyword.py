@@ -1,15 +1,15 @@
-#-*- coding=utf-8 -*-
+# -*- coding=utf-8 -*-
 import csv
-import sys
 import os
-import datetime
 import requests
 import json
 import operator
+import re
 
 subtitle_dir = '../it_done'
 timeLine_dir = '../to_weeks_preprocessed'
 result_dir = '../hot_word'
+phrase_dir = '../dict/phrase.txt'
 
 # 輸入countList
 # 會回傳依照關鍵次出現次數降冪排列的對應(index,count)的list
@@ -82,8 +82,8 @@ def output_json_file():
     word_list = {}
     for data in detail_data:
         for each_word in data[4]:
-            #data[0] : video name ; data[1] : video url ; data[2] : start time;
-            #data[3] : count ; data[4] : key word
+            # data[0] :video name ; data[1] :video url ; data[2] :start times
+            # data[3] : count ; data[4] : key word
             count_group = {}
             if each_word in word_list:
                 word_list[each_word]["vid_list"].append([data[0],
@@ -91,7 +91,7 @@ def output_json_file():
                                                          data[2],
                                                          data[3]])
                 word_list[each_word]["total_count"] += data[3]
-                  # count_group["vid_list"].append([data[0],data[1]])
+                # count_group["vid_list"].append([data[0],data[1]])
             else:
                 time_group = []
                 time_group.append([data[0], data[1], data[2], data[3]])
@@ -110,14 +110,29 @@ def output_json_file():
         word_list[i[0]]["order"] = num/len(sorted_count)
         num += 1
     sort_word = sorted(word_list.items(), key=lambda x: x[1]["total_count"], reverse=True)
-    # print(sort_word)
+    # print(word_list)
     return word_list
+
+
+def modify_word(word_list):
+    with open(phrase_dir) as f:
+        phrase_list = f.read().splitlines()
+        # print(phrase_list)
+
+    for i in word_list.keys():
+        for j in phrase_list:
+            word = re.split('[- / ]', j)[0]
+            if word == i:
+                word_list[j] = word_list.pop(i)
+    return word_list
+
+
 
 # create weekdir in resultdir if not exists
 # week_dirs = os.listdir(keyword_dir)
 # for dirName in week_dirs:LAN 1000 eng
 
-#get sharecourse video name and url
+# get sharecourse video name and url
 sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash')
 course_json = sc_course.json()
 
@@ -170,6 +185,7 @@ for week in weekList:
             pass
 
     word_list = output_json_file()
+    word_list = modify_word(word_list)
 
     week_name = int(week)
     with open('../hot_word/' + str(week_name) + '.txt', 'w') as outfile:
