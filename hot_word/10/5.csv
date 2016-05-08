@@ -1,5 +1,0 @@
-Source,Destination,IP
-ISATAP,進去,v4,轉成,位址
-Source,v6,IP
-Tunnel,ISATAP,Intra,Site
-Tunnel,ISATAP,Automatic,Intra,Site

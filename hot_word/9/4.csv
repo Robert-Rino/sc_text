@@ -1,5 +1,0 @@
-BGP4,介於,來用
-Message,ICMP,Protocol,IPv6
-Reply,常用,Request,Ping,Echo
-IP,常用,ICMP,Ping,Reply
-BGP4,MP,IPv4

@@ -1,5 +1,0 @@
-domain,去查,位址,server
-header,checksum,translatable,address,轉換成
-stateless,SIIT,轉換,NAT
-Stateless,SIIT,Algorithm
-IP,ICMP,Algorithm,Stateless
