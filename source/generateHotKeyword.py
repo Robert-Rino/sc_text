@@ -48,7 +48,7 @@ def getTime_KeyWord(biggestCountIndex, lecture_data):
     timeSegment = 40
     # 最後的關鍵字列表
     time_keyword = {}
-    for rank in range(5):  # 取前5高的點擊，可設定抓更多的數量
+    for rank in range(4):  # 取前5高的點擊，可設定抓更多的數量
         index_count = biggestCountIndex[rank]
         startTime = index_count[0]*timeSegment
         endTime = (index_count[0]+1)*timeSegment
