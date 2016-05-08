@@ -1,5 +1,0 @@
-RTT,window,MSS,congestion
-ack,window,congestion
-RTT,好處,AIMD
-ack,幾分,window,increament,congestion
-window,提早,滑動,幫助

@@ -1,5 +1,0 @@
-host,deliver
-datagram,deliver,IP
-IP,77.65,140.114,router
-
-router,MAC

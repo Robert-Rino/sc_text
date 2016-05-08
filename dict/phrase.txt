@@ -1,11 +1,9 @@
-Plug-and-Play
-CF-Down
-CF-UP
-back-off
-last-in-first-out
 hidden node
-hidden terminal
 exposed node
 round-trip
 CSMA/CD
 spanning tree
+sliding window
+full duplex
+collision window
+congestion window

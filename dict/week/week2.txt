@@ -10,6 +10,7 @@ ATM網路
 NACK
 匯流排
 terminator
+CSMA/CD
 segment
 網段
 transmitter

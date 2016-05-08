@@ -1,5 +1,0 @@
-Header,認證,加密
-neighbor,MAC,Solicitation,位址,Neighbor
-Header,Payload,過的
-MAC,位址
-IP,MAC,Solicitation,neighbor,Neighbor

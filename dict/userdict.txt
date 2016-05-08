@@ -350,3 +350,46 @@ exposed node
 round-trip
 CSMA/CD
 spanning tree
+reliable transmission
+sliding window protocol
+滑動視窗
+sliding
+CRC
+acknowledgement
+Acknowledgement
+full duplex
+duplex
+ARQ
+frame duplication
+duplication
+duplicated frame
+LAR
+last acknowledgement received
+window size
+LFS
+SWS
+RWS
+Cumulative
+cumulative
+overrun
+sequence
+SWS
+IP
+subnetting
+classless addressing
+classless
+routing protocol
+routing
+distance vector protocol
+distance
+link state
+link
+異質網路
+heterogeneous
+best-effort
+OSPF
+RIP
+BGP
+fragmentation
+reassembly
+mask

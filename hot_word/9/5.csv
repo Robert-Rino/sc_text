@@ -1,5 +1,0 @@
-Router,要問,multicast,nodes
-Router,Advertisement,廣告
-Router,要問,multicast,Group,nodes
-Link,Local,位址,Ethernet
-multicast,Group

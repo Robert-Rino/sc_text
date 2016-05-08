@@ -1,5 +1,0 @@
-control,一張,sender,TCP
-RTT,window,除以,throughput
-state,再來一個,linear
-slow,state,線性,congestion
-control,sender,TCP,congestion
