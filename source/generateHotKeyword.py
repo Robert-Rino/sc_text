@@ -132,8 +132,9 @@ def modify_word(word_list):
 # week_dirs = os.listdir(keyword_dir)
 # for dirName in week_dirs:LAN 1000 eng
 
-# get sharecourse video name and url
-sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash')
+
+#get sharecourse video name and url
+sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash/848')
 course_json = sc_course.json()
 
 weekList = os.listdir(subtitle_dir)
