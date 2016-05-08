@@ -1,0 +1,19 @@
+IP
+subnetting
+classless addressing
+classless
+routing protocol
+routing
+distance vector protocol
+distance
+link state
+link
+異質網路
+heterogeneous
+best-effort
+OSPF
+RIP
+BGP
+fragmentation
+reassembly
+mask
