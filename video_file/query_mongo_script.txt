@@ -1,0 +1,1 @@
+mongoexport  --host 104.155.227.109 --port 27017 -d test -q '{courseId:848,action:"seek",videoEndTime:{$exists:true}}' -c video_records -f userId,videoStartTime,videoEndTime,videoTotalTime,videoId,time --csv -o ./video_record_12_7.csv
