@@ -21,6 +21,6 @@ run ```python filter_just_pass.py``` will generate
 
 * run ```python preprocess_weeks_data.py``` generate files to dir ```to_weeks_preprecessed```
 
-* run ```python subtitlePrepeocess.py``` generate files to dir ```it_done```
+* run ```python3 subtitlePrepeocess.py``` generate files to dir ```it_done```
 
-* run ```python generateHotKeyword.py``` generate files to dir ```hot_word```
+* run ```python3 generateHotKeyword.py``` generate files to dir ```hot_word```
