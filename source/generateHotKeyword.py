@@ -147,7 +147,6 @@ for week in weekList:
     result_file = result_dir+'/'+week+'.csv'
     detail_data = []  # detail data every week
     week_data = course_json[int(week)]  # the video name and url every week
-    # print(week_data)
     # out = []
     # out.append(['size','text'])
     for lectureVideo in lectureVideoList:
