@@ -6,7 +6,7 @@ import datetime
 
 jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
 jieba.set_dictionary('../dict/keyword.txt')
-keywords_dir = '../dict/userdict.txt'
+keywords_dir = '../dict/new_userdict.txt'
 phrase_dir = '../dict/phrase.txt'
 original = '../original_file'
 done = '../it_done'
