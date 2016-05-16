@@ -744,3 +744,4 @@ UDP port 53 就是Domain name server DNS的服務
 
 187
 00:11:06,150 --> 00:11:08,150
+hello #防止出錯code
