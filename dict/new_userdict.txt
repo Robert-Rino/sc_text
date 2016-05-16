@@ -137,7 +137,6 @@ protocol
 authentication
 認證
 server
-Stateful
 Filter
 State
 table
