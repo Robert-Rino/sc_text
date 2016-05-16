@@ -6,3 +6,15 @@ Server-side attacks
 Landing site
 Malware site
 SYM Flooding
+authorized traffic
+packet filter
+Application Proxy
+Stateful Inspection
+public IP
+private IP
+Application Level Firewall
+application layer
+SOCKS proxy
+proxy server
+Stateful Filter
+State table
