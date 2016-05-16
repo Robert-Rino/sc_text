@@ -137,14 +137,14 @@ def modify_word(word_list):
 sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash/848')
 course_json = sc_course.json()
 
-weekList = os.listdir(subtitle_dir)
+weekList = os.listdir(subtitle_dir) # files in it_done
 weekly = {}
 for week in weekList:
-    weekDir = subtitle_dir+'/'+week
+    weekDir = subtitle_dir + '/' + week
     # create_dir_ifNotExist(result_dir+'/'+week)
     # create week dir in ../hot_word/
     lectureVideoList = os.listdir(weekDir)
-    result_file = result_dir+'/'+week+'.csv'
+    result_file = result_dir + '/' + week + '.csv'
     detail_data = []  # detail data every week
     week_data = course_json[int(week)]  # the video name and url every week
     # out = []
@@ -193,5 +193,5 @@ for week in weekList:
 
     weekly[int(week)] = word_list
 
-with open('../hot_word/tagcloud.txt', 'w') as outfile:
-    json.dump(weekly, outfile, ensure_ascii=False)
+# with open('../hot_word/tagcloud.txt', 'w') as outfile:
+#     json.dump(weekly, outfile, ensure_ascii=False)
