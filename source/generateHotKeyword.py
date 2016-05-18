@@ -107,6 +107,7 @@ def output_json_file():
 
     num = 1
     for i in sorted_count:
+        word_list[i[0]]["modalno"] = num # for website modal id number
         word_list[i[0]]["order"] = num/len(sorted_count)
         num += 1
     sort_word = sorted(word_list.items(), key=lambda x: x[1]["total_count"], reverse=True)
