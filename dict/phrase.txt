@@ -16,3 +16,7 @@ application layer
 SOCKS proxy
 proxy server
 State table
+Screening Router
+Multi-Legged firewall
+Simple Firewall
+port number
