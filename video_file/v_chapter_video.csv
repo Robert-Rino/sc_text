@@ -1,4 +1,3 @@
-"cid","chid","chapter_order","content_order","vid","name","urls"
 "848","5198","1","1","25181","課程簡介","https://youtu.be/MsvouzLgu34"
 "848","5209","2","1","25310","網路安全課程大綱","https://youtu.be/NHAEbzvptfU"
 "848","5209","2","2","25311","網路安全簡介","https://www.youtube.com/watch?v=Awux7yIScDg；http://v.youku.com/v_show/id_XOTY1NDIxNTUy.html"
@@ -19,13 +18,14 @@
 "848","5211","3","15","25367","反射流量分析流程 ","https://www.youtube.com/watch?v=ecbVmWnZ1As；http://v.youku.com/v_show/id_XOTY1NDMzNDQ0.html"
 "848","5211","3","17","25368","反射流量特性","https://www.youtube.com/watch?v=evc0PghGaD4；http://v.youku.com/v_show/id_XOTY1NDMzNjIw.html"
 "848","5212","4","1","26966","Botnet 是甚麼 ?","https://www.youtube.com/watch?v=xF6zS2tSsGU；http://v.youku.com/v_show/id_XMTI1MzE0ODY0NA==.html"
-"848","5212","4","2","25369","Botnet 有哪些架構","https://www.youtube.com/watch?v=CR4zAzfqmOI；http://v.youku.com/v_show/id_XMTI1MzE0OTY1Mg==.html"
-"848","5212","4","4","25370","Botnet 能夠用來做什麼","https://www.youtube.com/watch?v=X61U2DO_1eE；http://v.youku.com/v_show/id_XMTI1MzE2ODg3Ng==.html"
-"848","5212","4","6","25371","Botnet 如何擴張 I ","https://www.youtube.com/watch?v=Del9BMxV8l4；http://v.youku.com/v_show/id_XMTI1MzE2OTc4OA==.html"
-"848","5212","4","7","25372","Botnet如何擴張 II ","https://www.youtube.com/watch?v=f9-BZ9sf_k8；http://v.youku.com/v_show/id_XMTI1MzE3MTQyNA==.html"
-"848","5212","4","9","25373","Botnet 如何偵測 I","https://www.youtube.com/watch?v=Z85IZtY_YNo；http://v.youku.com/v_show/id_XMTI1MzE3MDQ2NA==.html"
-"848","5212","4","10","25374","Botnet如何偵測 II ","https://www.youtube.com/watch?v=7lPRdosi5yU；http://v.youku.com/v_show/id_XMTI1MzE3MTg0MA==.html"
-"848","5212","4","12","25375","Botnet 如何防治","https://www.youtube.com/watch?v=mKo_705diUo；http://v.youku.com/v_show/id_XMTI1MzE3MjI3Ng==.html"
+"848","5212","4","2","27686","殭屍網路 botnet","https://www.youtube.com/watch?v=7L4C_mN670I；http://v.youku.com/v_show/id_XMTI1MzE0OTIxNg==.html"
+"848","5212","4","3","25369","Botnet 有哪些架構","https://www.youtube.com/watch?v=CR4zAzfqmOI；http://v.youku.com/v_show/id_XMTI1MzE0OTY1Mg==.html"
+"848","5212","4","5","25370","Botnet 能夠用來做什麼","https://www.youtube.com/watch?v=X61U2DO_1eE；http://v.youku.com/v_show/id_XMTI1MzE2ODg3Ng==.html"
+"848","5212","4","7","25371","Botnet 如何擴張 I ","https://www.youtube.com/watch?v=Del9BMxV8l4；http://v.youku.com/v_show/id_XMTI1MzE2OTc4OA==.html"
+"848","5212","4","8","25372","Botnet如何擴張 II ","https://www.youtube.com/watch?v=f9-BZ9sf_k8；http://v.youku.com/v_show/id_XMTI1MzE3MTQyNA==.html"
+"848","5212","4","10","25373","Botnet 如何偵測 I","https://www.youtube.com/watch?v=Z85IZtY_YNo；http://v.youku.com/v_show/id_XMTI1MzE3MDQ2NA==.html"
+"848","5212","4","11","25374","Botnet如何偵測 II ","https://www.youtube.com/watch?v=7lPRdosi5yU；http://v.youku.com/v_show/id_XMTI1MzE3MTg0MA==.html"
+"848","5212","4","13","25375","Botnet 如何防治","https://www.youtube.com/watch?v=mKo_705diUo；http://v.youku.com/v_show/id_XMTI1MzE3MjI3Ng==.html"
 "848","5210","5","1","25337","何謂防火牆","https://www.youtube.com/watch?v=FZMmxzmHBIk"
 "848","5210","5","2","25338","防火牆目標","https://www.youtube.com/watch?v=t4L2jj8Xa2Q"
 "848","5210","5","4","25339","防火牆技術","https://www.youtube.com/watch?v=23FPtYUDeEI"
@@ -39,13 +39,13 @@
 "848","5213","6","3","25377","Linux 防火牆 IPtables","https://www.youtube.com/watch?v=0FAYx-2Ak00"
 "848","5213","6","4","25378","iptables 指令範例","https://www.youtube.com/watch?v=IOlE1I-P3Xs"
 "848","5213","6","6","25379","IP6tables","https://www.youtube.com/watch?v=um8Pdc-IPcc"
-"848","5213","6","7","25416","愛沙尼亞 DDoS 攻擊事件",
-"848","5213","6","8","25417","伊朗核子設施攻擊事件 (震網蠕蟲)",
-"848","5213","6","9","25418","索尼影業駭客攻擊事件",
-"848","5214","7","1","25419","APT 簡介",
-"848","5214","7","2","25420","APT 攻擊手法",
-"848","5214","7","3","25421","APT 攻擊週期",
-"848","5214","7","4","25422","IDS 入侵偵測系統",
-"848","5214","7","5","25423","字串比對技術 (string matching algorithms)",
-"848","5214","7","6","25424","IPS 入侵偵測防禦系統",
-"848","5214","7","7","25425","Snort IDS/IPS 介紹",
+"848","5213","6","7","25416","愛沙尼亞 DDoS 攻擊事件","https://youtu.be/4tGKx1FS6uA"
+"848","5213","6","9","25417","伊朗核子設施攻擊事件 (震網蠕蟲)","https://youtu.be/V9Dz2s_iEUU"
+"848","5213","6","11","25418","索尼影業駭客攻擊事件","https://youtu.be/eq48xqC1DIY"
+"848","5214","7","1","25419","APT 簡介","https://youtu.be/Te_XlepT4xE"
+"848","5214","7","2","25420","APT 攻擊手法","https://youtu.be/4o-rHFtOoT4"
+"848","5214","7","3","25421","APT 攻擊週期","https://youtu.be/0TfT8l2lm3o"
+"848","5214","7","5","25422","IDS 入侵偵測系統","https://youtu.be/6V0-F-JF4I0"
+"848","5214","7","7","25423","字串比對技術 (string matching algorithms)","https://youtu.be/mdC5zz8G4vo"
+"848","5214","7","9","25424","IPS 入侵偵測防禦系統","https://youtu.be/JkeQdH-vnoQ"
+"848","5214","7","11","25425","Snort IDS/IPS 介紹","https://youtu.be/gCTQDZuX1Mo"
