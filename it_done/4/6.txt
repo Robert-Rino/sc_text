@@ -1,38 +1,38 @@
 (0,2) : set()
-(2,6) : {'Level', 'Application', 'Firewall'}
-(6,8) : {'Application', 'proxy'}
-(8,13) : {'保護'}
-(13,18) : set()
+(2,6) : set()
+(6,8) : set()
+(8,13) : {'保護', '提供'}
+(13,18) : {'layer'}
 (18,21) : set()
-(21,24) : {'application', 'data'}
+(21,24) : {'application'}
 (24,26) : set()
-(26,30) : {'proxy'}
+(26,30) : set()
 (30,31) : set()
-(31,35) : {'proxy'}
-(35,39) : {'server', 'proxy'}
+(31,35) : set()
+(35,39) : {'server'}
 (39,41) : set()
-(41,46) : {'server'}
-(46,49) : {'proxy'}
-(49,52) : {'攔截', 'proxy'}
-(52,55) : {'攔截'}
-(55,59) : {'server'}
-(59,62) : {'proxy'}
-(62,65) : {'server', 'proxy'}
-(65,68) : {'server'}
+(41,46) : {'server', 'client'}
+(46,49) : set()
+(49,52) : set()
+(52,55) : set()
+(55,59) : {'server', 'client'}
+(59,62) : set()
+(62,65) : {'server'}
+(65,68) : {'server', 'client'}
 (68,71) : set()
 (71,72) : set()
-(72,77) : {'application'}
+(72,77) : {'application', 'layer'}
 (77,81) : {'packet', 'filter'}
-(81,84) : set()
-(84,87) : {'IP'}
+(81,84) : {'network', 'layer'}
+(84,87) : set()
 (87,91) : set()
-(91,93) : {'application', 'proxy'}
-(93,95) : {'application'}
-(95,100) : {'application'}
-(100,106) : {'application'}
+(91,93) : {'application'}
+(93,95) : {'application', 'gateway'}
+(95,100) : {'application', 'layer'}
+(100,106) : {'application', 'layer'}
 (106,109) : set()
-(109,113) : {'server'}
-(113,116) : {'application'}
+(109,113) : {'server', 'client'}
+(113,116) : {'application', 'layer'}
 (116,118) : set()
 (118,123) : set()
 (123,126) : set()
@@ -47,38 +47,38 @@
 (153,157) : set()
 (157,161) : {'packet', 'filter'}
 (161,163) : set()
-(163,167) : {'application', 'proxy'}
+(163,167) : {'application'}
 (167,170) : set()
 (170,172) : set()
 (172,176) : set()
 (176,180) : {'application'}
 (180,184) : set()
-(184,187) : {'proxy'}
+(184,187) : set()
 (187,189) : set()
 (189,193) : set()
 (193,195) : set()
 (195,199) : set()
 (199,204) : {'server'}
-(204,209) : {'proxy'}
-(209,214) : {'server', 'proxy'}
+(204,209) : {'client'}
+(209,214) : {'server'}
 (214,217) : set()
-(217,221) : {'packet', 'data'}
+(217,221) : {'packet'}
 (221,225) : set()
-(225,230) : {'data'}
-(230,234) : {'data'}
+(225,230) : set()
+(230,234) : set()
 (234,239) : set()
-(239,242) : {'data'}
+(239,242) : set()
 (242,249) : set()
 (249,253) : set()
-(253,258) : {'data'}
+(253,258) : set()
 (258,263) : set()
-(263,266) : {'proxy'}
+(263,266) : set()
 (266,270) : set()
 (270,274) : set()
-(274,281) : {'firewall', 'proxy'}
+(274,281) : set()
 (281,283) : set()
 (283,289) : set()
-(289,292) : {'data'}
+(289,292) : set()
 (292,297) : set()
 (297,298) : set()
 (298,302) : set()
@@ -86,47 +86,47 @@
 (308,312) : set()
 (312,313) : {'資源'}
 (313,317) : set()
-(317,321) : {'proxy'}
-(321,324) : {'application'}
-(327,327) : {'application'}
-(327,332) : {'application', 'proxy'}
+(317,321) : set()
+(321,324) : {'application', 'layer'}
+(327,327) : {'application', 'layer'}
+(327,332) : {'application', 'layer'}
 (332,336) : {'application'}
-(336,338) : set()
-(338,341) : {'proxy'}
+(336,338) : {'協議'}
+(338,341) : set()
 (341,345) : set()
 (345,350) : set()
-(350,354) : {'proxy'}
-(354,358) : {'application', 'proxy'}
+(350,354) : set()
+(354,358) : {'application'}
 (358,362) : {'application'}
 (362,365) : {'application'}
 (365,368) : set()
-(368,370) : {'proxy'}
+(368,370) : set()
 (370,374) : set()
 (374,375) : set()
 (375,379) : {'application'}
 (379,381) : set()
-(381,385) : {'Proxy'}
+(381,385) : set()
 (385,387) : set()
-(387,391) : {'Proxy', 'server'}
+(387,391) : {'server'}
 (391,393) : set()
-(393,397) : {'proxy'}
+(393,397) : set()
 (397,401) : set()
-(401,403) : {'Proxy', 'Application'}
-(403,406) : {'proxy'}
+(401,403) : set()
+(403,406) : set()
 (406,407) : {'server'}
-(407,412) : {'application'}
+(407,412) : {'application', 'gateway'}
 (412,415) : set()
 (415,417) : {'server'}
 (417,419) : {'server'}
 (419,423) : set()
-(423,428) : {'application', 'proxy'}
-(428,431) : set()
+(423,428) : {'application'}
+(428,431) : {'防火牆'}
 (431,435) : set()
-(435,441) : {'server'}
-(441,446) : {'server'}
+(435,441) : {'server', 'client'}
+(441,446) : {'server', 'client'}
 (446,449) : set()
-(449,453) : {'proxy'}
+(449,453) : set()
 (453,457) : {'application'}
 (457,461) : {'application'}
 (461,463) : set()
-(463,464) : {'proxy'}
+(463,464) : set()

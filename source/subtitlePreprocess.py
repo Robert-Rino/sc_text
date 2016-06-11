@@ -4,9 +4,9 @@ import os
 import jieba
 import datetime
 
-jieba.set_dictionary('../dict/extra_dict/dict.txt.big')
-jieba.set_dictionary('../dict/keyword.txt')
-keywords_dir = '../dict/new_userdict.txt'
+jieba.set_dictionary('../dict/userdict.txt')
+jieba.load_userdict('../dict/userdict.txt')
+keywords_dir = '../dict/keyword.txt'
 phrase_dir = '../dict/phrase.txt'
 original = '../original_file'
 done = '../it_done'
@@ -50,12 +50,6 @@ def preprocessSubtitle():
                     words = jieba.cut(content_list[index + 1], cut_all=False)  # （改）讀字幕最後一行沒東西時
                     tmp_word = []
                     for word in words:
-                        # if word != ' ' and word != '-' and word != '.' and word != '/' and word != '^':
-                        #     if re.search(word, phrase_list):
-                        #         new_word = filter(lambda x: word in x,
-                        #                           cut_phrase)
-                        #         tmp_word.extend(new_word)
-                        #     else:
                         tmp_word.append(word)
                     key = set(tmp_word).intersection(set(key_list))
                     fw.write('(' + str(video_start) + ',' + str(video_end)

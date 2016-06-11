@@ -1,49 +1,49 @@
-(0,4) : {'Firewall'}
+(0,4) : set()
 (4,6) : {'防火牆'}
-(6,9) : set()
+(6,9) : {'防火牆'}
 (9,12) : {'packet', 'filter'}
 (12,16) : set()
-(16,21) : set()
-(21,26) : {'ACL'}
-(26,31) : set()
+(16,21) : {'router'}
+(21,26) : {'router'}
+(26,31) : {'iptables', 'linux'}
 (31,35) : set()
-(35,39) : {'IP'}
+(35,39) : set()
 (39,43) : {'packet', 'filter'}
-(43,46) : {'Application'}
-(46,51) : {'SOCKS'}
-(51,54) : {'Application'}
-(54,57) : {'Application'}
-(57,59) : {'Application'}
+(43,46) : {'gateway'}
+(46,51) : set()
+(51,54) : {'gateway'}
+(54,57) : set()
+(57,59) : set()
 (59,63) : {'packet', 'filter'}
-(63,67) : {'Application'}
-(67,72) : {'Inspection', 'filter', 'Stateful'}
-(72,74) : set()
-(74,77) : {'table'}
-(77,80) : set()
+(63,67) : set()
+(67,72) : {'filter'}
+(72,74) : {'stateful'}
+(74,77) : {'table', 'state', 'connection'}
+(77,80) : {'狀態'}
 (80,82) : set()
 (82,86) : set()
-(86,91) : set()
+(86,91) : {'不存在'}
 (91,93) : set()
 (93,97) : set()
-(97,101) : set()
+(97,101) : {'狀態'}
 (101,105) : set()
-(105,111) : {'Filter'}
+(105,111) : set()
 (111,115) : set()
 (115,116) : set()
 (116,120) : set()
-(120,125) : {'Proxy', 'Application'}
-(125,129) : {'Proxy', 'Application', 'server'}
-(129,134) : set()
-(134,137) : {'Proxy', 'Application'}
+(120,125) : set()
+(125,129) : {'server'}
+(129,134) : {'client'}
+(134,137) : set()
 (137,142) : set()
-(142,148) : {'Proxy', 'Application'}
+(142,148) : set()
 (148,153) : set()
-(153,156) : {'Filter'}
-(156,160) : {'Inspection', 'Stateful'}
-(160,166) : {'table'}
+(153,156) : set()
+(156,160) : set()
+(160,166) : {'table', 'connection'}
 (166,167) : set()
 (167,172) : set()
-(172,175) : {'table'}
+(172,175) : {'connection', 'table'}
 (175,179) : {'合法'}
 (179,182) : set()
 (182,185) : set()
