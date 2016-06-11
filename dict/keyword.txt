@@ -1,160 +1,253 @@
-區域網路 20
-線上遊戲 20
-電子郵件 20
-社群網路 20
-檔案分享型 20
-即時通軟體 20
-計算機網路概論 20
-視訊會議系統 30
-視訊會議 25
-線上開會 20
-線上討論 20
-應用層 20
-無線通訊 30
-無線 20
-點對點 20
-同軸電纜 30
-電纜 20
-交換網路 20
-可靠性 25
-樹狀結構 30
-廣域網路 30
-大都會網路 20
-封包最大值 20
-封包上限值 20
-小片段 30
-片段 25
-網路阻塞 30
-統計多工 20
-先進先出 20
-天線 20
-無線 20
-偵錯 20
-CW值 30
-糾錯 20
-國際標準組織 20
-分層式 30
-分層 25
-硬體層 30
-網路設備 30
-狀態圖 20
-互通測試 30
-互通 20
-開放系統 30
-實體層 30
-第一層 20
-第二層 20
-layer2 20
-layer3 20
-雙絞線 20
-編碼 20
-錯誤檢査 30
-CSMA/CD 60
-最短路徑 20
-最短路徑優先 30
-分散式系統 30
-加密演算法 30
-解密演算法 30
-衝撞避免 30
-傳輸層 30
-點對點 30
-p2p 30
-網管 30
-排隊時間 30
-round-trip 30
-ATM網路 30
-石英振盪器 30
-last-in-first-out 30
-集中式演算法 30
-虛擬區域網路 30
-Plug-and-Play 30
-隨插即用 30
-網路安全 30
-CIA 30
-Confidentiality 30
-保密性 30
-完整性 30
-Integrity 30
-可用性 30
-Availability 30
-阻斷服務 30
-阻斷式 30
-SYN-Flooder 30
-IGMP 30
-DDoS 30
-DoS 30
-網路的入侵 30
-Network-Invasion 30
-竊聽 30
-Sniffing 30
-SYN-Flooding 30
-teardrop 30
-淚珠 30
-全收 30
-Promiscuous 30
-木馬程式 30
-SYN 30
-Flooding 30
-殭屍電腦 30
-魁儡電腦 30
-TFN 30
-Trin00 30
-ICMP 30
-Smurf 30
-偽造IP 30
-愛沙尼亞 30
-Estonia 30
-反射式 30
-放大式 30
-Reflector 30
-Amplifier 30
-小換大 30
-少換多 30
-Half-Open 30
-SYN-Flooding 30
-SYN-ACK 30
-ICMP 30
-Smurf 30
-Fraggle 30
-流量觀測 30
-Backscatter 30
-反射流量分析 30
-網路的望遠鏡 30
-望遠鏡 30
-黑洞 30
-IBR 30
-射流量分析 30
-Volume 30
-Botnet 30
-Cyber 30
-Attack 30
-IRC 30
-溝通 30
-Conficker 30
-Centralized 30
-集中式 30
-點對點 30
-Peer 30
-to 30
-C&C 30
-P2P 30
-盈利 30
-擴張 30
-弱點週期 30
-零時攻擊 30
-signature 30
-特徵碼 30
-Zero-day 30
-擴散 30
-Server-side 30
-attacks 30
-社交工程 30
-Landing 30
-Malware 30
-site 30
-偵測 30
-Conficker 30
-蜜罐 30
-honeypot 30
-防治 30
-偽造 30
+botnet
+bot
+chain
+rule
+黑洞
+規則
+觀測
+input
+apt
+irc
+fragment
+socks
+ids
+iptable
+client
+table
+screening
+字串比對
+drop
+reflector
+受害主機
+ack
+public
+forward
+router
+合法
+接受
+filter
+death
+阻斷服務攻擊
+dmz
+peer
+snort
+multi
+legged
+反射式攻擊
+promiscuous
+connection
+simple
+library
+private
+pattern
+網路入侵
+availability
+string
+network
+state
+daemon
+gateway
+ips
+host
+入侵偵測
+matching
+amplifier
+diego
+san
+缺點
+linux
+acl
+streaming
+interface
+list
+conficker
+igmp
+nmap
+fin
+memory
+網路掃描
+backdoor
+overlapping
+cia
+flooder
+accept
+特徵碼資料庫
+回應
+victim
+background
+放大式攻擊
+radiation
+flood
+tfn
+handler
+telescope
+agent
+botmaster
+web
+user
+優點
+byte
+as
+honeypot
+臥底
+rules
+match
+server
+passive
+zone
+syn
+需求
+unreachable
+uc
+isp
+封包給
+反射流量分析
+散佈
+snmp
+authentication
+site
+google
+download
+implement
+account
+cs
+invasion
+tw
+either
+scanning
+amazon
+cyberslam
+單點攻擊
+iis
+sniffing
+teardrop
+edu
+nthu
+nuke
+spoofed
+網路之間
+reputation
+bit
+fraggle
+attacker
+網路攻擊
+ftp
+廣播
+echo
+殭屍網路
+bug
+redirect
+零時攻擊
+period
+day
+zero
+log
+dns
+telnet
+code
+email
+insert
+nac
+demilitarized
+appendix
+tool
+review
+semi
+mangle
+辦法
+互聯網
+攻擊力道
+hacker
+center
+backscatter
+網路望遠鏡
+layer
+scanner
+outside
+allow
+封包通過
+inspection
+join
+deny
+stateful
+iptables
+flag
+trusted
+訪問
+社交工程
+teardropteardrop
+資訊等等
+birdspy
+victimvictim
+統的漏洞
+subseven
+竊取資料
+intrusion
+特定目標
+協助
+獲取
+蠕蟲
+防火牆
+hop
+malware
+交叉比對
+軟體公司
+tablefilter
+原始封包
+限制
+不易
+udpfraggle
+客戶
+協議
+網路安全
+感染
+五年
+protected
+transport
+可能被滲透
+filterstateful
+過濾器
+action
+狀態
+untrusted
+fragglefraggle
+application
+攻擊者
+結果
+中間
+布局
+美國
+期間
+一系列
+packet
+address
+錯誤
+request
+軟體設計不夠完善
+特徵碼製作完成
+回覆
+大量
+竊聽
+部攻擊
+調查
+震網蠕蟲
+測試
+開始入侵
+硬碟
+研究目標
+滅跡
+將控制權擴展到其他
+建置工具
+被老闆指責
+snortsnort
+電影
+擴張
+異常流量
+結論
+個針對
+policy
+資源
+弱點
+不存在
+保護
+提供
