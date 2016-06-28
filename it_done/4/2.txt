@@ -1,24 +1,24 @@
 (0,4) : set()
 (4,6) : {'防火牆'}
 (6,9) : {'防火牆'}
-(9,12) : {'packet', 'filter'}
+(9,12) : {'filter', 'packet'}
 (12,16) : set()
 (16,21) : {'router'}
-(21,26) : {'router'}
-(26,31) : {'iptables', 'linux'}
+(21,26) : {'ACL', 'router'}
+(26,31) : {'linux', 'iptables'}
 (31,35) : set()
 (35,39) : set()
-(39,43) : {'packet', 'filter'}
+(39,43) : {'filter', 'packet'}
 (43,46) : {'gateway'}
 (46,51) : set()
 (51,54) : {'gateway'}
 (54,57) : set()
 (57,59) : set()
-(59,63) : {'packet', 'filter'}
+(59,63) : {'filter', 'packet'}
 (63,67) : set()
 (67,72) : {'filter'}
 (72,74) : {'stateful'}
-(74,77) : {'table', 'state', 'connection'}
+(74,77) : {'state', 'connection', 'table'}
 (77,80) : {'狀態'}
 (80,82) : set()
 (82,86) : set()
@@ -40,7 +40,7 @@
 (148,153) : set()
 (153,156) : set()
 (156,160) : set()
-(160,166) : {'table', 'connection'}
+(160,166) : {'connection', 'table'}
 (166,167) : set()
 (167,172) : set()
 (172,175) : {'connection', 'table'}

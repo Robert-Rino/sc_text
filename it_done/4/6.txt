@@ -1,38 +1,38 @@
 (0,2) : set()
 (2,6) : set()
 (6,8) : set()
-(8,13) : {'保護', '提供'}
-(13,18) : {'layer'}
+(8,13) : {'提供', '保護'}
+(13,18) : set()
 (18,21) : set()
-(21,24) : {'application'}
+(21,24) : set()
 (24,26) : set()
 (26,30) : set()
 (30,31) : set()
 (31,35) : set()
 (35,39) : {'server'}
 (39,41) : set()
-(41,46) : {'server', 'client'}
+(41,46) : {'client', 'server'}
 (46,49) : set()
 (49,52) : set()
 (52,55) : set()
-(55,59) : {'server', 'client'}
+(55,59) : {'client', 'server'}
 (59,62) : set()
 (62,65) : {'server'}
-(65,68) : {'server', 'client'}
+(65,68) : {'client', 'server'}
 (68,71) : set()
 (71,72) : set()
-(72,77) : {'application', 'layer'}
-(77,81) : {'packet', 'filter'}
-(81,84) : {'network', 'layer'}
+(72,77) : set()
+(77,81) : {'filter', 'packet'}
+(81,84) : {'network'}
 (84,87) : set()
 (87,91) : set()
-(91,93) : {'application'}
-(93,95) : {'application', 'gateway'}
-(95,100) : {'application', 'layer'}
-(100,106) : {'application', 'layer'}
+(91,93) : set()
+(93,95) : {'gateway'}
+(95,100) : set()
+(100,106) : set()
 (106,109) : set()
-(109,113) : {'server', 'client'}
-(113,116) : {'application', 'layer'}
+(109,113) : {'client', 'server'}
+(113,116) : set()
 (116,118) : set()
 (118,123) : set()
 (123,126) : set()
@@ -45,13 +45,13 @@
 (147,149) : set()
 (149,153) : set()
 (153,157) : set()
-(157,161) : {'packet', 'filter'}
+(157,161) : {'filter', 'packet'}
 (161,163) : set()
-(163,167) : {'application'}
+(163,167) : set()
 (167,170) : set()
 (170,172) : set()
 (172,176) : set()
-(176,180) : {'application'}
+(176,180) : set()
 (180,184) : set()
 (184,187) : set()
 (187,189) : set()
@@ -87,23 +87,23 @@
 (312,313) : {'資源'}
 (313,317) : set()
 (317,321) : set()
-(321,324) : {'application', 'layer'}
-(327,327) : {'application', 'layer'}
-(327,332) : {'application', 'layer'}
-(332,336) : {'application'}
+(321,324) : set()
+(327,327) : set()
+(327,332) : set()
+(332,336) : set()
 (336,338) : {'協議'}
 (338,341) : set()
 (341,345) : set()
 (345,350) : set()
 (350,354) : set()
-(354,358) : {'application'}
-(358,362) : {'application'}
-(362,365) : {'application'}
+(354,358) : set()
+(358,362) : set()
+(362,365) : set()
 (365,368) : set()
 (368,370) : set()
 (370,374) : set()
 (374,375) : set()
-(375,379) : {'application'}
+(375,379) : set()
 (379,381) : set()
 (381,385) : set()
 (385,387) : set()
@@ -114,19 +114,19 @@
 (401,403) : set()
 (403,406) : set()
 (406,407) : {'server'}
-(407,412) : {'application', 'gateway'}
+(407,412) : {'gateway'}
 (412,415) : set()
 (415,417) : {'server'}
 (417,419) : {'server'}
 (419,423) : set()
-(423,428) : {'application'}
+(423,428) : set()
 (428,431) : {'防火牆'}
 (431,435) : set()
-(435,441) : {'server', 'client'}
-(441,446) : {'server', 'client'}
+(435,441) : {'client', 'server'}
+(441,446) : {'client', 'server'}
 (446,449) : set()
 (449,453) : set()
-(453,457) : {'application'}
-(457,461) : {'application'}
+(453,457) : set()
+(457,461) : set()
 (461,463) : set()
 (463,464) : set()
