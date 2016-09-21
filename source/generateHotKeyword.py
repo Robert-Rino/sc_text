@@ -135,7 +135,7 @@ def modify_word(word_list):
 
 
 #get sharecourse video name and url
-sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash/848')
+sc_course = requests.get('http://104.155.227.109:8080/api/v1/getVideoHash/908')
 course_json = sc_course.json()
 
 weekList = os.listdir(subtitle_dir) # files in it_done
